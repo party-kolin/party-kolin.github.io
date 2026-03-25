@@ -54,7 +54,7 @@
         /* Hero Sekce - Lepší pro mobil */
         .hero {
             height: 60vh; /* Menší na mobilu */
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('uvod.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('logo.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             align-items: center;
