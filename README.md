@@ -176,7 +176,7 @@
 <body>
 
     <nav>
-        <img src="logo.png" alt="Party Kolín">
+        <img src="logo.jpg" alt="Party Kolín">
         <div class="nav-links">
             <a href="#vybaveni">Ceník</a>
             <a href="#kontakt">Kontakt</a>
@@ -240,8 +240,8 @@
             <h2>Naše Služby</h2>
             <div class="divider" style="margin-bottom:20px;"></div>
             <p style="max-width: 700px; margin: 0 auto; color: var(--text-gray); font-size: 0.95rem;">
-                Nabízíme pronájem stanů a dětských skákacích hradů pro soukromé akce. 
-                Rádi Vám pomůžeme Váš den zastřešit před deštěm i sluncem.
+     Nabízíme pronájem párty stanů, dětských skákacích hradů pro menší soukromé akce typu svatba, výročí, narozeninová oslava apod.
+Počasí je někdy neúprosné a mnohdy dokáže zkazit vysněný a dlouho plánovaný slavnostní den. Rádi Vám pomůžeme Váš slavnostní den zastřešit. Naše párty stany pomohou hosty schovat před deštěm, přímým sluncem či větrem. Nabízíme pronájem stanů 6x12m (trubkový) a 6x3m (nůžkový), posezení (pivní sety), vytápění a také skákací dětské hrady.
             </p>
         </div>
     </div>
