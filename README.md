@@ -156,7 +156,7 @@
 <body>
 
     <nav>
-        <img src="logo.png" alt="Party Kolín">
+        <img src="logo.jpg" alt="Party Kolín">
         <div class="nav-links">
             <a href="#sluzby">Služby</a>
             <a href="#vybaveni">Ceník</a>
