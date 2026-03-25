@@ -4,101 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Party Kolín | Pronájem stanů a skákacích hradů</title>
+    <title>Party Kolín | ...s námi to oslavíte</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #007bff; --accent: #ff8800; --dark: #333; --light: #f4f7f6; }
+        /* Definice zelené barvy z loga a základní styl */
+        :root { --brand-green: #8cc63f; --dark: #222; --light-bg: #f9f9f9; }
         body { font-family: 'Open Sans', sans-serif; margin: 0; color: var(--dark); background-color: white; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; }
 
-        /* Hero sekce s textem od vás */
+        /* Hlavní lišta s logem */
+        .top-bar { background: white; padding: 10px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; box-sizing: border-box; display: flex; align-items: center; }
+        .logo-img { height: 50px; width: auto; /* Zde se načte vaše logo */ }
+        
+        /* Úvodní velká fotka (Hero) */
         header { 
-            height: 80vh; 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; 
+            height: 100vh; 
+            margin-top: 70px; /* Prostor pro top-bar */
+            /* !!! ZDE ZMĚŇTE NAZEV VAŠÍ FOTKY !!! */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('uvod.jpg') no-repeat center center/cover; 
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
         }
-        h1 { font-size: 3.5rem; margin: 0; text-transform: uppercase; }
-        .hero-text { max-width: 800px; font-size: 1.2rem; margin: 20px 0; }
+        h1.hero-title { font-size: 4rem; margin: 0; text-shadow: 2px 2px 15px rgba(0,0,0,0.8); }
+        h1.hero-title span { color: var(--brand-green); } /* Zelený akcent */
 
-        .btn { padding: 15px 35px; background: var(--accent); color: white; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; font-size: 1.1rem; }
-        .btn:hover { background: #e67a00; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        /* Sekce dlaždic */
+        section#menu-tiles { padding: 60px 20px; background-color: var(--light-bg); text-align: center; }
+        
+        .tile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto; }
+        
+        /* Styl jedné dlaždice */
+        .tile { 
+            background: white; padding: 40px 20px; border-radius: 10px; text-decoration: none; color: var(--dark);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 2px solid transparent;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; height: 180px;
+        }
+        
+        /* Efekt při najetí myší na dlaždici */
+        .tile:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(140, 198, 63, 0.2); border-color: var(--brand-green); }
+        
+        .tile h3 { font-size: 1.3rem; margin: 10px 0 0 0; color: #111; }
+        .tile-icon { font-size: 2.5rem; color: var(--brand-green); margin-bottom: 10px; }
 
-        /* Sekce Vybavení */
-        section { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        .section-title { text-align: center; margin-bottom: 50px; }
-        .section-title h2 { font-size: 2.5rem; color: var(--primary); }
+        /* Patička s kontaktem */
+        footer { background: var(--dark); color: #bbb; text-align: center; padding: 50px 20px; }
+        footer h2 { color: white; }
+        .contact-info { font-size: 1.2rem; color: white; margin: 20px 0; font-weight: 600; }
+        .contact-info a { color: var(--brand-green); text-decoration: none; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: var(--light); padding: 30px; border-radius: 10px; text-align: center; border-bottom: 5px solid var(--primary); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .card h3 { color: var(--primary); margin-top: 0; }
-        .card ul { list-style: none; padding: 0; text-align: left; }
-        .card li::before { content: "✓ "; color: var(--accent); font-weight: bold; }
-
-        /* O nás sekce (Váš text) */
-        .about-box { background: var(--primary); color: white; padding: 50px; border-radius: 20px; text-align: center; margin-top: 50px; }
-
-        footer { background: #222; color: #ccc; text-align: center; padding: 50px 20px; margin-top: 50px; }
-        .contact-info { font-size: 1.2rem; color: white; margin: 20px 0; }
+        /* Responsivita pro mobily */
+        @media (max-width: 768px) { h1.hero-title { font-size: 2.5rem; } .tile-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
+    <div class="top-bar">
+        <img src="logo.png" alt="Party Kolín Logo" class="logo-img">
+    </div>
+
     <header>
-        <h1>PARTY KOLÍN</h1>
-        <p class="hero-text">Zajistíme, aby váš slavnostní den nic nepokazilo. Nabízíme pronájem párty stanů a skákacích hradů pro vaše nezapomenutelné oslavy.</p>
-        <a href="#kontakt" class="btn">POPTAT TERMÍN ZDARMA</a>
+        <h1 class="hero-title">...s námi to <span>oslavíte</span>.</h1>
     </header>
 
-    <section id="vybaveni">
-        <div class="section-title">
-            <h2>Naše Vybavení</h2>
-            <p>Vše pro vaši svatbu, výročí nebo narozeninovou oslavu.</p>
-        </div>
-        
-        <div class="grid">
-            <div class="card">
-                <h3>Párty Stany</h3>
-                <ul>
-                    <li><strong>6x12m</strong> – Robustní trubkový stan</li>
-                    <li><strong>6x3m</strong> – Rychlý nůžkový stan</li>
-                    <li>Ochrana před deštěm, sluncem i větrem</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Zábava pro děti</h3>
-                <ul>
-                    <li><strong>Skákací hrady</strong></li>
-                    <li>Ideální pro rodinné oslavy</li>
-                    <li>Bezpečný a prověřený materiál</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Doplňky</h3>
-                <ul>
-                    <li>Pivní sety (posezení)</li>
-                    <li>Výkonné vytápění stanů</li>
-                    <li>Kompletní zastřešení akce</li>
-                </ul>
-            </div>
+    <section id="menu-tiles">
+        <h2>Vyberte si službu</h2>
+        <div class="tile-grid">
+            
+            <a href="#vybaveni" class="tile">
+                <div class="tile-icon">⛺</div> <h3>Vybavení (ceník)</h3>
+            </a>
+
+            <a href="#galerie" class="tile">
+                <div class="tile-icon">📷</div> <h3>Fotogalerie</h3>
+            </a>
+
+            <a href="#faq" class="tile">
+                <div class="tile-icon">❓</div> <h3>Časté dotazy</h3>
+            </a>
+
+            <a href="#sluzby" class="tile">
+                <div class="tile-icon">🤝</div> <h3>Naše služby</h3>
+            </a>
+
+            <a href="#podminky" class="tile">
+                <div class="tile-icon">📄</div> <h3>Obchodní podmínky</h3>
+            </a>
+
+            <a href="#kontakt" class="tile">
+                <div class="tile-icon">📞</div> <h3>Kontakty</h3>
+            </a>
+
         </div>
     </section>
 
-    <section>
-        <div class="about-box">
-            <h2>Proč my?</h2>
-            <p>"Počasí je někdy neúprosné a mnohdy dokáže zkazit vysněný a dlouho plánovaný slavnostní den. Rádi Vám pomůžeme Váš slavnostní den zastřešit."</p>
-        </div>
-    </section>
+    <section id="vybaveni" style="padding:100px 20px; text-align:center;"><h2>Zde bude Ceník Vybavení</h2></section>
+    <section id="galerie" style="padding:100px 20px; text-align:center; background:#eee;"><h2>Zde bude Fotogalerie</h2></section>
 
     <footer id="kontakt">
         <h2>Kontaktujte nás</h2>
+        <p>Pro nezávaznou poptávku nám zavolejte nebo napište.</p>
         <div class="contact-info">
-            📧 info@party-kolin.cz | 📞 +420 123 456 789
+            📧 <a href="mailto:info@party-kolin.cz">info@party-kolin.cz</a><br>
+            📞 <a href="tel:+420123456789">+420 123 456 789</a>
         </div>
-        <p>Působíme v Kolíně a širokém okolí.</p>
-        <hr style="width: 50px; border: 1px solid var(--accent); margin: 30px auto;">
-        <p>&copy; 2026 www.party-kolin.cz | Vytvořeno zdarma s AI</p>
+        <p>&copy; 2026 www.party-kolin.cz | Kolín a okolí</p>
     </footer>
 
 </body>
