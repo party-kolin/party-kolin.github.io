@@ -244,7 +244,9 @@
             </div>
             <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-gray);">
                 Nabízíme pronájem párty stanů a dětských skákacích hradů pro menší soukromé akce. 
-                Rádi Vám pomůžeme Váš slavnostní den zastřešit a ochránit hosty před deštěm, sluncem či větrem.
+                Rádi Vám pomůžeme Váš slavnostní den zastřešit a ochránit hosty před deštěm, sluncem či větrem.Nabízíme pronájem párty stanů, dětských skákacích hradů pro menší soukromé akce typu svatba, výročí, narozeninová oslava apod.
+
+Počasí je někdy neúprosné a mnohdy dokáže zkazit vysněný a dlouho plánovaný slavnostní den. Rádi Vám pomůžeme Váš slavnostní den zastřešit. Naše párty stany pomohou hosty schovat před deštěm, přímým sluncem či větrem. Nabízíme pronájem stanů 6x12m (trubkový) a 6x3m (nůžkový), posezení (pivní sety), vytápění a také skákací dětské hrady
             </p>
         </div>
     </div>
@@ -253,7 +255,7 @@
         <div class="container" style="padding: 0;">
             <h2>Máte dotaz nebo chcete rezervovat?</h2>
             <p>Působíme v Kolíně a širokém okolí.</p>
-            <a href="tel:+420123456789" class="contact-large">+420 123 456 789</a>
+            <a href="tel:+420 723 355 740" class="contact-large">+420 723 355 740</a>
             <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">info@party-kolin.cz</a>
             <div style="margin-top: 50px; font-size: 0.8rem; color: #aaa;">
                 &copy; 2026 Party-Kolin.cz | Kolín
