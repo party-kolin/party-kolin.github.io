@@ -178,6 +178,35 @@
             <a href="#vybaveni" class="card">
                 <h3>Vybavení & Ceník</h3>
                 <p>Párty stany, pivní sety a vytápění pro vaši akci.</p>
+                <section id="vybaveni" class="container">
+    <div class="section-title">
+        <h2>Vybavení & Ceník</h2>
+        <p>Kvalitní zázemí pro vaše soukromé i firemní akce.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card" style="border-top: 5px solid var(--primary-color);">
+            <div style="font-size: 0.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 10px;">NEJOBLÍBENĚJŠÍ</div>
+            <h3>Párty stan 6 x 12 m</h3>
+            <p>Prostorný trubkový stan ideální pro větší oslavy a svatby.</p>
+            
+            <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left; font-size: 0.9rem;">
+                <li>📏 <strong>Rozměry:</strong> 6 x 12 m</li>
+                <li>↕️ <strong>Výška:</strong> boční 2m / hřeben 3m</li>
+                <li>👥 <strong>Kapacita:</strong> 50 až 80 osob</li>
+                <li>🛡️ <strong>Ochrana:</strong> UV záření, déšť i vítr</li>
+            </ul>
+
+            <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 20px 0;">
+                10 890 Kč <span style="font-size: 0.9rem; font-weight: 400;">s DPH</span>
+            </div>
+            <p style="font-size: 0.8rem; font-style: italic;">Cena platí pro pronájem na 1 až 2 dny.</p>
+            
+            <a href="#kontakt" class="btn" style="display: inline-block; margin-top: 15px; background: var(--primary-color); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 600;">POPTAT TERMÍN</a>
+        </div>
+
+        </div>
+</section>
             </a>
             <a href="#galerie" class="card">
                 <h3>Fotogalerie</h3>
