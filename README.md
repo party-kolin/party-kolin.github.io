@@ -207,6 +207,26 @@
 
         </div>
 </section>
+    <div class="section-title">
+        <h2>Vybavení & Ceník</h2>
+        <p>Kvalitní zázemí pro vaše soukromé i firemní akce.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card" style="border-top: 5px solid var(--primary-color);">
+            <div style="font-size: 0.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 10px;">NEJOBLÍBENĚJŠÍ</div>
+            
+
+            <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 20px 0;">
+                10 890 Kč <span style="font-size: 0.9rem; font-weight: 400;">s DPH</span>
+            </div>
+            <p style="font-size: 0.8rem; font-style: italic;">Cena platí pro pronájem na 1 až 2 dny.</p>
+            
+            <a href="#kontakt" class="btn" style="display: inline-block; margin-top: 15px; background: var(--primary-color); color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: 600;">POPTAT TERMÍN</a>
+        </div>
+
+        </div>
+</section>
             </a>
             <a href="#galerie" class="card">
                 <h3>Fotogalerie</h3>
