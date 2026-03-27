@@ -175,7 +175,7 @@
 
         <div class="grid-fixed">
             <div class="card">
-                <div class="card-img" style="background-image: url('image_2.png');"></div>
+                <div class="card-img" style="background-image: url('uvod.JPG');"></div>
                 <div class="card-content">
                     <h3 style="color: var(--primary-color)">Párty stan 6 x 12 m</h3>
                     <ul class="card-list">
@@ -200,7 +200,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('Pivni set.jpg');"></div>
+                <div class="card-img" style="background-image: url('pivni-set.png');"></div>
                 <div class="card-content">
                     <h3>Pivní set 200 x 50 cm</h3>
                     <ul class="card-list">
@@ -213,7 +213,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrib.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrib.png');"></div>
                 <div class="card-content">
                     <h3>Plynový hřib (10kW)</h3>
                     <ul class="card-list">
