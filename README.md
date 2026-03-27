@@ -201,7 +201,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('pivni-set.png');"></div>
+                <div class="card-img" style="background-image: url('pivni-set1.png');"></div>
                 <div class="card-content">
                     <h3>Pivní set 200 x 50 cm</h3>
                     <ul class="card-list">
@@ -214,7 +214,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrib.png');"></div>
+                <div class="card-img" style="background-image: url('hrib1.jpg');"></div>
                 <div class="card-content">
                     <h3>Plynový hřib (10kW)</h3>
                     <ul class="card-list">
