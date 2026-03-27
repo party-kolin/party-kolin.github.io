@@ -29,76 +29,97 @@
             scroll-behavior: smooth;
         }
 
+        /* HLAVIČKA A LOGO */
         nav {
             position: fixed; top: 0; left: 0; width: 100%;
             background: rgba(255, 255, 255, 0.98);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000; display: flex;
             justify-content: space-between; align-items: center;
-            padding: 10px 15px;
+            padding: 12px 5%;
         }
 
-        nav img { height: 30px; max-width: 40%; object-fit: contain; }
+        nav img { 
+            height: 55px; /* Zvětšené logo */
+            width: auto;
+            max-width: 200px; 
+            object-fit: contain; 
+        }
 
-        .nav-links { display: flex; gap: 10px; }
+        .nav-links { display: flex; gap: 12px; }
         .nav-links a {
             text-decoration: none; color: var(--text-dark);
-            font-weight: 600; font-size: 0.65rem;
+            font-weight: 700; font-size: 0.7rem;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
+        /* HERO SEKCE */
         .hero {
-            height: 50vh;
+            height: 55vh;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('uvod.jpg.JPG') no-repeat center center/cover;
             display: flex; flex-direction: column; align-items: center;
             justify-content: center; text-align: center; color: white;
-            margin-top: 50px; padding: 20px; width: 100%;
+            margin-top: 70px; padding: 20px; width: 100%;
         }
 
-        .hero h1 { font-size: clamp(1.5rem, 7vw, 3.5rem); margin: 0; }
+        .hero h1 { font-size: clamp(1.8rem, 8vw, 4rem); font-weight: 700; margin: 0; }
         .hero h1 span { color: var(--primary-color); }
 
-        .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 40px 15px; }
-        .section-title { text-align: center; margin-bottom: 30px; }
-        .divider { width: 40px; height: 3px; background: var(--primary-color); margin: 0 auto; }
+        /* KONTEJNERY */
+        .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 50px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 2rem; margin-bottom: 10px; }
+        .divider { width: 50px; height: 4px; background: var(--primary-color); margin: 0 auto; }
 
-        .grid-fixed { display: block; width: 100%; }
+        /* MŘÍŽKA KARET */
+        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; width: 100%; }
 
         .card {
-            background: #fff; border-radius: 8px; border: 1px solid var(--border-color);
-            margin-bottom: 25px; overflow: hidden; width: 100%;
-            display: flex; flex-direction: column;
+            background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
+            overflow: hidden; width: 100%; display: flex; flex-direction: column;
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 
-        .card-img { width: 100%; height: 200px; background-size: cover; background-position: center; }
-        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
-        .card h3 { font-size: 1.15rem; margin: 5px 0; color: var(--text-dark); }
-        .price { font-size: 1.4rem; font-weight: 700; margin: 15px 0 10px 0; }
-        .price span { font-size: 0.8rem; font-weight: 400; color: var(--text-gray); }
+        .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card h3 { font-size: 1.25rem; margin: 5px 0; color: var(--text-dark); font-weight: 700; }
         
-        .card-list { list-style: none; padding: 0; margin: 10px 0; font-size: 0.85rem; flex-grow: 1; }
-        .card-list li { margin-bottom: 5px; padding-left: 20px; position: relative; color: var(--text-gray); }
+        .price { font-size: 1.6rem; font-weight: 800; margin: 15px 0 10px 0; color: var(--text-dark); }
+        .price span { font-size: 0.85rem; font-weight: 400; color: var(--text-gray); }
+        
+        .card-list { list-style: none; padding: 0; margin: 15px 0; font-size: 0.9rem; flex-grow: 1; }
+        .card-list li { margin-bottom: 6px; padding-left: 22px; position: relative; color: var(--text-gray); }
         .card-list li::before { content: "✓"; color: var(--primary-color); position: absolute; left: 0; font-weight: bold; }
 
         .btn-main {
             display: block; background: var(--primary-color); color: white;
-            padding: 12px; text-decoration: none; border-radius: 4px;
-            font-weight: 600; text-align: center; font-size: 0.9rem; margin-top: 10px;
+            padding: 14px; text-decoration: none; border-radius: 6px;
+            font-weight: 700; text-align: center; font-size: 1rem; margin-top: auto;
+        }
+
+        /* PATIČKA (KONTAKT) */
+        footer { background: #fafafa; padding: 70px 20px; text-align: center; border-top: 1px solid var(--border-color); }
+        .contact-section { margin-bottom: 40px; }
+        .contact-label { display: block; font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 5px; }
+        .contact-large { font-size: 1.4rem; font-weight: 700; display: block; margin: 5px 0; color: var(--text-dark); text-decoration: none; }
+        .contact-large:hover { color: var(--primary-color); }
+
+        /* RESPONZIVITA */
+        @media (max-width: 600px) {
+            nav { flex-direction: column; padding: 10px; }
+            nav img { height: 45px; margin-bottom: 10px; }
+            .hero { margin-top: 100px; height: 45vh; }
         }
 
         @media (min-width: 768px) {
-            .grid-fixed { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
-            .card { margin-bottom: 0; }
-            .nav-links { gap: 15px; }
-            .nav-links a { font-size: 0.75rem; }
+            .grid-fixed { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (min-width: 1024px) {
             .grid-fixed { grid-template-columns: repeat(3, 1fr); }
         }
-
-        footer { background: #fafafa; padding: 60px 20px; text-align: center; border-top: 1px solid var(--border-color); }
-        .contact-large { font-size: 1.3rem; font-weight: 700; display: block; margin: 10px 0; color: var(--text-dark); text-decoration: none; }
     </style>
 </head>
 <body>
@@ -138,7 +159,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-color: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">Foto připravujeme</div>
+                <div class="card-img" style="background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #bbb;">Foto připravujeme</div>
                 <div class="card-content">
                     <h3>Nůžkový stan 3 x 6 m</h3>
                     <ul class="card-list">
@@ -170,7 +191,7 @@
                 <div class="card-content">
                     <h3>Povlak na pivní set</h3>
                     <ul class="card-list">
-                        <li>Povlak na 2 lavice a stůl</li>
+                        <li>Komplet na 2 lavice a stůl</li>
                         <li><strong>Molitanová výstelka</strong> lavic</li>
                         <li>100% bavlna, půjčujeme od 4ks</li>
                     </ul>
@@ -228,7 +249,7 @@
                     <ul class="card-list">
                         <li>4,55 x 3,30 x 2,65 m</li>
                         <li>Max. 6 dětí najednou</li>
-                        <li>Atest TÜV, boční sítě</li>
+                        <li>Atest TÜV, postavení do 5 min</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -242,7 +263,7 @@
                     <ul class="card-list">
                         <li>5,60 x 2,55 x 1,90 m</li>
                         <li>Max. 4 děti najednou</li>
-                        <li>Velká plocha na klouzání</li>
+                        <li>Atest TÜV, hmotnost 30 kg</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -255,8 +276,8 @@
                     <h3>Překážková dráha</h3>
                     <ul class="card-list">
                         <li>5,60 x 2,55 x 1,90 m</li>
-                        <li>Aktivní herní prvky</li>
-                        <li>Pro děti od 3 do 10 let</li>
+                        <li>Aktivní herní prvky uvnitř</li>
+                        <li>Atest TÜV, postavení do 5 min</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -268,9 +289,9 @@
                 <div class="card-content">
                     <h3>Osvětlení stanu</h3>
                     <ul class="card-list">
-                        <li>2x LED/Halogen reflektor</li>
+                        <li>2x výkonný LED reflektor</li>
                         <li>Kabeláž 15m nebo 20m</li>
-                        <li><strong>Včetně montáže</strong></li>
+                        <li><strong>Včetně odborné montáže</strong></li>
                     </ul>
                     <div class="price">390 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -282,9 +303,9 @@
                 <div class="card-content">
                     <h3>Doprava a závoz</h3>
                     <ul class="card-list">
-                        <li>Stan 6x12m: do 10km zdarma</li>
-                        <li>Ostatní dle velikosti akce</li>
-                        <li>Rozvoz z Kolína</li>
+                        <li>Stan 6x12m: do 10km ZDARMA</li>
+                        <li>Ostatní dle velikosti zakázky</li>
+                        <li>Rychlá a spolehlivá domluva</li>
                     </ul>
                     <div class="price">Individuálně</div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -294,11 +315,24 @@
     </section>
 
     <footer id="kontakt">
-        <h2 style="font-size:1.4rem;">Máte zájem o rezervaci?</h2>
-        <a href="tel:+420723355740" class="contact-large">+420 723 355 740</a>
-        <a href="tel:+420605717081" class="contact-large">+420 605 717 081</a>
-        <p>Kolín a široké okolí</p>
-        <p style="font-size:0.8rem; color:#aaa; margin-top:30px;">&copy; 2026 Party-Kolin.cz</p>
+        <div class="container" style="padding: 0;">
+            <h2 style="font-size:1.8rem; margin-bottom: 10px;">Máte zájem o rezervaci?</h2>
+            <p style="color: var(--text-gray); margin-bottom: 40px; font-size: 1.1rem;">Napište nám nebo zavolejte, rádi vám poradíme.</p>
+            
+            <div class="contact-section">
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:info@party-kolin.cz" class="contact-large">info@party-kolin.cz</a>
+            </div>
+
+            <div class="contact-section">
+                <span class="contact-label">Telefon</span>
+                <a href="tel:+420723355740" class="contact-large">+420 723 355 740</a>
+                <a href="tel:+420605717081" class="contact-large">+420 605 717 081</a>
+            </div>
+
+            <p style="font-weight: 700; margin-top: 40px; font-size: 1.1rem;">Kolín a široké okolí</p>
+            <p style="font-size:0.8rem; color:#aaa; margin-top:50px; border-top: 1px solid #eee; padding-top: 20px;">&copy; 2026 Party-Kolin.cz</p>
+        </div>
     </footer>
 
 </body>
