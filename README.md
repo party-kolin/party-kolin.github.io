@@ -231,6 +231,39 @@
                 </div>
             </div>
             </div>
+        
+<div class="card">
+                <div class="card-img" style="background-image: url('rautovy-stul.jpg');"></div>
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Praktický doplněk</div>
+                    <h3>Skládací rautový stůl 180 cm</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Rozměry: 180 x 74 x 75 cm. Vhodný pro vnitřní i venkovní použití.</p>
+                    <ul class="card-list">
+                        <li>Stabilní a robustní provedení</li>
+                        <li>Možnost bílého potahu (+ 180 Kč)</li>
+                        <li><strong>Půjčujeme pouze se stany</strong></li>
+                    </ul>
+                    <div class="price">245 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>            
+
+<div class="card">
+                <div class="card-img" style="background-image: url('barovy stul.jpg');"></div>
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Společenská zóna</div>
+                    <h3>Barový kulatý stůl</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Rozměry: ø 60 cm, výška 110 cm. Sklopná deska a stavitelné nohy.</p>
+                    <ul class="card-list">
+                        <li>Ideální pro drinky a rauty na stojáka</li>
+                        <li>Možnost bílého potahu (+ 150 Kč)</li>
+                        <li><strong>Se stany, samostatně po domluvě</strong></li>
+                    </ul>
+                    <div class="price">245 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+            
             <div class="card">
                 <div class="card-img" style="background-image: url('hrib1.jpg');"></div>
                 <div class="card-content">
@@ -244,6 +277,91 @@
                 </div>
             </div>
         </div>
+
+ <div class="card">
+                <div class="card-img" style="background-image: url('hrad 3v1.jpg'); height: 200px;"></div>
+                
+                <div class="card-content">
+                    <div style="color: var(--primary-color); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Dětská zóna</div>
+                    <h3>Skákací hrad House 3 v 1</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Rozměry: 4,55 x 3,30 x 2,65 m. Skvělá zábava pro děti na vaši oslavu.</p>
+                    <ul class="card-list">
+                        <li>Kapacita: max. 6 dětí / 180kg</li>
+                        <li><strong>Atest TÜV, bezpečnostní sítě, clona</strong></li>
+                        <li>Věk: 3 až 10 let / Postavení do 5 min</li>
+                    </ul>
+                    <div class="price" style="margin-top:auto;">1500 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+    <div class="card">
+                <div class="card-img" style="background-image: url('hrad skluzavka.jpg'); height: 200px;"></div>
+                
+                <div class="card-content">
+                    <div style="color: var(--primary-color); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Dětská zóna</div>
+                    <h3>Skákací hrad Obří skluzavka</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Rozměry: 5,60 x 2,55 x 1,90 m. Maximální zážitek z klouzání pro vaše nejmenší.</p>
+                    <ul class="card-list">
+                        <li>Kapacita: max. 4 děti / 180kg</li>
+                        <li><strong>Atest TÜV, robustní provedení</strong></li>
+                        <li>Věk: 3 až 10 let / Hmotnost atrakce 30 kg</li>
+                    </ul>
+                    <div class="price" style="margin-top:auto;">1500 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+   <div class="card">
+                <div class="card-img" style="background-image: url('hrad prekazkova draha.jpg'); height: 200px;"></div>
+                
+                <div class="card-content">
+                    <div style="color: var(--primary-color); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Dětská zóna</div>
+                    <h3>Skákací hrad Překážková dráha</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Rozměry: 5,60 x 2,55 x 1,90 m. Aktivní zábava, která děti jen tak neomrzí.</p>
+                    <ul class="card-list">
+                        <li>Kapacita: max. 4 děti / 180kg</li>
+                        <li><strong>Atest TÜV, aktivní prvky uvnitř</strong></li>
+                        <li>Věk: 3 až 10 let / Hmotnost atrakce 30 kg</li>
+                    </ul>
+                    <div class="price" style="margin-top:auto;">1500 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+   <div class="card">
+                <div class="card-img" style="background-image: url('osvetleni.jpg');"></div>
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Příslušenství</div>
+                    <h3>Osvětlení stanu</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Kompletní set pro osvětlení vnitřních prostor stanu.</p>
+                    <ul class="card-list">
+                        <li>2x výkonný reflektor (LED/Halogen)</li>
+                        <li>Přívodní kabel 15m / 20m</li>
+                        <li><strong>Cena včetně odborné montáže</strong></li>
+                        <li>Půjčujeme pouze se stany</li>
+                    </ul>
+                    <div class="price">390 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+   
+   <div class="card">
+                <div class="card-img" style="background-image: url('doprava.jpg');"></div>
+                <div class="card-content">
+                    <div style="color: var(--primary-color); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Logistika</div>
+                    <h3>Doprava a závoz</h3>
+                    <p style="color: var(--text-gray); font-size: 0.85rem; margin-bottom: 10px;">Vybavení vám dovezeme až na místo určení.</p>
+                    <ul class="card-list">
+                        <li><strong>Stan 6x12m: do 10km ZDARMA</strong></li>
+                        <li>Ostatní: individuálně dle zakázky</li>
+                        <li>Rychlá a spolehlivá domluva</li>
+                    </ul>
+                    <div class="price" style="margin-top:auto;">Individuálně <span>dle km</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div> 
+ 
     </section>
 
     <footer id="kontakt">
