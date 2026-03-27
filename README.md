@@ -75,16 +75,14 @@
         .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
         .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
 
-        /* MŘÍŽKA KARET */
+        /* KARTY */
         .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; }
-
         .card {
             background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
             overflow: hidden; display: flex; flex-direction: column;
             transition: all 0.3s ease;
         }
         .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-
         .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
         .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
         .card h3 { font-size: 1.25rem; margin: 5px 0; font-weight: 700; min-height: 3rem; display: flex; align-items: center; }
@@ -101,10 +99,13 @@
             display: block; background: var(--primary-color); color: white;
             padding: 12px; text-decoration: none; border-radius: 6px;
             font-weight: 700; text-align: center; font-size: 0.9rem;
-            transition: background 0.2s;
         }
-        .btn-main:hover { background: #7ab334; }
 
+        /* FAQ & PODMÍNKY */
+        .faq-item, .policy-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+        .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
+
+        /* PATIČKA */
         footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
         .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
         .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
@@ -125,9 +126,11 @@
     <nav>
         <img src="logo.jpg" alt="Party Kolín">
         <div class="nav-links">
-            <a href="#sluzby">O nás</a>
+            <a href="#sluzby">Naše služby</a>
             <a href="#vybaveni">Ceník</a>
             <a href="#galerie">Galerie</a>
+            <a href="#faq">Časté dotazy</a>
+            <a href="#podminky">Podmínky</a>
             <a href="#kontakt">Kontakt</a>
         </div>
     </nav>
@@ -139,11 +142,11 @@
     <section id="sluzby" style="background: #fcfcfc;">
         <div class="container">
             <div class="section-title">
-                <h2>Půjčovna vybavení Kolín</h2>
+                <h2>Naše služby</h2>
                 <div class="divider"></div>
             </div>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p>Jsme rodinná firma z Kolína. Nabízíme kompletní zázemí pro vaše oslavy, svatby a dětské dny. Zakládáme si na lidském přístupu a 100% spolehlivosti.</p>
+                <p>Jsme rodinná půjčovna z Kolína. Nabízíme kompletní zázemí pro vaše oslavy, svatby a dětské dny. Zakládáme si na lidském přístupu, čistotě vybavení a 100% spolehlivosti. S námi počasí vaši akci neohrozí.</p>
             </div>
         </div>
     </section>
@@ -163,7 +166,7 @@
                         <li>Kapacita 50 až 80 osob</li>
                         <li>Výška boční stěny 2m / střechy 3m</li>
                         <li>Stabilní PVC plachta a konstrukce</li>
-                        <li>Včetně montáže a dopravy do 10km</li>
+                        <li>V ceně montáž a doprava do 10km</li>
                     </ul>
                     <div class="price">10 890 Kč <span>s DPH</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
@@ -192,9 +195,9 @@
                 <div class="card-content">
                     <h3>Pivní set (2x lavice + stůl)</h3>
                     <ul class="card-list">
-                        <li>Pro 6 až 8 osob</li>
-                        <li>Stabilní provedení</li>
-                        <li>Samostatně od 4ks, jinak ke stanům</li>
+                        <li>Pro 6 až 8 osob, stabilní provedení</li>
+                        <li>Samostatně od 4ks</li>
+                        <li>Jinak pouze ke stanům</li>
                     </ul>
                     <div class="price">330 Kč <span>s DPH</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
@@ -209,7 +212,7 @@
                     <ul class="card-list">
                         <li>Povlak na 2 lavice a stůl</li>
                         <li>Molitanová výstelka lavic</li>
-                        <li>Měkké a luxusní posezení</li>
+                        <li>Luxusní měkké posezení</li>
                         <li>Půjčujeme od 4ks</li>
                     </ul>
                     <div class="price">390 Kč <span>s DPH</span></div>
@@ -224,9 +227,8 @@
                     <h3>Vytápění (plynový hřib)</h3>
                     <ul class="card-list">
                         <li>Výkon 10kW (provoz až 13h)</li>
-                        <li>Vytápění stanu nebo okolí</li>
-                        <li>Cena s 10kg PB: 1550 Kč s DPH</li>
-                        <li>Samostatně po domluvě</li>
+                        <li>S náplní PB 10kg: 1550 Kč</li>
+                        <li>Samostatně pouze po domluvě</li>
                     </ul>
                     <div class="price">770 Kč <span>/ bez náplně</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
@@ -236,4 +238,11 @@
 
             <div class="card">
                 <div class="card-img" style="background-image: url('rautovy-stul.jpg');"></div>
-                <div class="card-content
+                <div class="card-content">
+                    <h3>Rautový stůl 180 cm</h3>
+                    <ul class="card-list">
+                        <li>180 x 74 x 75 cm</li>
+                        <li>Možnost potahu (+180 Kč)</li>
+                        <li>Půjčujeme pouze se stany</li>
+                    </ul>
+                    <div class="price">245 Kč <span>s DPH</span></div>
