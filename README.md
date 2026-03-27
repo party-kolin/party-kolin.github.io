@@ -214,6 +214,23 @@
         </div>
     </section>
 
+<div class="card" style="padding: 0; overflow: hidden; text-align: left;">
+                    <div class="card-img" style="background-image: url('vytapeni.png'); height: 230px; background-size: cover; background-position: center;"></div>
+                    
+                    <div style="padding: 25px;">
+                        <div style="color: var(--text-gray); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Pohodlí</div>
+                        <h3 style="margin-top: 5px; font-size: 1.3rem;">Vytápění (plynový hřib)</h3>
+                        <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 10px;">Vytápění stanu nebo okolí pro vaši oslavu.</p>
+                        <ul class="card-list">
+                            <li>Výkon 10kW</li>
+                            <li>Až 13 hodin provozu</li>
+                            <li>Cena bez náplně (1 až 2 dny): <strong>770 Kč s DPH</strong></li>
+                            <li>S náplní PB 10kg: <strong>1550 Kč s DPH</strong></li>
+                        </ul>
+                        <p style="font-size: 0.8rem; font-style: italic; color: #777; margin-bottom: 15px;">Půjčujeme pouze se stany, samostatně po domluvě.</p>
+                        <a href="#kontakt" class="btn-main" style="display: block; text-align: center;">POPTAT TERMÍN</a>
+                    </div>
+                </div>
     <section id="galerie" class="container">
         <div class="section-title">
             <h2>Fotogalerie</h2>
