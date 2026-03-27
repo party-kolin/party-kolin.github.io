@@ -183,7 +183,7 @@
 
         <div class="grid-fixed">
             <div class="card">
-                <div class="card-img" style="background-image: url('image_2.png');"></div>
+                <div class="card-img" style="background-image: url('uvod.JPG');"></div>
                 <div class="card-content">
                     <h3>Párty stan 6 x 12 m</h3>
                     <ul class="card-list">
@@ -196,7 +196,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #bbb;">Foto připravujeme</div>
+                <div class="card-img" style="background-image: url('nuzkový stan.png');"></div>
                 <div class="card-content">
                     <h3>Nůžkový stan 3 x 6 m</h3>
                     <ul class="card-list">
@@ -209,7 +209,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('Pivni set.jpg');"></div>
+                <div class="card-img" style="background-image: url('pivni-set1.png');"></div>
                 <div class="card-content">
                     <h3>Pivní set 200 x 50 cm</h3>
                     <ul class="card-list">
@@ -235,7 +235,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('rautovy-stul.jpg');"></div>
+                <div class="card-img" style="background-image: url('rautovy-stul.JPG');"></div>
                 <div class="card-content">
                     <h3>Rautový stůl 180 cm</h3>
                     <ul class="card-list">
@@ -248,7 +248,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('barovy stul.jpg');"></div>
+                <div class="card-img" style="background-image: url('barový stul.jpg');"></div>
                 <div class="card-content">
                     <h3>Barový kulatý stůl</h3>
                     <ul class="card-list">
@@ -261,7 +261,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrib.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrib1.jpg');"></div>
                 <div class="card-content">
                     <h3>Plynový hřib (10kW)</h3>
                     <ul class="card-list">
@@ -274,7 +274,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad 3v1.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrad 3v1.JPG');"></div>
                 <div class="card-content">
                     <h3>Hrad House 3 v 1</h3>
                     <ul class="card-list">
@@ -287,7 +287,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad skluzavka.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrad skluzavka.JPG');"></div>
                 <div class="card-content">
                     <h3>Obří skluzavka</h3>
                     <ul class="card-list">
@@ -300,7 +300,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad prekazkova draha.jpg');"></div>
+                <div class="card-img" style="background-image: url('překazkova draha.jpg');"></div>
                 <div class="card-content">
                     <h3>Překážková dráha</h3>
                     <ul class="card-list">
@@ -433,7 +433,7 @@
             <p>9.1. Nájemce odpovídá za ztrátu a poškození. 9.5. Stan nelze užívat při větru nad 72 km/h, teplotách pod -30°C/+40°C nebo při sněhové pokrývce na plachtě. 9.6. Zákaz otevřeného ohně v blízkosti vybavení.</p>
 
             <h3>10. Odstupné</h3>
-            <p>10.1. Rezervační záloha je vratná při zrušení 90 a více dnů předem, nebo z důvodu nepříznivého počasí.</p>
+            <p>10.1. Rezervační záloha je vratná pouze v případě zrušení z nezaviněných důvodů nájemce.</p>
 
             <h3>12. Závěrečná ustanovení</h3>
             <p>12.2. Tyto VOP nabývají účinnosti dnem 1.4.2026.</p>
