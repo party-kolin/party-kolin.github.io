@@ -24,7 +24,7 @@
             scroll-behavior: smooth;
         }
 
-        /* Navigace - Responzivní */
+        /* Navigace */
         nav {
             position: fixed;
             top: 0;
@@ -35,25 +35,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 5%;
+            padding: 10px 3%;
             box-sizing: border-box;
         }
 
-        nav img { height: 35px; } /* Trochu menší logo pro víc místa */
+        nav img { height: 40px; }
+
+        .nav-links { display: flex; gap: 12px; }
 
         .nav-links a {
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 600;
-            margin-left: 15px;
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            white-space: nowrap;
         }
 
-        /* Hero Sekce - Lepší pro mobil */
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Sekce */
         .hero {
-            height: 60vh; /* Menší na mobilu */
+            height: 60vh;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('uvod.jpg.JPG') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
@@ -65,111 +69,65 @@
             padding: 0 20px;
         }
 
-        .hero h1 {
-            font-size: clamp(1.8rem, 8vw, 4rem);
-            font-weight: 700;
-            margin: 0;
-            line-height: 1.1;
-        }
-
+        .hero h1 { font-size: clamp(1.8rem, 8vw, 4rem); font-weight: 700; margin: 0; }
         .hero h1 span { color: var(--primary-color); }
 
         /* Kontejner */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 15px; /* Menší padding na mobilu */
-        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 1.8rem; margin-bottom: 10px; }
+        .divider { width: 50px; height: 3px; background: var(--primary-color); margin: 0 auto; }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .section-title h2 {
-            font-size: clamp(1.5rem, 5vw, 2.2rem);
-            margin-bottom: 10px;
-        }
-
-        .section-title .divider {
-            width: 50px;
-            height: 3px;
-            background: var(--primary-color);
-            margin: 0 auto;
-        }
-
-        /* Grid a Karty - Optimalizováno */
+        /* Grid a Karty */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
 
         .card {
             background: #fff;
-            padding: 25px; /* Menší padding na mobilu */
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            text-align: center;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
             transition: transform 0.3s ease;
         }
 
-        .card:hover {
-            border-color: var(--primary-color);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 
+        .card-img { width: 100%; height: 200px; background-size: cover; background-position: center; }
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        
         .card h3 { font-size: 1.2rem; margin: 10px 0; }
-        .card .price { font-size: 1.6rem; font-weight: 700; margin: 15px 0; color: var(--text-dark); }
-        .card .price span { font-size: 0.85rem; font-weight: 400; color: var(--text-gray); }
+        .price { font-size: 1.6rem; font-weight: 700; margin: 15px 0; }
+        .price span { font-size: 0.8rem; font-weight: 400; color: var(--text-gray); }
 
-        .card-list {
-            list-style: none;
-            padding: 0;
-            margin: 15px 0;
-            text-align: left;
-            font-size: 0.9rem;
-            flex-grow: 1;
-        }
-
+        .card-list { list-style: none; padding: 0; margin: 15px 0; font-size: 0.9rem; flex-grow: 1; }
         .card-list li { margin-bottom: 6px; padding-left: 20px; position: relative; }
         .card-list li::before { content: "✓"; color: var(--primary-color); position: absolute; left: 0; font-weight: bold; }
 
         .btn-main {
-            display: inline-block;
+            display: block;
             background: var(--primary-color);
             color: white;
-            padding: 12px 20px;
+            padding: 12px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #fafafa;
-            border-top: 1px solid var(--border-color);
-            padding: 40px 20px;
             text-align: center;
         }
 
-        .contact-large { font-size: 1.4rem; font-weight: 700; margin: 15px 0; display: block; text-decoration: none; color: var(--text-dark); }
+        footer { background: #fafafa; border-top: 1px solid var(--border-color); padding: 60px 20px; text-align: center; }
+        .contact-large { font-size: 1.3rem; font-weight: 700; margin: 15px 0; display: block; text-decoration: none; color: var(--text-dark); }
 
-        /* Skrytí navigace na velmi malých mobilech pro čistotu */
-        @media (max-width: 400px) {
-            .nav-links { display: none; }
-            nav { justify-content: center; }
-        }
-
-        /* Úprava pro desktop */
-        @media (min-width: 768px) {
-            .container { padding: 80px 20px; }
-            .hero { height: 75vh; }
-            .nav-links a { font-size: 0.85rem; margin-left: 25px; }
-            .card { padding: 40px; }
+        /* Mobilní úpravy */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; padding: 10px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 10px; gap: 8px; }
+            .hero { height: 50vh; }
+            .container { padding: 40px 15px; }
         }
     </style>
 </head>
@@ -178,8 +136,11 @@
     <nav>
         <img src="logo.jpg" alt="Party Kolín">
         <div class="nav-links">
+            <a href="#sluzby">Služby</a>
             <a href="#vybaveni">Ceník</a>
+            <a href="#galerie">Galerie</a>
             <a href="#kontakt">Kontakt</a>
+            <a href="#podminky">Podmínky</a>
         </div>
     </nav>
 
@@ -187,69 +148,95 @@
         <h1>...s námi to <span>oslavíte</span>.</h1>
     </header>
 
-    <div class="container" id="vybaveni">
+    <section id="sluzby" class="container">
         <div class="section-title">
-            <h2>Vybavení & Ceník</h2>
+            <h2>Naše Služby</h2>
             <div class="divider"></div>
         </div>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-gray);">
+            Nabízíme pronájem párty stanů a skákacích hradů pro vaše oslavy, svatby či výročí. 
+            Rádi vám pomůžeme váš den zastřešit a ochránit hosty před deštěm, sluncem či větrem.
+        </p>
+    </section>
 
-        <div class="grid">
-            <div class="card">
-                <div style="color: var(--primary-color); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Hlavní nabídka</div>
-                <h3>Párty stan 6 x 12 m</h3>
-                <ul class="card-list">
-                    <li>Kapacita 50 až 80 osob</li>
-                    <li>Výška boční 2m / hřeben 3m</li>
-                    <li>Robustní konstrukce</li>
-                    <li>Odolná plachta</li>
-                </ul>
-                <div class="price">10 890 Kč <span>s DPH</span></div>
-                <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+    <section id="vybaveni" style="background: var(--bg-light); padding: 20px 0 60px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vybavení & Ceník</h2>
+                <div class="divider"></div>
             </div>
 
-            <div class="card">
-                <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Rychlé řešení</div>
-                <h3>Nůžkový stan 3 x 6 m</h3>
-                <ul class="card-list">
-                    <li>Kapacita cca 20 osob</li>
-                    <li>Postavení do 5 minut</li>
-                    <li>Stabilní konstrukce</li>
-                    <li>3x bok, 1x otevřená strana</li>
-                </ul>
-                <div class="price">1 900 Kč <span>s DPH</span></div>
-                <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('uvod.jpg.JPG');"></div>
+                    <div class="card-content">
+                        <div style="color: var(--primary-color); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Hlavní nabídka</div>
+                        <h3>Párty stan 6 x 12 m</h3>
+                        <ul class="card-list">
+                            <li>Kapacita 50 až 80 osob</li>
+                            <li>Výška boční 2m / hřeben 3m</li>
+                            <li>Robustní trubková konstrukce</li>
+                        </ul>
+                        <div class="price">10 890 Kč <span>s DPH</span></div>
+                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                    </div>
+                </div>
 
-            <div class="card">
-                <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Doplňky</div>
-                <h3>Pivní set 200 x 50 cm</h3>
-                <ul class="card-list">
-                    <li>Sestava: 1x stůl + 2x lavice</li>
-                    <li>Kapacita 6 až 8 osob</li>
-                    <li>Samostatně od 4ks</li>
-                    <li>Nebo v setu se stanem</li>
-                </ul>
-                <div class="price">330 Kč <span>s DPH</span></div>
-                <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                <div class="card">
+                    <div class="card-content">
+                        <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Rychlé řešení</div>
+                        <h3>Nůžkový stan 3 x 6 m</h3>
+                        <ul class="card-list">
+                            <li>Kapacita cca 20 osob</li>
+                            <li>Postavení do 5 minut</li>
+                            <li>3x bok, 1x otevřená strana</li>
+                        </ul>
+                        <div class="price">1 900 Kč <span>s DPH</span></div>
+                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" style="background-image: url('pivni-set.png');"></div>
+                    <div class="card-content">
+                        <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Posezení</div>
+                        <h3>Pivní set 200 x 50 cm</h3>
+                        <ul class="card-list">
+                            <li>Sestava: 1x stůl + 2x lavice</li>
+                            <li>Kapacita 6 až 8 osob</li>
+                            <li>Samostatně od 4ks</li>
+                        </ul>
+                        <div class="price">330 Kč <span>s DPH</span></div>
+                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="sluzby" style="background: var(--bg-light); padding: 60px 0;">
-        <div class="container" style="text-align:center;">
-            <h2>Naše Služby</h2>
-            <div class="divider" style="margin-bottom:20px;"></div>
-            <p style="max-width: 700px; margin: 0 auto; color: var(--text-gray); font-size: 0.95rem;">
-     Nabízíme pronájem párty stanů, dětských skákacích hradů pro menší soukromé akce typu svatba, výročí, narozeninová oslava apod.
-Počasí je někdy neúprosné a mnohdy dokáže zkazit vysněný a dlouho plánovaný slavnostní den. Rádi Vám pomůžeme Váš slavnostní den zastřešit. Naše párty stany pomohou hosty schovat před deštěm, přímým sluncem či větrem. Nabízíme pronájem stanů 6x12m (trubkový) a 6x3m (nůžkový), posezení (pivní sety), vytápění a také skákací dětské hrady.
-            </p>
+    <section id="galerie" class="container">
+        <div class="section-title">
+            <h2>Fotogalerie</h2>
+            <div class="divider"></div>
         </div>
-    </div>
+        <p style="text-align: center; color: var(--text-gray);">Připravujeme pro vás ukázky našich realizací.</p>
+    </section>
+
+    <section id="podminky" style="background: var(--bg-light); padding: 60px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Obchodní podmínky</h2>
+                <div class="divider"></div>
+            </div>
+            <p style="text-align: center; color: var(--text-gray);">Informace o pronájmu a provozní řád.</p>
+        </div>
+    </section>
 
     <footer id="kontakt">
         <div class="container" style="padding: 0;">
             <h2 style="font-size:1.4rem;">Chcete rezervovat?</h2>
-            <a href="tel:+420123456789" class="contact-large">+420 123 456 789</a>
+            <a href="tel:+420723355740" class="contact-large">+420 723 355 740</a>
+            <a href="tel:+420605717081" class="contact-large">+420 605 717 081</a>
             <p>Kolín a široké okolí</p>
             <p style="font-size:0.8rem; color:#aaa; margin-top:30px;">&copy; 2026 Party-Kolin.cz</p>
         </div>
