@@ -60,7 +60,7 @@
         .hero h1 span { color: var(--primary-color); }
 
         /* SEKCE O NÁS / SLUŽBY */
-        .services-intro { background: #fcfcfc; border-bottom: 1fr solid var(--border-color); }
+        .services-intro { background: #fcfcfc; border-bottom: 1px solid var(--border-color); }
         .services-text { max-width: 800px; margin: 0 auto; text-align: center; }
         .services-text p { margin-bottom: 20px; color: var(--text-gray); font-size: 1.05rem; }
         .services-grid { 
@@ -100,13 +100,17 @@
             font-weight: 700; text-align: center; font-size: 1rem;
         }
 
+        /* FAQ STYLE */
+        .faq-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+        .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
+        .faq-category { margin-top: 40px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; color: var(--primary-color); font-weight: 800; }
+
         /* PATIČKA */
         footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
         .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
         .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
         .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
 
-        /* RESPONZIVITA */
         @media (max-width: 768px) {
             nav { padding: 15px; }
             .nav-links { gap: 8px; justify-content: center; margin-top: 10px; }
@@ -184,7 +188,6 @@
                     <h3>Párty stan 6 x 12 m</h3>
                     <ul class="card-list">
                         <li>Kapacita 50 až 80 osob</li>
-                        <li>Robustní konstrukce</li>
                         <li>Doprava do 10km zdarma</li>
                     </ul>
                     <div class="price">10 890 Kč <span>s DPH</span></div>
@@ -211,7 +214,7 @@
                     <h3>Pivní set 200 x 50 cm</h3>
                     <ul class="card-list">
                         <li>1x stůl + 2x lavice</li>
-                        <li>Kapacita 6 až 8 osob</li>
+                        <li>Stabilní dřevo</li>
                     </ul>
                     <div class="price">330 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -223,8 +226,8 @@
                 <div class="card-content">
                     <h3>Povlak na pivní set</h3>
                     <ul class="card-list">
-                        <li>Komplet na 2 lavice a stůl</li>
-                        <li>Molitanová výstelka lavic</li>
+                        <li>Bílá bavlna, molitan</li>
+                        <li>Set na stůl a lavice</li>
                     </ul>
                     <div class="price">390 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -236,7 +239,7 @@
                 <div class="card-content">
                     <h3>Rautový stůl 180 cm</h3>
                     <ul class="card-list">
-                        <li>Rozměr: 180x74x75cm</li>
+                        <li>Skládací, stabilní</li>
                         <li>Možnost potahu (+ 180 Kč)</li>
                     </ul>
                     <div class="price">245 Kč <span>s DPH</span></div>
@@ -275,8 +278,8 @@
                 <div class="card-content">
                     <h3>Hrad House 3 v 1</h3>
                     <ul class="card-list">
-                        <li>4,55 x 3,30 x 2,65 m</li>
                         <li>Atest TÜV, max 6 dětí</li>
+                        <li>Postavení do 5 minut</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -288,8 +291,8 @@
                 <div class="card-content">
                     <h3>Obří skluzavka</h3>
                     <ul class="card-list">
-                        <li>5,60 x 2,55 x 1,90 m</li>
-                        <li>Max. 4 děti najednou</li>
+                        <li>Atest TÜV, max 4 děti</li>
+                        <li>Extra dlouhá plocha</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -301,8 +304,8 @@
                 <div class="card-content">
                     <h3>Překážková dráha</h3>
                     <ul class="card-list">
-                        <li>Aktivní herní prvky</li>
                         <li>Atest TÜV</li>
+                        <li>Aktivní prvky uvnitř</li>
                     </ul>
                     <div class="price">1 500 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -315,7 +318,7 @@
                     <h3>Osvětlení stanu</h3>
                     <ul class="card-list">
                         <li>2x LED reflektor</li>
-                        <li>Včetně montáže</li>
+                        <li>Včetně odborné montáže</li>
                     </ul>
                     <div class="price">390 Kč <span>s DPH</span></div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
@@ -327,10 +330,10 @@
                 <div class="card-content">
                     <h3>Doprava a závoz</h3>
                     <ul class="card-list">
-                        <li>Stan 6x12m: do 10km zdarma</li>
-                        <li>Rozvoz z Kolína</li>
+                        <li>Stan 6x12: do 10km zdarma</li>
+                        <li>Individuální rozvoz</li>
                     </ul>
-                    <div class="price">Individuálně</div>
+                    <div class="price">Dle domluvy</div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
@@ -350,9 +353,49 @@
             <h2>Časté dotazy</h2>
             <div class="divider"></div>
         </div>
-        <div style="max-width: 800px; margin: 0 auto; color: var(--text-gray);">
-            <p><strong>Jak dlouho trvá postavení stanu?</strong><br>Velký stan 6x12m stavíme cca 2-3 hodiny, nůžkový stan je hotový do 10 minut.</p>
-            <p><strong>Co když bude foukat silný vítr?</strong><br>Naše stany jsou robustní a kotvíme je, ale v případě extrémní vichřice doporučujeme bezpečnostní opatření, která s vámi probereme.</p>
+        <div style="max-width: 900px; margin: 0 auto;">
+            
+            <div class="faq-category">Obecné informace</div>
+            <div class="faq-item">
+                <h4>Jak objednat zápůjčku?</h4>
+                <p>Kontaktujte nás přes email nebo kontaktní formulář a sdělte nám, co byste z výčtu vybavení potřebovali zapůjčit a také na jaké období. V odpovědi Vám potvrdíme dostupnost vybavení. V ten moment nepřijmeme další požadavek od jiných zájemců, dokud u Vás nebudeme mít jasno.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Jak vzniká smlouva o pronájmu?</h4>
+                <p>1) Potvrzením nabídky zájemcem elektronicky (závazná objednávka), kde souhlasíte s Obchodními podmínkami.<br>2) Podpisem papírové Smlouvy o pronájmu při předání předmětu nájmu.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Kde je možné zápůjčku vyzvednout?</h4>
+                <p>Jelikož nemáme oficiální výdejní místo, stany a vybavení Vám přivezeme na místo určení, kde Vám stan(y) rovnou postavíme. Dětský hrad Vám také přivezeme nebo se domluvíme na místě předání.</p>
+            </div>
+
+            <div class="faq-category">Párty stany</div>
+            <div class="faq-item">
+                <h4>Mohu si párty stan postavit sám?</h4>
+                <p>Bohužel to není možné. Stany půjčujeme pouze se stavbou od nás z důvodu kontroly stavu při navrácení a náročnosti samotné stavby.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Jak velké místo budu potřebovat?</h4>
+                <p>Pro párty stan je třeba počítat s 3 m navíc oproti rozměrům na každou stranu. Na výšku stan potřebuje cca 3 m prostoru. Skákací hrad potřebuje také min. 3 m na každou stranu navíc.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Na jakém místě lze stan postavit?</h4>
+                <p>Je třeba měkký podklad (tráva, hlína) pro řádné ukotvení, popř. podklad, do kterého lze navrtat turbo šrouby. Stavba na jiný podklad je možná pouze po předchozí domluvě.</p>
+            </div>
+
+            <div class="faq-category">Skákací hrady</div>
+            <div class="faq-item">
+                <h4>Zvládnu hrad rozbalit a nafouknout sám?</h4>
+                <p>Ano, zvládnete to během pár minut. Stačí zkontrolovat plochu bez nečistot, rozložit podkladovou plachtu (součástí vybavení), připojit kompresor a zapojit do sítě. Hrad se do minuty nafoukne. Poté ho zafixujete kolíky do země.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Co dělat když hrad poškodím?</h4>
+                <p>Ihned nás kontaktujte. I v případě malého propíchnutí hrad normálně funguje dál, protože kompresor je velmi výkonný.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Může na hrad pršet?</h4>
+                <p>V žádném případě! Hrozí úraz proudem od kompresoru. Pokud začne pršet, ihned ho odpojte. Pokud atrakce zmokne, je třeba ji později rozbalit a nechat dokonale vyschnout.</p>
+            </div>
         </div>
     </section>
 
@@ -361,15 +404,46 @@
             <h2>Obchodní podmínky</h2>
             <div class="divider"></div>
         </div>
-        <div style="max-width: 800px; margin: 0 auto; font-size: 0.9rem; color: var(--text-gray);">
-            <p>Všechny ceny jsou uvedeny včetně DPH. Rezervace je platná po potvrzení termínu. Vybíráme vratnou kauci na zapůjčené vybavení...</p>
+        <div style="max-width: 900px; margin: 0 auto; font-size: 0.85rem; color: var(--text-gray); line-height: 1.4; text-align: justify;">
+            <h3>1. Výklad pojmů</h3>
+            <p>1.1. Pronajímatel - Miloš Hulinko, Tylova 184, 281 01, Velim, IČ: 76282431.<br>
+            1.2. Nájemce - osoba, která uzavřela smlouvu o pronájmu.<br>
+            1.3. Smlouva - písemná nebo elektronická (emailem).<br>
+            1.4. Předmět nájmu - párty vybavení (stany, lavice, stoly, hrad atd.).</p>
+
+            <h3>2. Platnost VOP</h3>
+            <p>2.1. Tyto VOP platí pro všechny smlouvy, ve kterých vystupuje Miloš Hulinko jako pronajímatel dle § 1751 odst. 1 občanského zákoníku.</p>
+
+            <h3>3. Obecné zásady</h3>
+            <p>3.1. K uzavření vztahu dochází podpisem smlouvy nebo závaznou objednávkou emailem.</p>
+
+            <h3>4. Předmět nájmu</h3>
+            <p>4.1. U stanů je součástí plnění také montáž, demontáž a doprava dle ceníku v sekci "VYBAVENÍ".</p>
+
+            <h3>5. Místo nájmu a montáž</h3>
+            <p>5.2. Nájemce zajistí povolení užívat prostranství. 5.3. Nájemce zajistí rovný podklad a informuje pronajímatele o druhu podkladu (tráva, beton atd.). 5.6. Změna místa po zahájení montáže může být zpoplatněna sazbou 250 Kč/hod na osobu.</p>
+
+            <h3>6. Trvání nájmu</h3>
+            <p>6.2. Nedostavení se nájemce k montáži (nad 30 min) dává pronajímateli právo odstoupit se sankcí 30 % ceny. 6.3. O předání a vrácení se sepisuje předávací protokol.</p>
+
+            <h3>7. Nájemné a platba</h3>
+            <p>7.1. Nájemné se platí hotově při předání předmětu nájmu. 7.5. Případné vícenáklady jsou splatné do 7 dnů. 7.8. Úrok z prodlení činí 1 % z dlužné částky za každý den.</p>
+
+            <h3>9. Odpovědnost a meteorologické podmínky</h3>
+            <p>9.1. Nájemce odpovídá za ztrátu a poškození. 9.5. Stan nelze užívat při větru nad 72 km/h, teplotách pod -30°C/+40°C nebo při sněhové pokrývce na plachtě. 9.6. Zákaz otevřeného ohně v blízkosti vybavení.</p>
+
+            <h3>10. Odstupné</h3>
+            <p>10.1. Rezervační záloha je vratná při zrušení 90 a více dnů předem, nebo z důvodu nepříznivého počasí.</p>
+
+            <h3>12. Závěrečná ustanovení</h3>
+            <p>12.2. Tyto VOP nabývají účinnosti dnem 1.4.2026.</p>
         </div>
     </section>
 
     <footer id="kontakt">
         <div class="container" style="padding: 0;">
             <h2 style="font-size:2rem; margin-bottom: 10px;">Máte zájem o rezervaci?</h2>
-            <p style="color: #aaa; margin-bottom: 40px;">Napište nám nebo zavolejte, rádi vám poradíme.</p>
+            <p style="color: #aaa; margin-bottom: 40px; font-size: 1.1rem;">Napište nám nebo zavolejte, rádi vám poradíme.</p>
             
             <div style="margin-bottom: 30px;">
                 <span class="contact-label">E-mail</span>
@@ -385,7 +459,7 @@
             <p style="font-weight: 700; font-size: 1.2rem; color: var(--primary-color);">Kolín a široké okolí</p>
             
             <div class="footer-bottom">
-                &copy; 2026 Party-Kolin.cz | Bratranci z Kolína
+                &copy; 2026 Party-Kolin.cz | Miloš Hulinko | Bratranci z Kolína
             </div>
         </div>
     </footer>
