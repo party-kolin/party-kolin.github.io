@@ -213,6 +213,24 @@
                 </div>
             </div>
 
+<div class="card">
+                <div class="card-img" style="background-image: url('povlak.jpg');"></div>
+                
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Luxusní posezení</div>
+                    <h3>Povlak na pivní set 200 x 50 cm</h3>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 10px;">Promění pivní set v elegantní posezení.</p>
+                    <ul class="card-list">
+                        <li>Komplet na 2 lavice a 1 stůl</li>
+                        <li><strong>Molitanová výstelka</strong> pro měkké sezení</li>
+                        <li>Materiál: 100% bavlna (bílá)</li>
+                        <li>Půjčujeme od 4ks</li>
+                    </ul>
+                    <div class="price">390 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+            </div>
             <div class="card">
                 <div class="card-img" style="background-image: url('hrib1.jpg');"></div>
                 <div class="card-content">
