@@ -196,7 +196,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('nuzkový stan.png');"></div>
+                <div class="card-img" style="background-image: url('nuzkový stan 2.jpg');"></div>
                 <div class="card-content">
                     <h3>Nůžkový stan 3 x 6 m</h3>
                     <ul class="card-list">
@@ -248,7 +248,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('barový stul.jpg');"></div>
+                <div class="card-img" style="background-image: url('barový stul.JPG');"></div>
                 <div class="card-content">
                     <h3>Barový kulatý stůl</h3>
                     <ul class="card-list">
@@ -261,7 +261,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrib1.jpg');"></div>
+                <div class="card-img" style="background-image: url('hřib 2.JPG');"></div>
                 <div class="card-content">
                     <h3>Plynový hřib (10kW)</h3>
                     <ul class="card-list">
