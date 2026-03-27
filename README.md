@@ -160,77 +160,90 @@
     </section>
 
     <section id="vybaveni" style="background: var(--bg-light); padding: 20px 0 60px 0;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Vybavení & Ceník</h2>
-                <div class="divider"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Vybavení & Ceník</h2>
+            <div class="divider"></div>
+        </div>
+
+        <style>
+            /* Oprava gridu, aby se karty neroztahovaly přes celou šířku */
+            .grid-fixed {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 25px;
+                justify-content: center; /* Vycentruje karty, pokud jich je v řadě méně */
+            }
+            @media (min-width: 1100px) {
+                .grid-fixed {
+                    grid-template-columns: repeat(3, 1fr); /* Na desktopu max 3 vedle sebe */
+                }
+            }
+        </style>
+
+        <div class="grid-fixed">
+            <div class="card">
+                <div class="card-img" style="background-image: url('image_2.png'); height: 200px;"></div>
+                <div class="card-content">
+                    <div style="color: var(--primary-color); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Hlavní nabídka</div>
+                    <h3>Párty stan 6 x 12 m</h3>
+                    <ul class="card-list">
+                        <li>Kapacita 50 až 80 osob</li>
+                        <li>Výška boční 2m / hřeben 3m</li>
+                        <li>Robustní trubková konstrukce</li>
+                    </ul>
+                    <div class="price">10 890 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
             </div>
 
-            <div class="grid">
-                <div class="card">
-                    <div class="card-img" style="background-image: url('uvod.jpg.JPG');"></div>
-                    <div class="card-content">
-                        <div style="color: var(--primary-color); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Hlavní nabídka</div>
-                        <h3>Párty stan 6 x 12 m</h3>
-                        <ul class="card-list">
-                            <li>Kapacita 50 až 80 osob</li>
-                            <li>Výška boční 2m / hřeben 3m</li>
-                            <li>Robustní trubková konstrukce</li>
-                        </ul>
-                        <div class="price">10 890 Kč <span>s DPH</span></div>
-                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-                    </div>
+            <div class="card">
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Rychlé řešení</div>
+                    <h3>Nůžkový stan 3 x 6 m</h3>
+                    <ul class="card-list">
+                        <li>Kapacita cca 20 osob</li>
+                        <li>Postavení do 5 minut</li>
+                        <li>3x bok, 1x otevřená strana</li>
+                    </ul>
+                    <div class="price">1 900 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-content">
-                        <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Rychlé řešení</div>
-                        <h3>Nůžkový stan 3 x 6 m</h3>
-                        <ul class="card-list">
-                            <li>Kapacita cca 20 osob</li>
-                            <li>Postavení do 5 minut</li>
-                            <li>3x bok, 1x otevřená strana</li>
-                        </ul>
-                        <div class="price">1 900 Kč <span>s DPH</span></div>
-                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-                    </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('pivni-set.png'); height: 200px;"></div>
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Posezení</div>
+                    <h3>Pivní set 200 x 50 cm</h3>
+                    <ul class="card-list">
+                        <li>Sestava: 1x stůl + 2x lavice</li>
+                        <li>Kapacita 6 až 8 osob</li>
+                        <li>Stabilní dřevěné provedení</li>
+                    </ul>
+                    <div class="price">330 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-img" style="background-image: url('pivni-set.png');"></div>
-                    <div class="card-content">
-                        <div style="color: var(--text-gray); font-weight:700; font-size:0.7rem; text-transform:uppercase;">Posezení</div>
-                        <h3>Pivní set 200 x 50 cm</h3>
-                        <ul class="card-list">
-                            <li>Sestava: 1x stůl + 2x lavice</li>
-                            <li>Kapacita 6 až 8 osob</li>
-                            <li>Samostatně od 4ks</li>
-                        </ul>
-                        <div class="price">330 Kč <span>s DPH</span></div>
-                        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-                    </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('hrib.jpg'); height: 200px;"></div>
+                <div class="card-content">
+                    <div style="color: var(--text-gray); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Pohodlí</div>
+                    <h3>Vytápění (plynový hřib)</h3>
+                    <ul class="card-list">
+                        <li>Výkon 10kW, až 13h provozu</li>
+                        <li>Bez náplně: <strong>770 Kč</strong></li>
+                        <li>S náplní 10kg PB: <strong>1550 Kč</strong></li>
+                    </ul>
+                    <p style="font-size: 0.75rem; color: #777; margin-bottom: 10px;">Půjčujeme se stany, samostatně po domluvě.</p>
+                    <div class="price" style="margin-top:auto;">od 770 Kč <span>s DPH</span></div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
         </div>
-    </section>
-
-<div class="card" style="padding: 0; overflow: hidden; text-align: left;">
-                    <div class="card-img" style="background-image: url('vytapeni.png'); height: 230px; background-size: cover; background-position: center;"></div>
-                    
-                    <div style="padding: 25px;">
-                        <div style="color: var(--text-gray); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Pohodlí</div>
-                        <h3 style="margin-top: 5px; font-size: 1.3rem;">Vytápění (plynový hřib)</h3>
-                        <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 10px;">Vytápění stanu nebo okolí pro vaši oslavu.</p>
-                        <ul class="card-list">
-                            <li>Výkon 10kW</li>
-                            <li>Až 13 hodin provozu</li>
-                            <li>Cena bez náplně (1 až 2 dny): <strong>770 Kč s DPH</strong></li>
-                            <li>S náplní PB 10kg: <strong>1550 Kč s DPH</strong></li>
-                        </ul>
-                        <p style="font-size: 0.8rem; font-style: italic; color: #777; margin-bottom: 15px;">Půjčujeme pouze se stany, samostatně po domluvě.</p>
-                        <a href="#kontakt" class="btn-main" style="display: block; text-align: center;">POPTAT TERMÍN</a>
-                    </div>
-                </div>
+    </div>
+</section>
     <section id="galerie" class="container">
         <div class="section-title">
             <h2>Fotogalerie</h2>
