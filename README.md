@@ -188,6 +188,7 @@
             </div>
 
             <div class="card">
+            <div class="card-img" style="background-image: url('nuzkový stan.png');"></div>
                 <div class="card-content">
                     <h3>Nůžkový stan 3 x 6 m</h3>
                     <ul class="card-list">
