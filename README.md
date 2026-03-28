@@ -347,7 +347,7 @@
         </div>
 
         <div class="gallery-grid" id="gallery">
-            <div class="gallery-item stan6x12"><img src="stan-hájenka 1.jpg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 1.jpg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 2.jpg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 3.jpg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 4.jpg" alt="Párty stan Hájenka"></div>
