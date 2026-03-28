@@ -469,16 +469,68 @@
         </div>
     </section>
 
-    <footer id="kontakt">
-        <div class="container">
-            <h2 style="margin-bottom: 40px;">Půjčovna párty vybavení Kolín</h2>
-            <span class="contact-label">E-mail</span>
-            <a href="mailto:info@party-kolin.cz" class="contact-large">info@party-kolin.cz</a>
-            <span class="contact-label">Telefon</span>
-            <a href="tel:+420723355740" class="contact-large">+420 723 355 740</a>
-            <div class="footer-bottom">&copy; 2026 Party-Kolin.cz | Miloš Hulinko</div>
+    <section id="kontakt" class="container" style="background: #fff; padding-top: 80px;">
+        <div class="section-title">
+            <h2>Napište nám</h2>
+            <div class="divider"></div>
+            <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
-    </footer>
+
+        <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše jméno</label>
+                    <input type="text" name="name" placeholder="Jan Novák" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">E-mail pro odpověď</label>
+                    <input type="email" name="_replyto" placeholder="vas@email.cz" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Telefon</label>
+                    <input type="tel" name="phone" placeholder="+420 123 456 789" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">O co máte zájem?</label>
+                    <select name="vybaveni" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; background: white;">
+                        <option value="stan_6x12">Párty stan 6x12m</option>
+                        <option value="nuzkovy_stan">Nůžkový stan</option>
+                        <option value="skakaci_hrad">Skákací hrad</option>
+                        <option value="kompletni_oslava">Vybavení pro celou oslavu</option>
+                        <option value="jine">Jiný dotaz</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše zpráva (datum, místo, dotaz...)</label>
+                    <textarea name="message" rows="4" placeholder="Dobrý den, poptávám vybavení na..." required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical;"></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="Nová poptávka z webu Party-Kolin.cz">
+                <button type="submit" class="btn-main" style="border: none; cursor: pointer; width: 100%; margin-top: 10px;">ODESLAT POPTÁVKU</button>
+            </form>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding: 20px;">
+            <p style="margin-bottom: 10px; font-weight: 700; color: var(--text-gray);">Kontaktujte nás přímo:</p>
+            <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.4rem; font-weight: 800; text-decoration: none; display: block; margin-bottom: 5px;">+420 723 355 740</a>
+            <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: block; margin-bottom: 25px;">info@party-kolin.cz</a>
+
+            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+                <a href="https://www.facebook.com/vase-stranka" target="_blank" style="text-decoration: none; color: #1877F2; font-size: 1.5rem;">
+                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">FB</span>
+                </a>
+                <a href="https://www.instagram.com/vase-stranka" target="_blank" style="text-decoration: none; color: #E4405F; font-size: 1.5rem;">
+                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">IG</span>
+                </a>
+            </div>
+            <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
+        </div>
+    </section>
 
     <script>
         // Funkce pro filtrování galerie
