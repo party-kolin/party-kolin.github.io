@@ -159,7 +159,18 @@
                 <div class="divider"></div>
             </div>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p>Jsme rodinná půjčovna z Kolína. Nabízíme kompletní zázemí pro vaše oslavy, svatby a dětské dny. Zakládáme si na lidském přístupu, čistotě vybavení a 100% spolehlivosti. S námi počasí vaši akci neohrozí.</p>
+                <p>Jsme rodinná půjčovna z Kolína. Nabízíme kompletní zázemí pro vaše oslavy, svatby a dětské dny. Zakládáme si na lidském přístupu, čistotě vybavení a 100% spolehlivosti. S námi počasí vaši akci neohrozí. 
+Nenechte počasí diktovat pravidla vaší párty!
+Plánujete svatbu, rodinné výročí nebo tu nejlepší narozeninovou oslavu pod širým nebem? Máte vybrané jídlo, pozvané hosty a vyladěný každý detail, ale jedna věc vás straší – počasí. My v Párty Kolín jsme tu od toho, abychom tuhle nejistotu vymazali z vašeho seznamu starostí.
+Jsme dva bratranci, kteří věří, že každá oslava si zaslouží být perfektní, ať už venku praží slunce, fouká vítr nebo padají trakaře. K našemu vybavení přidáváme lidský přístup a spolehlivost, na kterou se můžete v ten důležitý den stoprocentně spolehnout.
+Co pro vás máme připraveno?
+•	Párty stany pro každou příležitost: * Pro větší události (jako jsou svatby nebo firemní akce) máme prostorný trubkový stan 6x12 m, kam se pohodlně vejdou všichni hosté i kapela.
+o	Pro menší, komornější setkání nabízíme rychlý nůžkový stan 6x3 m, který postavíme doslova za pár minut.
+•	Komfort a teplo: Aby se u vás hosté cítili jako v bavlnce, zajistíme klasické pivní sety pro pohodlné sezení. A pokud se oslava protáhne do chladného večera? Naše vytápění zajistí, že nikdo nebude muset sahat po dece.
+•	Dětský ráj na zahradě: Co by to bylo za rodinnou akci bez dětského smíchu? Naše skákací hrady zabaví ty nejmenší na dlouhé hodiny, zatímco vy si můžete v klidu užít kávu nebo drink.
+Proč jít do toho s námi?
+Protože nejsme anonymní půjčovna. Jsme kluci z Kolína, které to baví. Zakládáme si na tom, že naše vybavení je čisté, funkční a že domluva s námi platí. Vaši radost ze srazu s blízkými prostě nenecháme zmoknout.
+</p>
             </div>
         </div>
     </section>
@@ -352,9 +363,9 @@
             <div class="gallery-item stan6x12"><img src="stan-hajenka 3.jpg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 4.jpg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 5.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hájenka 6.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 6.JPG" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 7.JPG" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hájenka 8.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 8.JPG" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-hajenka 9.JPG" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan-khbox 1.JPG" alt="Párty stan Kolín"></div>
             <div class="gallery-item stan6x12"><img src="stan-khbox 2.JPG" alt="Párty stan Kolín"></div>
@@ -364,7 +375,7 @@
             <div class="gallery-item stan6x12"><img src="stan-mlyn 2.JPG" alt="Párty stan u mlýna"></div>
             <div class="gallery-item stan6x12"><img src="stan-mlyn 3.JPG" alt="Párty stan u mlýna"></div>
 
-            <div class="gallery-item nuzkovy"><img src="nízký-stan.JPG" alt="Nůžkový stan"></div>
+            <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
             <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan Ostrov"></div>
             <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 2.jpg" alt="Nůžkový stan Ostrov"></div>
             <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 3.jpg" alt="Nůžkový stan Ostrov"></div>
@@ -377,17 +388,17 @@
             <div class="gallery-item hrady"><img src="hrad-draha 2.jpg" alt="Překážková dráha"></div>
             <div class="gallery-item hrady"><img src="hrad-draha 3.jpg" alt="Překážková dráha"></div>
             <div class="gallery-item hrady"><img src="hrad-draha 4.jpg" alt="Překážková dráha"></div>
-            <div class="gallery-item hrady"><img src="hradní dům 1.JPG" alt="Hradní dům"></div>
-            <div class="gallery-item hrady"><img src="hradní dům 2.JPG" alt="Hradní dům"></div>
-            <div class="gallery-item hrady"><img src="hradní dům 3.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 1.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 2.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 3.JPG" alt="Hradní dům"></div>
             <div class="gallery-item hrady"><img src="hrad-skluzavka 1.JPG" alt="Obří skluzavka"></div>
 
-            <div class="gallery-item ostatni"><img src="pivní sety 1.JPG" alt="Pivní sety"></div>
-            <div class="gallery-item ostatni"><img src="plynový hřib 1.jpg" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="plynový hřib 2.jpg" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="plynový hřib 3.JPG" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="sada-povlak 1.jpg" alt="Povlaky na pivní sety"></div>
-            <div class="gallery-item ostatni"><img src="sada-povlak 2.jpg" alt="Povlaky na pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="pivni-sety 1.JPG" alt="Pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 1.jpg" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 2.jpg" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 3.JPG" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="set-povlak 1.jpg" alt="Povlaky na pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="set-povlak 2.jpg" alt="Povlaky na pivní sety"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 1.jpg" alt="Rautový stůl s povlakem"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl s povlakem"></div>
         </div>
@@ -422,7 +433,7 @@
 
     <footer id="kontakt">
         <div class="container">
-            <h2 style="margin-bottom: 40px;">Půjčovna vybavení Kolín</h2>
+            <h2 style="margin-bottom: 40px;">Půjčovna párty vybavení Kolín</h2>
             <span class="contact-label">E-mail</span>
             <a href="mailto:info@party-kolin.cz" class="contact-large">info@party-kolin.cz</a>
             <span class="contact-label">Telefon</span>
