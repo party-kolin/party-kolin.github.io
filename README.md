@@ -235,7 +235,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hřib 2.JPG');"></div>
+                <div class="card-img" style="background-image: url('plynový hřib 3.JPG');"></div>
                 <div class="card-content">
                     <h3>Vytápění (plynový hřib)</h3>
                     <ul class="card-list">
@@ -267,7 +267,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('barový stul.JPG');"></div>
+                <div class="card-img" style="background-image: url('stul-povlak 2.JPG');"></div>
                 <div class="card-content">
                     <h3>Barový kulatý stůl</h3>
                     <ul class="card-list">
