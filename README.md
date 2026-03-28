@@ -212,10 +212,7 @@
             </div>
         </div>
     </section>
-            </div>
-        </div>
-    </section>
-
+ 
     <section id="vybaveni" class="container">
         <div class="section-title">
             <h2>Vybavení & Ceník</h2>
