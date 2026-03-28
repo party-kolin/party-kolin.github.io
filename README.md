@@ -61,7 +61,7 @@
         /* HERO */
         .hero {
             height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('uvod.jpg.JPG') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
             display: flex; flex-direction: column; align-items: center;
             justify-content: center; text-align: center; color: white;
             margin-top: 60px; padding: 20px;
@@ -172,7 +172,7 @@
 
         <div class="grid-fixed">
             <div class="card">
-                <div class="card-img" style="background-image: url('image_2.png');"></div>
+                <div class="card-img" style="background-image: url('stan-khbox 1.JPG');"></div>
                 <div class="card-content">
                     <h3>Párty stan 6 x 12 m</h3>
                     <ul class="card-list">
@@ -188,7 +188,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('nuzkový stan.png');"></div>
+                <div class="card-img" style="background-image: url('nuzkovy-stan-ostrov 1.jpg');"></div>
                 <div class="card-content">
                     <h3>Nůžkový stan 3 x 6 m</h3>
                     <ul class="card-list">
@@ -204,7 +204,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('Pivni set.jpg');"></div>
+                <div class="card-img" style="background-image: url('pivni-set1.png');"></div>
                 <div class="card-content">
                     <h3>Pivní set (2x lavice + stůl)</h3>
                     <ul class="card-list">
@@ -235,7 +235,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrib.jpg');"></div>
+                <div class="card-img" style="background-image: url('hřib 2.JPG');"></div>
                 <div class="card-content">
                     <h3>Vytápění (plynový hřib)</h3>
                     <ul class="card-list">
@@ -251,7 +251,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('rautovy-stul.jpg');"></div>
+                <div class="card-img" style="background-image: url('rautovy-stul.JPG');"></div>
                 <div class="card-content">
                     <h3>Rautový stůl 180 cm</h3>
                     <ul class="card-list">
@@ -267,7 +267,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('barovy stul.jpg');"></div>
+                <div class="card-img" style="background-image: url('barový stul.JPG');"></div>
                 <div class="card-content">
                     <h3>Barový kulatý stůl</h3>
                     <ul class="card-list">
@@ -283,7 +283,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad 3v1.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrad 3v1.JPG');"></div>
                 <div class="card-content">
                     <h3>Hrad House 3v1</h3>
                     <ul class="card-list">
@@ -299,7 +299,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad skluzavka.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrad skluzavka.JPG');"></div>
                 <div class="card-content">
                     <h3>Hrad Obří skluzavka</h3>
                     <ul class="card-list">
@@ -315,7 +315,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad prekazkova draha.jpg');"></div>
+                <div class="card-img" style="background-image: url('hrad-draha 2.jpg');"></div>
                 <div class="card-content">
                     <h3>Hrad Překážková dráha</h3>
                     <ul class="card-list">
