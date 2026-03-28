@@ -152,25 +152,66 @@
         <h1>...s námi to <span>oslavíte</span>.</h1>
     </header>
 
-    <section id="sluzby" style="background: #fcfcfc;">
+   <section id="sluzby" style="background: #fcfcfc; padding: 80px 0;">
         <div class="container">
             <div class="section-title">
-                <h2>Naše služby</h2>
+                <span style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Půjčovna s lidským přístupem</span>
+                <h2 style="margin-top: 10px;">...s námi to oslavíte v klidu</h2>
                 <div class="divider"></div>
             </div>
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p>Jsme rodinná půjčovna z Kolína. Nabízíme kompletní zázemí pro vaše oslavy, svatby a dětské dny. Zakládáme si na lidském přístupu, čistotě vybavení a 100% spolehlivosti. S námi počasí vaši akci neohrozí. 
-Nenechte počasí diktovat pravidla vaší párty!
-Plánujete svatbu, rodinné výročí nebo tu nejlepší narozeninovou oslavu pod širým nebem? Máte vybrané jídlo, pozvané hosty a vyladěný každý detail, ale jedna věc vás straší – počasí. My v Párty Kolín jsme tu od toho, abychom tuhle nejistotu vymazali z vašeho seznamu starostí.
-Jsme dva bratranci, kteří věří, že každá oslava si zaslouží být perfektní, ať už venku praží slunce, fouká vítr nebo padají trakaře. K našemu vybavení přidáváme lidský přístup a spolehlivost, na kterou se můžete v ten důležitý den stoprocentně spolehnout.
-Co pro vás máme připraveno?
-•	Párty stany pro každou příležitost: * Pro větší události (jako jsou svatby nebo firemní akce) máme prostorný trubkový stan 6x12 m, kam se pohodlně vejdou všichni hosté i kapela.
-o	Pro menší, komornější setkání nabízíme rychlý nůžkový stan 6x3 m, který postavíme doslova za pár minut.
-•	Komfort a teplo: Aby se u vás hosté cítili jako v bavlnce, zajistíme klasické pivní sety pro pohodlné sezení. A pokud se oslava protáhne do chladného večera? Naše vytápění zajistí, že nikdo nebude muset sahat po dece.
-•	Dětský ráj na zahradě: Co by to bylo za rodinnou akci bez dětského smíchu? Naše skákací hrady zabaví ty nejmenší na dlouhé hodiny, zatímco vy si můžete v klidu užít kávu nebo drink.
-Proč jít do toho s námi?
-Protože nejsme anonymní půjčovna. Jsme kluci z Kolína, které to baví. Zakládáme si na tom, že naše vybavení je čisté, funkční a že domluva s námi platí. Vaši radost ze srazu s blízkými prostě nenecháme zmoknout.
-</p>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <p style="font-size: 1.15rem; color: var(--text-dark); font-weight: 600; line-height: 1.6; margin-bottom: 20px;">
+                        Nenechte počasí diktovat pravidla vaší párty!
+                    </p>
+                    <p style="color: var(--text-gray); font-size: 1.05rem;">
+                        Plánujete svatbu, rodinné výročí nebo tu nejlepší narozeninovou oslavu pod širým nebem? Máte vybrané jídlo, pozvané hosty a vyladěný každý detail, ale jedna věc vás straší – počasí. My v <strong>Párty Kolín</strong> jsme tu od toho, abychom tuhle nejistotu vymazali z vašeho seznamu starostí.
+                    </p>
+                </div>
+
+                <div style="background: white; border: 1px solid var(--border-color); border-radius: 15px; padding: 30px; margin-bottom: 50px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 280px;">
+                        <h3 style="color: var(--primary-color); margin-top: 0;">Kdo jsme?</h3>
+                        <p style="margin-bottom: 0;">Jsme dva bratranci z Kolína, kteří věří, že každá oslava si zaslouží být perfektní, ať už venku praží slunce, fouká vítr nebo padají trakaře. Nejsme anonymní půjčovna – zakládáme si na lidském přístupu a 100% spolehlivosti.</p>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.6rem;">Co pro vás máme připraveno?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                    
+                    <div style="padding: 20px; border-left: 4px solid var(--primary-color); background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--text-dark);">⛺ Párty stany</h4>
+                        <p style="font-size: 0.9rem; margin: 0; color: var(--text-gray);">
+                            Pro velké události (svatby, firemní akce) máme prostorný <strong>trubkový stan 6x12 m</strong>. Pro menší setkání nabízíme <strong>rychlý nůžkový stan 6x3 m</strong>, který stojí doslova za pár minut.
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; border-left: 4px solid var(--primary-color); background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--text-dark);">☕ Komfort a teplo</h4>
+                        <p style="font-size: 0.9rem; margin: 0; color: var(--text-gray);">
+                            Zajistíme klasické pivní sety pro pohodlné sezení. A pokud se oslava protáhne do chladného večera? Naše <strong>plynové vytápění</strong> zajistí, že nikdo nebude muset sahat po dece.
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; border-left: 4px solid var(--primary-color); background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.02);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--text-dark);">🏰 Dětský ráj</h4>
+                        <p style="font-size: 0.9rem; margin: 0; color: var(--text-gray);">
+                            Naše <strong>skákací hrady</strong> zabaví ty nejmenší na dlouhé hodiny, zatímco vy si můžete v klidu užít kávu nebo drink. Bezpečná zábava, která k rodinné akci patří.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div style="text-align: center; margin-top: 50px; padding: 30px; border-top: 1px dashed #ddd;">
+                    <h3 style="margin-bottom: 15px;">Proč jít do toho s námi?</h3>
+                    <p style="font-style: italic; color: var(--text-gray);">
+                        "Protože nás to baví. Zakládáme si na tom, že naše vybavení je vždy čisté, funkční a že domluva s námi prostě platí. Vaši radost ze srazu s blízkými nenecháme zmoknout."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
             </div>
         </div>
     </section>
