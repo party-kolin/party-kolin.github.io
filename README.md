@@ -413,8 +413,6 @@
         <strong>Ostatní zakázky:</strong><br>
         Cena dopravy je řešena individuálně<br>
         dle velikosti zakázky a vzdálenosti.
-    </p>
-    
     <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ddd;">
         <span style="font-size: 0.9rem; color: #777;">Konečná cena dopravy bude upřesněna v cenové nabídce.</span>
     </div>
