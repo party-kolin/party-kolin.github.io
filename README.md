@@ -548,8 +548,7 @@
                     <span>📄</span> Stáhnout Obchodní podmínky (PDF)
                 </a>
             </div>
-        </div>
-    </section>
+    
 
     <section id="kontakt" class="container" style="background: #fff; padding-top: 80px;">
         <div class="section-title">
