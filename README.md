@@ -631,13 +631,13 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
-  <section id="mapa" style="width: 100%; height: 450px; margin-top: 20px; border-top: 5px solid var(--primary-color);">
-        <div style="text-align: center; padding: 15px; background: #fff;">
-            <strong style="color: var(--primary-color); font-size: 1.1rem;">📍 Sklad / Výdejní místo (Garáže Cihelna, Kolín)</strong>
-            <p style="font-size: 0.9rem; color: #666; margin: 5px 0 10px;">Techniku předáváme po předchozí telefonické domluvě.</p>
+ <section id="mapa" style="width: 100%; height: 300px; margin-top: 0; border-top: 2px solid #ddd;">
+        <div style="text-align: center; padding: 10px; background: #fff; border-bottom: 1px solid #eee;">
+            <strong style="color: var(--primary-color); font-size: 1rem;">📍 Výdejní místo: Areál Cihelna, Kolín</strong>
+            <p style="font-size: 0.8rem; color: #777; margin: 2px 0;">(Pouze pro výdej a vrácení po domluvě)</p>
         </div>
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2562.062402174363!2d15.19718817666245!3d50.01361077151325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTkuMiJF!5e0!3m2!1scs!2scz!4v1711200000000!5m2!1scs!2scz" 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2562.034638363768!2d15.19718817666245!3d50.01361077151241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTAuMiJF!5e0!3m2!1scs!2scz!4v1715678901234!5m2!1scs!2scz" 
             width="100%" 
             height="100%" 
             style="border:0;" 
