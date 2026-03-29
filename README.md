@@ -39,14 +39,20 @@
             scroll-behavior: smooth;
         }
 
-        /* NAVIGACE */
-        nav {
-            position: fixed; top: 0; left: 0; width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            border-bottom: 1px solid var(--border-color);
-            z-index: 1000; display: flex;
-            justify-content: space-between; align-items: center;
-            padding: 10px 5%;
+       /* NAVIGACE - upraveno pro větší zvýraznění */
+        .nav-links a {
+            text-decoration: none; 
+            color: var(--text-dark);
+            font-weight: 800;          /* Změněno z 700 na 800 pro extra tučné písmo */
+            font-size: 0.75rem;        /* Mírně zvětšeno pro lepší čitelnost */
+            text-transform: uppercase; 
+            letter-spacing: 0.8px;     /* Větší rozestup pro prémiový vzhled */
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color); /* Při najetí myší zmodrá/zezelená */
+        }
         }
 
         nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
