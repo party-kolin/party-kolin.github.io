@@ -645,11 +645,6 @@
         </a>
     </div>
     </section>
-  <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
-    <p style="margin: 0; font-size: 0.9rem; color: #777;">
-        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
-    </p>
-</footer>
 
     <div style="width: 100%; height: 300px; border-top: 1px solid #ddd;">
         <iframe 
@@ -662,8 +657,11 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
-</section>
- 
+ <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+    <p style="margin: 0; font-size: 0.9rem; color: #777;">
+        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
+    </p>
+</footer>
 
     <script>
         // Funkce pro filtrování galerie
