@@ -39,7 +39,7 @@
             scroll-behavior: smooth;
         }
 
-    /* NAVIGACE - Čistá verze s efektem pouze v menu */
+  /* NAVIGACE - původní vzhled + zelené najetí myší */
     nav {
         position: fixed; top: 0; left: 0; width: 100%;
         background: rgba(255, 255, 255, 0.98);
@@ -49,12 +49,12 @@
         padding: 10px 5%;
     }
 
-    /* Logo - stabilní velikost */
+    /* Logo zpět na původních 50px */
     nav img { 
-        height: 45px; 
+        height: 50px; 
         width: auto; 
-        max-width: 150px; 
-        object-fit: contain;
+        max-width: 180px; 
+        object-fit: contain; 
     }
 
     .nav-links { 
@@ -64,26 +64,21 @@
         justify-content: flex-end; 
     }
 
-    /* Odkazy pouze v horním menu - tučné a výrazné */
+    /* Odkazy v menu - původní velikost a tloušťka */
     .nav-links a {
         text-decoration: none; 
         color: var(--text-dark);
-        font-weight: 800;          /* Extra tučné písmo */
-        font-size: 0.75rem; 
+        font-weight: 700; 
+        font-size: 0.65rem;
         text-transform: uppercase; 
-        letter-spacing: 0.8px; 
-        transition: color 0.3s ease; /* Plynulý přechod barvy */
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
     }
 
-    /* Efekt najetí myší - pouze pro tyto odkazy v menu */
+    /* Zelená barva pouze při najetí myší */
     .nav-links a:hover {
-        color: var(--primary-color) !important; /* Změní barvu na zelenou */
-    }
-        color: var(--primary-color); /* Zelená při najetí */
-    }
-
-        /* Nové výrazné odkazy - pouze jedna definice */
-        .nav-links a {
+        color: var(--primary-color);
+    } {
             text-decoration: none; 
             color: var(--text-dark);
             font-weight: 800;          /* Extra tučné */
