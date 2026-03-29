@@ -515,19 +515,38 @@
             </form>
         </div>
 
-        <div style="text-align: center; margin-top: 50px; padding: 20px;">
-            <p style="margin-bottom: 10px; font-weight: 700; color: var(--text-gray);">Kontaktujte nás přímo:</p>
-            <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.4rem; font-weight: 800; text-decoration: none; display: block; margin-bottom: 5px;">+420 723 355 740</a>
-            <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: block; margin-bottom: 25px;">info@party-kolin.cz</a>
+      <div style="text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid var(--border-color);">
+            <p style="margin-bottom: 20px; font-weight: 700; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1px;">Kontaktujte nás přímo:</p>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
+                <div>
+                    <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
+                    <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
+                </div>
+                <div>
+                    <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloslav Hendrych</span>
+                    <a href="tel:+420605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 605 717 081</a>
+                </div>
+            </div>
 
-            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-                <a href="https://www.facebook.com/vase-stranka" target="_blank" style="text-decoration: none; color: #1877F2; font-size: 1.5rem;">
-                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">FB</span>
+            <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 30px;">info@party-kolin.cz</a>
+
+            <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
+                <a href="https://www.facebook.com/vase-stranka" target="_blank" style="text-decoration: none; color: #1877F2;">
+                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">FB</span>
                 </a>
-                <a href="https://www.instagram.com/vase-stranka" target="_blank" style="text-decoration: none; color: #E4405F; font-size: 1.5rem;">
-                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">IG</span>
+                <a href="https://www.instagram.com/vase-stranka" target="_blank" style="text-decoration: none; color: #E4405F;">
+                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">IG</span>
                 </a>
             </div>
+
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; font-size: 0.85rem; color: #666; line-height: 1.5; border: 1px solid #eee; max-width: 400px; margin: 0 auto;">
+                <strong style="color: var(--text-dark); display: block; margin-bottom: 5px;">Fakturační údaje:</strong>
+                Miloš Hulinko<br>
+                Tylova 184, 281 01 Velim<br>
+                IČ: 76282431
+            </div>
+        </div>
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
         </div>
     </section>
