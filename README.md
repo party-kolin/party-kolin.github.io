@@ -648,10 +648,6 @@
         <div style="max-width: 400px; margin: 0 auto;">
             <strong style="display: block; margin-bottom: 10px; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">Fakturační údaje</strong>
             <p style="line-height: 1.6; color: #555; font-size: 0.95rem;">
-                <strong>Miloš Hulinko</strong><br>
-                Tylova 184, 281 01 Velim<br>
-                IČ: 76282431
-            </p>
         </div>
         <p style="margin-top: 30px; font-size: 0.8rem; color: #999;">© 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.</p>
     </footer>
