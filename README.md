@@ -613,10 +613,10 @@
             <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 30px;">info@party-kolin.cz</a>
 
             <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
-                <a href="https://www.facebook.com/vase-stranka" target="_blank" style="text-decoration: none; color: #1877F2;">
+                <a href="https://www.facebook.com/partykolin/" target="_blank" style="text-decoration: none; color: #1877F2;">
                     <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">FB</span>
                 </a>
-                <a href="https://www.instagram.com/vase-stranka" target="_blank" style="text-decoration: none; color: #E4405F;">
+                <a href="https://www.instagram.com/party_kolin.cz" target="_blank" style="text-decoration: none; color: #E4405F;">
                     <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">IG</span>
                 </a>
             </div>
