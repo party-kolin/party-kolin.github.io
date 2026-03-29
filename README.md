@@ -442,20 +442,92 @@
         </div>
     </section>
 
-    <section id="faq" class="container">
+   <section id="faq" class="container" style="background: #fff;">
         <div class="section-title">
             <h2>Časté dotazy</h2>
             <div class="divider"></div>
         </div>
+
         <div style="max-width: 900px; margin: 0 auto;">
-            <div class="faq-item">
-                <h4>Jak probíhá rezervace?</h4>
-                <p>Kontaktujte nás e-mailem nebo telefonicky. Po potvrzení termínu vám vybavení zarezervujeme.</p>
+            
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">📌 Obecné informace</h3>
+                
+                <div class="faq-item">
+                    <h4>Jak objednat zápůjčku (pronájem)?</h4>
+                    <p>Kontaktujte nás přes email nebo kontaktní formulář a sdělte nám, co byste z výčtu vybavení potřebovali zapůjčit a také na jaké období. V odpovědi Vám potvrdíme dostupnost vybavení. V ten moment nepřijmeme další požadavek od jiných zájemců, dokud u Vás nebudeme mít jasno, zda máte zájem či nikoliv. V dalších krocích komunikace přejdeme od nabídky až po případné potvrzení Vaší objednávky.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Jak vzniká obchodní vztah (smlouva o pronájmu)?</h4>
+                    <p>1) Potvrzením nabídky zájemcem elektronicky (závazná objednávka), kde zároveň zájemce souhlasí s Obchodními podmínkami.<br>
+                       2) Podpisem papírové Smlouvy o pronájmu při předání předmětu nájmu.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Kde je možné zápůjčku vyzvednout?</h4>
+                    <p>Jelikož nemáme žádné oficiální výdejní místo, stany a další vybavení Vám <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání.</p>
+                </div>
             </div>
-            <div class="faq-item">
-                <h4>Kdy stany stavíte?</h4>
-                <p>Standardně montujeme den před akcí a demontujeme den po akci, nebo dle domluvy.</p>
+
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">⛺ Párty stany</h3>
+                
+                <div class="faq-item">
+                    <h4>Mohu si párty stan + příslušenství postavit sám/sama?</h4>
+                    <p>Bohužel to není možné. Stany půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti a přesný postup.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Jak velké místo budu pro stan či hrad potřebovat?</h4>
+                    <p>Pro párty stan je třeba počítat s <strong>3 m navíc</strong> oproti psaným rozměrům na každou stranu stanu. Na výšku stan potřebuje cca 3 m prostoru. Skákací hrad potřebuje rovněž min. 3 m odstup na každou stranu.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Na jakém místě lze párty stan postavit?</h4>
+                    <p>Je třeba <strong>měkký podklad (tráva, hlína)</strong>, aby stan bylo možno řádně ukotvit, popř. podklad, do kterého lze navrtat kotvící turbo šrouby. Stavba na jiný podklad (beton, dlažba) je možná pouze po předchozí domluvě.</p>
+                </div>
             </div>
+
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">🏰 Dětské skákací hrady</h3>
+                
+                <div class="faq-item">
+                    <h4>Zvládnu hrad rozbalit a nafouknout sám?</h4>
+                    <p>Ano, hrad postavíte během pár minut. Stačí zkontrolovat plochu (bez ostrých nečistot), rozložit podkladovou plachtu a na ní hrad roztáhnout. Poté nasadíte rukáv hradu na kompresor, zajistíte suchým zipem a zapojíte do sítě. Hrad se do minuty nafoukne. Poté jej zafixujete kolíky do země.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Platí se vratná kauce za půjčení hradu?</h4>
+                    <p>Ne. Při převzetí hradu se hradí pouze sjednané nájemné.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Co dělat když hrad poškodím (malá dírka apod.)?</h4>
+                    <p>Ihned nás kontaktujte. I v případě malého propíchnutí hrad díky výkonnému kompresoru normálně funguje dál. Situaci s vámi vyřešíme individuálně.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Může na hrad pršet?</h4>
+                    <p><strong>V žádném případě.</strong> Hrozí úraz elektrickým proudem od kompresoru. Při dešti ihned odpojte kompresor a ukryjte jej. Pokud atrakce zmokne, je nutné ji později rozbalit na suchém místě a nechat důkladně vyschnout (včetně plachty).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Jak sbalit hrad?</h4>
+                    <p>Hrad se nesmí balit mokrý nebo špinavý. Neumývejte jej saponáty, pouze čistou vodou. Po vypnutí kompresoru se hrad vyfoukne, stěny se složí do středu a hrad se sbalí překládáním (cca 5 min). Poté se vloží do tašky.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Můžu atrakci použít při kulturní akci a vybírat vstupné?</h4>
+                    <p>Bohužel ne. Naše atrakce jsou určeny <strong>výhradně pro soukromé účely</strong> (rodinné oslavy, zahrady).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Co se stane, pokud nestihnu vrátit hrad včas?</h4>
+                    <p>V takovém případě je účtováno nájemné za další den dle ceníku. Vše je ale na dohodě – stačí zavolat a vždy se pokusíme najít rozumné řešení.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
