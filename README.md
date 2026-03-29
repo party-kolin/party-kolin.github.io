@@ -380,26 +380,35 @@
             </div>
         </div>
 
- <div class="pricing-card">
-    <img src="image2.jpg" alt="Osvětlení stanu">
-    <div class="pricing-content">
+ <div class="card">
+    <div class="card-img" style="background-image: url('image2.jpg');"></div>
+    <div class="card-content">
         <h3>Osvětlení stanu</h3>
-        <p>2x halogenový nebo LED reflektor (3200lm)</p>
-        <p>Kabel 15m nebo 20m (dle stanu)</p>
-        <p><strong>Cena včetně montáže</strong></p>
-        <p style="color: #e63946; font-weight: bold;">Půjčujeme pouze se stany</p>
-        <div class="price">390 Kč <span>s DPH (1-2 dny)</span></div>
+        <ul class="card-list">
+            <li>2x halogenový nebo LED reflektor</li>
+            <li>Světelný výkon ekv. 3200lm</li>
+            <li>Kabel 15m nebo 20m (dle stanu)</li>
+            <li>Půjčujeme pouze se stany</li>
+        </ul>
+        <div class="price">390 Kč <span>/ 1 až 2 dny</span></div>
+        <div class="note">Cena včetně montáže a demontáže</div>
+        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
     </div>
-</div>
 
-<div class="pricing-card">
-    <img src="doprava.jpg" alt="Doprava">
-    <div class="pricing-content">
+ </div>
+<div class="card">
+    <div class="card-img" style="background-image: url('doprava.jpg');"></div>
+    <div class="card-content">
         <h3>Doprava a závoz</h3>
-        <p><strong>Pronájem stanu 6x12m:</strong></p>
-        <p style="color: #28a745; font-weight: bold;">Do 10 km ZDARMA</p>
-        <p>Ostatní – individuálně dle velikosti zakázky</p>
-        <div class="price">Dle dohody</div>
+        <ul class="card-list">
+            <li><strong>Stan 6x12m: do 10km ZDARMA</strong></li>
+            <li>Ostatní: individuální kalkulace</li>
+            <li>Dle velikosti zakázky a váhy</li>
+            <li>Závoz v rámci Kolína a okolí</li>
+        </ul>
+        <div class="price">Individuálně <span>/ dle cesty</span></div>
+        <div class="note">Přesnou cenu dopravy vám sdělíme v nabídce</div>
+        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
     </div>
 </div>
     
