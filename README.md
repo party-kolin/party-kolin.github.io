@@ -631,20 +631,20 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
-   <section id="mapa" style="width: 100%; height: 450px; margin-top: 20px;">
-        <div style="text-align: center; padding: 15px; background: #fff; border-top: 5px solid var(--primary-color);">
-            <strong style="color: var(--primary-color);">📍 Sklad / Výdejní místo (Garáže Cihelna, Kolín)</strong>
-            <p style="font-size: 0.85rem; color: #666; margin: 5px 0 0;">Techniku předáváme po předchozí telefonické domluvě.</p>
+   <section id="mapa" style="width: 100%; height: 500px; margin-top: 20px; border-top: 5px solid var(--primary-color);">
+        <div style="text-align: center; padding: 15px; background: #fff;">
+            <strong style="color: var(--text-dark); font-size: 1.1rem;">📍 Sklad / Výdejní místo (Garáže Cihelna, Kolín)</strong>
+            <p style="font-size: 0.9rem; color: #666; margin: 5px 0 10px;">Techniku předáváme po předchozí telefonické domluvě.</p>
         </div>
         <iframe 
-            src="https://en.mapy.cz/zakladni?x=15.1997631&y=50.0136108&z=16&source=coor&id=15.1997631%2C50.0136108&title=PARTY-KOLIN.CZ%20-%20Sklad" 
+            src="https://mapy.cz/s/fofebuvuna" 
             width="100%" 
             height="100%" 
             style="border:none;" 
-            frameborder="0">
+            frameborder="0" 
+            allowfullscreen="true">
         </iframe>
     </section>
-
     <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
         <div style="max-width: 400px; margin: 0 auto;">
             <strong style="display: block; margin-bottom: 10px; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">Fakturační údaje</strong>
