@@ -644,13 +644,38 @@
         </a>
     </div>
 </section>
-    <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
-        <div style="max-width: 400px; margin: 0 auto;">
-            <strong style="display: block; margin-bottom: 10px; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">Fakturační údaje</strong>
-            <p style="line-height: 1.6; color: #555; font-size: 0.95rem;">
-        </div>
-        <p style="margin-top: 30px; font-size: 0.8rem; color: #999;">© 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.</p>
-    </footer>
+  <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+    <p style="margin: 0; font-size: 0.9rem; color: #777;">
+        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
+    </p>
+</footer>
+
+<section id="sklad-sekce" style="padding: 40px 0 0 0; background: #fff; text-align: center; border-top: 1px solid #eee;">
+    <div style="padding: 0 20px 30px 20px;">
+        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Sklad / Výdejní místo</h3>
+        <p style="font-size: 1.1rem; color: #555; margin-bottom: 5px;"><strong>Areál Cihelna, Kolín (Garáže)</strong></p>
+        <p style="color: #777; margin-bottom: 25px;">Předání vybavení probíhá vždy po předchozí telefonické domluvě.</p>
+        
+        <a href="https://www.google.com/maps/dir/?api=1&destination=50.0136108,15.1997631" 
+           target="_blank" 
+           style="display: inline-block; padding: 12px 25px; background-color: #e63946; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">
+           📍 Otevřít v Mapách (navigovat)
+        </a>
+    </div>
+
+    <div style="width: 100%; height: 300px; border-top: 1px solid #ddd;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2562.3846461947294!2d15.197188176669913!3d50.01361077151368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTkuMiJF!5e0!3m2!1scs!2scz!4v1711735000000!5m2!1scs!2scz" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+ 
 
     <script>
         // Funkce pro filtrování galerie
