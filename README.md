@@ -39,35 +39,50 @@
             scroll-behavior: smooth;
         }
 
-       /* NAVIGACE - kompletně opraveno a vyčištěno */
-        nav {
-            position: fixed; top: 0; left: 0; width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            border-bottom: 1px solid var(--border-color);
-            z-index: 1000; display: flex;
-            justify-content: space-between; align-items: center;
-            padding: 10px 5%;
-        }
+     /* NAVIGACE - kompletně opraveno a vyčištěno */
+    nav {
+        position: fixed; top: 0; left: 0; width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        z-index: 1000; display: flex;
+        justify-content: space-between; align-items: center;
+        padding: 10px 5%;
+    }
 
-        /* Zmenšené logo */
-        nav img { 
-            height: 45px; 
-            width: auto; 
-            max-width: 150px; 
-            object-fit: contain; 
-            transition: transform 0.3s ease;
-        }
+    /* Zmenšené logo */
+    nav img { 
+        height: 45px; 
+        width: auto; 
+        max-width: 150px; 
+        object-fit: contain; 
+        transition: transform 0.3s ease;
+    }
 
-        nav img:hover {
-            transform: scale(1.05);
-        }
+    nav img:hover {
+        transform: scale(1.05);
+    }
 
-        .nav-links { 
-            display: flex; 
-            gap: 15px; 
-            flex-wrap: wrap; 
-            justify-content: flex-end; 
-        }
+    .nav-links { 
+        display: flex; 
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+    }
+
+    /* Nové výrazné odkazy */
+    .nav-links a {
+        text-decoration: none; 
+        color: var(--text-dark);
+        font-weight: 800;          /* Extra tučné */
+        font-size: 0.75rem;        /* Lepší čitelnost */
+        text-transform: uppercase; 
+        letter-spacing: 0.8px; 
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-color); /* Zelená při najetí */
+    }
 
         /* Nové výrazné odkazy - pouze jedna definice */
         .nav-links a {
