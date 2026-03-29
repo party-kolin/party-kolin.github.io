@@ -631,6 +631,34 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
+    </section>
+
+    <section id="mapa" style="width: 100%; height: 400px; margin-top: 50px; border-top: 1px solid #eee;">
+        <div style="text-align: center; padding: 15px; background: #fff;">
+            <strong style="color: var(--primary-color);">📍 Sklad / Výdejní místo (Garáže Cihelna, Kolín)</strong>
+            <p style="font-size: 0.85rem; color: #666; margin: 5px 0 0;">Předání vybavení probíhá vždy po předchozí domluvě.</p>
+        </div>
+        <iframe 
+            src="https://api.mapy.cz/frame?x=15.1997631&y=50.0136108&z=16&p=1&l=0&title=PARTY-KOLIN.CZ&address=Sklad: Areál Cihelna, Kolín" 
+            width="100%" 
+            height="100%" 
+            style="border:none;" 
+            frameborder="0">
+        </iframe>
+    </section>
+
+    <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+        <div style="max-width: 400px; margin: 0 auto;">
+            <strong style="display: block; margin-bottom: 10px; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">Fakturační údaje</strong>
+            <p style="line-height: 1.6; color: #555; font-size: 0.95rem;">
+                <strong>Miloš Hulinko</strong><br>
+                Tylova 184, 281 01 Velim<br>
+                IČ: 76282431
+            </p>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; color: #999;">© 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.</p>
+    </footer>
+
     <script>
         // Funkce pro filtrování galerie
         document.querySelectorAll('.filter-btn').forEach(button => {
