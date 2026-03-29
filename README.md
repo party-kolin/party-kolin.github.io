@@ -631,24 +631,6 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
-<section id="mapa-blok" style="padding: 40px 20px; background: #fff; text-align: center; border-top: 1px solid #eee;">
-    <div style="max-width: 800px; margin: 0 auto;">
-        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase;">Sklad / Výdejní místo</h3>
-        <p style="font-size: 1.1rem; color: #555; margin-bottom: 5px;"><strong>Areál Cihelna, Kolín (Garáže)</strong></p>
-        <p style="color: #777; margin-bottom: 25px;">Předání vybavení probíhá vždy po předchozí telefonické domluvě.</p>
-        
-        <a href="https://www.google.com/maps/dir/?api=1&destination=50.0136108,15.1997631" 
-           target="_blank" 
-           style="display: inline-block; padding: 15px 30px; background-color: #e63946; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s;">
-           📍 Otevřít v Mapách (navigovat)
-        </a>
-    </div>
-</section>
-  <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
-    <p style="margin: 0; font-size: 0.9rem; color: #777;">
-        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
-    </p>
-</footer>
 
 <section id="sklad-sekce" style="padding: 40px 0 0 0; background: #fff; text-align: center; border-top: 1px solid #eee;">
     <div style="padding: 0 20px 30px 20px;">
@@ -662,6 +644,12 @@
            📍 Otevřít v Mapách (navigovat)
         </a>
     </div>
+    </section>
+  <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+    <p style="margin: 0; font-size: 0.9rem; color: #777;">
+        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
+    </p>
+</footer>
 
     <div style="width: 100%; height: 300px; border-top: 1px solid #ddd;">
         <iframe 
