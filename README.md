@@ -393,10 +393,8 @@
         <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
     </div>
 </div>
-          
- </div>
-<div class="card">
-    <div class="card-img" style="background-image: url('doprava.jpg');"></div>
+       <div class="card">
+    <div class="card-img" style="background-image: url('image2.jpg');"></div>
     <div class="card-content">
         <h3>Doprava a závoz</h3>
         <ul class="card-list">
