@@ -539,15 +539,9 @@
 
         <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <p style="margin-bottom: 20px; line-height: 1.6;">
-                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026</strong>. Níže naleznete stručný výtah nejdůležitějších bodů:
+                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026.
             </p>
 
-            <ul style="margin-bottom: 30px; line-height: 1.8; color: #444;">
-                <li><strong>Smlouva:</strong> Vzniká podpisem písemné smlouvy nebo závazným potvrzením nabídky e-mailem.</li>
-                <li><strong>Podmínky pro stany:</strong> Nájemce je povinen zajistit rovný podklad a případná povolení pro vstup na pozemek.</li>
-                <li><strong>Odpovědnost:</strong> Nájemce odpovídá za ztrátu či poškození vybavení po celou dobu nájmu.</li>
-            
-            </ul>
 
             <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
                 <p style="margin-bottom: 20px; font-weight: 600;">Kompletní znění dokumentu ve formátu PDF:</p>
