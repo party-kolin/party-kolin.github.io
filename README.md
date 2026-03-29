@@ -39,7 +39,7 @@
             scroll-behavior: smooth;
         }
 
-  /* NAVIGACE - původní vzhled + zelené najetí myší */
+  /* NAVIGACE - Původní verze bez efektů */
     nav {
         position: fixed; top: 0; left: 0; width: 100%;
         background: rgba(255, 255, 255, 0.98);
@@ -49,22 +49,10 @@
         padding: 10px 5%;
     }
 
-    /* Logo zpět na původních 50px */
-    nav img { 
-        height: 50px; 
-        width: auto; 
-        max-width: 180px; 
-        object-fit: contain; 
-    }
+    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
 
-    .nav-links { 
-        display: flex; 
-        gap: 15px; 
-        flex-wrap: wrap; 
-        justify-content: flex-end; 
-    }
+    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
 
-    /* Odkazy v menu - původní velikost a tloušťka */
     .nav-links a {
         text-decoration: none; 
         color: var(--text-dark);
@@ -72,23 +60,7 @@
         font-size: 0.65rem;
         text-transform: uppercase; 
         letter-spacing: 0.5px;
-        transition: color 0.3s ease;
-    }
-
-    /* Zelená barva pouze při najetí myší */
-    .nav-links a:hover {
-        color: var(--primary-color);
     } {
-            text-decoration: none; 
-            color: var(--text-dark);
-            font-weight: 800;          /* Extra tučné */
-            font-size: 0.75rem;        /* Lepší čitelnost */
-            text-transform: uppercase; 
-            letter-spacing: 0.8px; 
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
             color: var(--primary-color); /* Zelená při najetí */
         }:hover {
             color: var(--primary-color); /* Při najetí myší zmodrá/zezelená */
