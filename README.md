@@ -380,33 +380,28 @@
             </div>
         </div>
 
-    <div class="pricing-card" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <img src="image2.jpg" alt="Osvětlení stanu" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px;">
-    <h3 style="color: var(--primary-color); margin-top: 0;">Osvětlení stanu</h3>
-    <ul style="list-style: none; padding: 0; color: #555; font-size: 0.95rem;">
-        <li><strong>💡 2x reflektor</strong> (halogen/LED, ekv. 3200lm)</li>
-        <li><strong>🔌 Kabeláž:</strong> 15m nebo 20m (dle stanu)</li>
-        <li><strong>🛠️ Servis:</strong> Cena včetně montáže</li>
-        <li style="color: #e63946; font-weight: bold; margin-top: 10px;">⚠️ Půjčujeme pouze se stany</li>
-    </ul>
-    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ddd; text-align: center;">
-        <span style="font-size: 1.4rem; font-weight: bold; color: #222;">390 Kč</span>
-        <span style="font-size: 0.9rem; color: #777;">s DPH (1-2 dny)</span>
+ <div class="pricing-card">
+    <img src="image2.jpg" alt="Osvětlení stanu">
+    <div class="pricing-content">
+        <h3>Osvětlení stanu</h3>
+        <p>2x halogenový nebo LED reflektor (3200lm)</p>
+        <p>Kabel 15m nebo 20m (dle stanu)</p>
+        <p><strong>Cena včetně montáže</strong></p>
+        <p style="color: #e63946; font-weight: bold;">Půjčujeme pouze se stany</p>
+        <div class="price">390 Kč <span>s DPH (1-2 dny)</span></div>
     </div>
 </div>
 
-<div class="pricing-card" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center;">
-    
-    <img src="doprava.jpg" alt="Doprava a závoz stanů Kolín" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px;">
-    
-    <h3 style="color: #333; margin-top: 0; text-transform: uppercase; letter-spacing: 1px;">Doprava a závoz</h3>
-    
-    <div style="margin: 15px 0; padding: 10px; background: #f9f9f9; border-radius: 5px;">
-        <p style="margin: 0 0 5px 0; font-size: 1rem; color: #555;"><strong>Pronájem stanu 6x12m:</strong></p>
-        <span style="display: inline-block; background: #28a745; color: #fff; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 1.1rem;">
-            🚚 Do 10 km ZDARMA
-        </span>
+<div class="pricing-card">
+    <img src="doprava.jpg" alt="Doprava">
+    <div class="pricing-content">
+        <h3>Doprava a závoz</h3>
+        <p><strong>Pronájem stanu 6x12m:</strong></p>
+        <p style="color: #28a745; font-weight: bold;">Do 10 km ZDARMA</p>
+        <p>Ostatní – individuálně dle velikosti zakázky</p>
+        <div class="price">Dle dohody</div>
     </div>
+</div>
     
     <p style="color: #666; font-size: 0.9rem; line-height: 1.5; margin-top: 15px;">
         <strong>Ostatní zakázky:</strong><br>
