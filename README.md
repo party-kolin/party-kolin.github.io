@@ -539,19 +539,19 @@
 
         <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <p style="margin-bottom: 20px; line-height: 1.6;">
-                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026</strong>[cite: 106, 107]. Níže naleznete stručný výtah nejdůležitějších bodů:
+                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026</strong>. Níže naleznete stručný výtah nejdůležitějších bodů:
             </p>
 
             <ul style="margin-bottom: 30px; line-height: 1.8; color: #444;">
-                <li><strong>Smlouva:</strong> Vzniká podpisem písemné smlouvy nebo závazným potvrzením nabídky e-mailem[cite: 7, 16].</li>
-                <li><strong>Podmínky pro stany:</strong> Nájemce je povinen zajistit rovný podklad a případná povolení pro vstup na pozemek[cite: 28, 30].</li>
-                <li><strong>Odpovědnost:</strong> Nájemce odpovídá za ztrátu či poškození vybavení po celou dobu nájmu[cite: 68].</li>
-                <li><strong>Bezpečnost:</strong> Stany nelze užívat při větru nad $72~km/h$ nebo při sněhové pokrývce na střeše[cite: 77, 78].</li>
+                <li><strong>Smlouva:</strong> Vzniká podpisem písemné smlouvy nebo závazným potvrzením nabídky e-mailem.</li>
+                <li><strong>Podmínky pro stany:</strong> Nájemce je povinen zajistit rovný podklad a případná povolení pro vstup na pozemek.</li>
+                <li><strong>Odpovědnost:</strong> Nájemce odpovídá za ztrátu či poškození vybavení po celou dobu nájmu.</li>
+            
             </ul>
 
             <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
                 <p style="margin-bottom: 20px; font-weight: 600;">Kompletní znění dokumentu ve formátu PDF:</p>
-                <a href="obchodni-podminky.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;">
+                <a href="Obchodní podmínky.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;">
                     <span>📄</span> Stáhnout Obchodní podmínky (PDF)
                 </a>
             </div>
