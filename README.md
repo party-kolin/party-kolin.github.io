@@ -402,22 +402,6 @@
                 </div>
             </div>
           
-      <div class="card">
-                <div class="card-img" style="background-image: url('hrad-draha 2.jpg');"></div>
-                <div class="card-content">
-                    <h3>Hrad Překážková dráha</h3>
-                    <ul class="card-list">
-                        <li>5,60 x 2,55 x 1,90 m</li>
-                        <li>Max. 4 děti, nosnost 180kg</li>
-                        <li>Atest TÜV, váha 30kg</li>
-                        <li>Věk dětí 3 až 10 let</li>
-                    </ul>
-                    <div class="price">1 500 Kč <span>/ 24 hod.</span></div>
-                    <div class="note">Hmotnost jednotlivce max 45kg</div>
-                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-                </div>
-            </div>
-
             <div class="card">
                 <div class="card-img" style="background-image: url('image2.jpg');"></div>
                 <div class="card-content">
