@@ -39,19 +39,31 @@
             scroll-behavior: smooth;
         }
 
-  /* NAVIGACE - Původní verze bez efektů */
+  /* NAVIGACE - Čistá verze bez efektů */
     nav {
         position: fixed; top: 0; left: 0; width: 100%;
         background: rgba(255, 255, 255, 0.98);
         border-bottom: 1px solid var(--border-color);
-        z-index: 1000; display: flex;
-        justify-content: space-between; align-items: center;
+        z-index: 1000; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
         padding: 10px 5%;
     }
 
-    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
+    nav img { 
+        height: 50px; 
+        width: auto; 
+        max-width: 180px; 
+        object-fit: contain; 
+    }
 
-    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links { 
+        display: flex; 
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+    }
 
     .nav-links a {
         text-decoration: none; 
@@ -60,21 +72,21 @@
         font-size: 0.65rem;
         text-transform: uppercase; 
         letter-spacing: 0.5px;
-    } {
-            color: var(--primary-color); /* Zelená při najetí */
-        }:hover {
-            color: var(--primary-color); /* Při najetí myší zmodrá/zezelená */
-        }
-        }
+    }
 
-        nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
-
-        .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
-        .nav-links a {
-            text-decoration: none; color: var(--text-dark);
-            font-weight: 700; font-size: 0.65rem;
-            text-transform: uppercase; letter-spacing: 0.5px;
-        }
+    /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
+    .hero {
+        height: 60vh;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center; 
+        color: white;
+        margin-top: 60px; 
+        padding: 20px;
+    }
 
         /* HERO */
         .hero {
