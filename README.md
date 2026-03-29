@@ -379,46 +379,55 @@
                 </div>
             </div>
           
-       <div class="card">
-    <div class="card-img" style="background-image: url('image2.jpg');"></div>
-    <div class="card-content">
-        <h3>Osvětlení stanu</h3>
-        <ul class="card-list">
-            <li>2x halogenový nebo LED reflektor</li>
-            <li>Světelný výkon ekv. 3200lm</li>
-            <li>Kabel 15m nebo 20m (dle stanu)</li>
-            <li>Půjčujeme pouze se stany</li>
-        </ul>
-        <div class="price">390 Kč <span>/ 1 až 2 dny</span></div>
-        <div class="note">Cena včetně montáže a demontáže</div>
-        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-    </div>
-</div>
- 
- <div class="card">
-    <div class="card-img" style="background-image: url('doprava.jpg');"></div>
-    <div class="card-content">
-        <h3>Doprava a závoz</h3>
-        <ul class="card-list">
-            <li><strong>Stan 6x12m: do 10km ZDARMA</strong></li>
-            <li>Ostatní: individuální kalkulace</li>
-            <li>Dle velikosti zakázky a váhy</li>
-            <li>Závoz v rámci Kolína a okolí</li>
-        </ul>
-        <div class="price">Individuálně <span>/ dle cesty</span></div>
-        <div class="note">Přesnou cenu dopravy vám sdělíme v nabídce</div>
-        <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
-    </div>
-</div>
-    
-    <p style="color: #666; font-size: 0.9rem; line-height: 1.5; margin-top: 15px;">
-        <strong>Ostatní zakázky:</strong><br>
-        Cena dopravy je řešena individuálně<br>
-        dle velikosti zakázky a vzdálenosti.
-    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ddd;">
-        <span style="font-size: 0.9rem; color: #777;">Konečná cena dopravy bude upřesněna v cenové nabídce.</span>
-    </div>
-</div>
+      <div class="card">
+                <div class="card-img" style="background-image: url('hrad-draha 2.jpg');"></div>
+                <div class="card-content">
+                    <h3>Hrad Překážková dráha</h3>
+                    <ul class="card-list">
+                        <li>5,60 x 2,55 x 1,90 m</li>
+                        <li>Max. 4 děti, nosnost 180kg</li>
+                        <li>Atest TÜV, váha 30kg</li>
+                        <li>Věk dětí 3 až 10 let</li>
+                    </ul>
+                    <div class="price">1 500 Kč <span>/ 24 hod.</span></div>
+                    <div class="note">Hmotnost jednotlivce max 45kg</div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('image2.jpg');"></div>
+                <div class="card-content">
+                    <h3>Osvětlení stanu</h3>
+                    <ul class="card-list">
+                        <li>2x halogenový nebo LED reflektor</li>
+                        <li>Světelný výkon ekv. 3200lm</li>
+                        <li>Kabel 15m nebo 20m (dle stanu)</li>
+                        <li>Půjčujeme pouze se stany</li>
+                    </ul>
+                    <div class="price">390 Kč <span>/ 1 až 2 dny</span></div>
+                    <div class="note">Cena včetně montáže a demontáže</div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('doprava.jpg');"></div>
+                <div class="card-content">
+                    <h3>Doprava a závoz</h3>
+                    <ul class="card-list">
+                        <li><strong>Stan 6x12m: do 10km ZDARMA</strong></li>
+                        <li>Ostatní: individuální kalkulace</li>
+                        <li>Dle velikosti zakázky a vzdálenosti</li>
+                        <li>Závoz v rámci Kolína a okolí</li>
+                    </ul>
+                    <div class="price">Individuálně <span>/ dle cesty</span></div>
+                    <div class="note">Cenu vám upřesníme v nabídce</div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+
+        </div> </section> <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
 
     <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
         <div class="section-title">
