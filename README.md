@@ -378,9 +378,7 @@
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
-        </div>
-
- <div class="card">
+            <div class="card">
     <div class="card-img" style="background-image: url('image2.jpg');"></div>
     <div class="card-content">
         <h3>Osvětlení stanu</h3>
@@ -394,7 +392,8 @@
         <div class="note">Cena včetně montáže a demontáže</div>
         <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
     </div>
-
+</div>
+          
  </div>
 <div class="card">
     <div class="card-img" style="background-image: url('doprava.jpg');"></div>
