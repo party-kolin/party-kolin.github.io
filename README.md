@@ -631,15 +631,13 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
-    </section>
-
-    <section id="mapa" style="width: 100%; height: 400px; margin-top: 50px; border-top: 1px solid #eee;">
-        <div style="text-align: center; padding: 15px; background: #fff;">
+   <section id="mapa" style="width: 100%; height: 450px; margin-top: 20px;">
+        <div style="text-align: center; padding: 15px; background: #fff; border-top: 5px solid var(--primary-color);">
             <strong style="color: var(--primary-color);">📍 Sklad / Výdejní místo (Garáže Cihelna, Kolín)</strong>
-            <p style="font-size: 0.85rem; color: #666; margin: 5px 0 0;">Předání vybavení probíhá vždy po předchozí domluvě.</p>
+            <p style="font-size: 0.85rem; color: #666; margin: 5px 0 0;">Techniku předáváme po předchozí telefonické domluvě.</p>
         </div>
         <iframe 
-            src="https://api.mapy.cz/frame?x=15.1997631&y=50.0136108&z=16&p=1&l=0&title=PARTY-KOLIN.CZ&address=Sklad: Areál Cihelna, Kolín" 
+            src="https://en.mapy.cz/zakladni?x=15.1997631&y=50.0136108&z=16&source=coor&id=15.1997631%2C50.0136108&title=PARTY-KOLIN.CZ%20-%20Sklad" 
             width="100%" 
             height="100%" 
             style="border:none;" 
