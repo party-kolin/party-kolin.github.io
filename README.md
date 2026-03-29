@@ -631,21 +631,29 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
- <section id="mapa" style="width: 100%; height: 300px; margin-top: 0; border-top: 2px solid #ddd;">
-        <div style="text-align: center; padding: 10px; background: #fff; border-bottom: 1px solid #eee;">
-            <strong style="color: var(--primary-color); font-size: 1rem;">📍 Výdejní místo: Areál Cihelna, Kolín</strong>
-            <p style="font-size: 0.8rem; color: #777; margin: 2px 0;">(Pouze pro výdej a vrácení po domluvě)</p>
-        </div>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2562.034638363768!2d15.19718817666245!3d50.01361077151241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTAuMiJF!5e0!3m2!1scs!2scz!4v1715678901234!5m2!1scs!2scz" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </section>
+ <section id="mapa" style="width: 100%; height: 300px; margin-top: 0; border-top: 2px solid #ddd; background: #fff;">
+    <div style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;">
+        <strong style="color: #e63946; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">
+            📍 Sklad / Výdejní místo
+        </strong>
+        <p style="font-size: 0.9rem; color: #555; margin: 4px 0 0; font-weight: 600;">
+            Areál Cihelna, Kolín (Garáže)
+        </p>
+        <p style="font-size: 0.8rem; color: #888; margin: 2px 0 0;">
+            Výdej a vrácení vybavení probíhá pouze po předchozí domluvě.
+        </p>
+    </div>
+    
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.741!2d15.1975744!3d50.0136108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTkuMiJF!5e0!3m2!1scs!2scz!4v1710000000000!5m2!1scs!2scz" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
     <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
         <div style="max-width: 400px; margin: 0 auto;">
             <strong style="display: block; margin-bottom: 10px; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">Fakturační údaje</strong>
