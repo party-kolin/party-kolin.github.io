@@ -378,7 +378,8 @@
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
-            <div class="card">
+          
+       <div class="card">
     <div class="card-img" style="background-image: url('image2.jpg');"></div>
     <div class="card-content">
         <h3>Osvětlení stanu</h3>
@@ -393,7 +394,8 @@
         <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
     </div>
 </div>
-<div class="card">
+ 
+ <div class="card">
     <div class="card-img" style="background-image: url('doprava.jpg');"></div>
     <div class="card-content">
         <h3>Doprava a závoz</h3>
@@ -671,7 +673,7 @@
 
 <section id="sklad-sekce" style="padding: 40px 0 0 0; background: #fff; text-align: center; border-top: 1px solid #eee;">
     <div style="padding: 0 20px 30px 20px;">
-        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Sklad / Výdejní místo</h3>
+        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Výdejní místo</h3>
         <p style="font-size: 1.1rem; color: #555; margin-bottom: 5px;"><strong>Areál Cihelna, Kolín (Garáže)</strong></p>
         <p style="color: #777; margin-bottom: 25px;">Předání vybavení probíhá vždy po předchozí telefonické domluvě.</p>
         
