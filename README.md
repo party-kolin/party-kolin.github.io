@@ -540,8 +540,7 @@
         <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <p style="margin-bottom: 20px; line-height: 1.6;">
                 Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026.
-            </p>
-
+        
 
             <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
                 <p style="margin-bottom: 20px; font-weight: 600;">Kompletní znění dokumentu ve formátu PDF:</p>
@@ -631,7 +630,6 @@
             </div>
         </div>
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
-        </div>
     </section>
 
     <script>
@@ -655,5 +653,4 @@
             });
         });
     </script>
-</body>
-</html>
+
