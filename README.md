@@ -39,7 +39,7 @@
             scroll-behavior: smooth;
         }
 
-     /* NAVIGACE - kompletně opraveno a vyčištěno */
+    /* NAVIGACE - Čistá verze s efektem pouze v menu */
     nav {
         position: fixed; top: 0; left: 0; width: 100%;
         background: rgba(255, 255, 255, 0.98);
@@ -49,17 +49,12 @@
         padding: 10px 5%;
     }
 
-    /* Zmenšené logo */
+    /* Logo - stabilní velikost */
     nav img { 
         height: 45px; 
         width: auto; 
         max-width: 150px; 
-        object-fit: contain; 
-        transition: transform 0.3s ease;
-    }
-
-    nav img:hover {
-        transform: scale(1.05);
+        object-fit: contain;
     }
 
     .nav-links { 
@@ -69,18 +64,21 @@
         justify-content: flex-end; 
     }
 
-    /* Nové výrazné odkazy */
+    /* Odkazy pouze v horním menu - tučné a výrazné */
     .nav-links a {
         text-decoration: none; 
         color: var(--text-dark);
-        font-weight: 800;          /* Extra tučné */
-        font-size: 0.75rem;        /* Lepší čitelnost */
+        font-weight: 800;          /* Extra tučné písmo */
+        font-size: 0.75rem; 
         text-transform: uppercase; 
         letter-spacing: 0.8px; 
-        transition: color 0.3s ease;
+        transition: color 0.3s ease; /* Plynulý přechod barvy */
     }
 
+    /* Efekt najetí myší - pouze pro tyto odkazy v menu */
     .nav-links a:hover {
+        color: var(--primary-color) !important; /* Změní barvu na zelenou */
+    }
         color: var(--primary-color); /* Zelená při najetí */
     }
 
