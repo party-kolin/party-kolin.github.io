@@ -631,28 +631,18 @@
             <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
     </section>
 
- <section id="mapa" style="width: 100%; height: 300px; margin-top: 0; border-top: 2px solid #ddd; background: #fff;">
-    <div style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;">
-        <strong style="color: #e63946; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">
-            📍 Sklad / Výdejní místo
-        </strong>
-        <p style="font-size: 0.9rem; color: #555; margin: 4px 0 0; font-weight: 600;">
-            Areál Cihelna, Kolín (Garáže)
-        </p>
-        <p style="font-size: 0.8rem; color: #888; margin: 2px 0 0;">
-            Výdej a vrácení vybavení probíhá pouze po předchozí domluvě.
-        </p>
+<section id="mapa-blok" style="padding: 40px 20px; background: #fff; text-align: center; border-top: 1px solid #eee;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase;">Sklad / Výdejní místo</h3>
+        <p style="font-size: 1.1rem; color: #555; margin-bottom: 5px;"><strong>Areál Cihelna, Kolín (Garáže)</strong></p>
+        <p style="color: #777; margin-bottom: 25px;">Předání vybavení probíhá vždy po předchozí telefonické domluvě.</p>
+        
+        <a href="https://www.google.com/maps/dir/?api=1&destination=50.0136108,15.1997631" 
+           target="_blank" 
+           style="display: inline-block; padding: 15px 30px; background-color: #e63946; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s;">
+           📍 Otevřít v Mapách (navigovat)
+        </a>
     </div>
-    
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.741!2d15.1975744!3d50.0136108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTkuMiJF!5e0!3m2!1scs!2scz!4v1710000000000!5m2!1scs!2scz" 
-        width="100%" 
-        height="100%" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
 </section>
     <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
         <div style="max-width: 400px; margin: 0 auto;">
