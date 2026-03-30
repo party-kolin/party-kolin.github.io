@@ -187,14 +187,68 @@
         .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
         .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
 
+        /* --- KOMPLETNÍ OPRAVA PRO MOBILY A TABLETY --- */
         @media (max-width: 768px) {
-            nav { padding: 15px; }
-            .nav-links { gap: 8px; justify-content: center; margin-top: 10px; }
-            .hero { height: 50vh; margin-top: 110px; }
-            .section-title h2 { font-size: 1.8rem; }
+            nav { 
+                padding: 10px 15px; 
+                flex-direction: column; 
+                gap: 8px;
+            }
+            nav img { 
+                height: 40px; 
+            }
+            .nav-links { 
+                gap: 8px; 
+                justify-content: center; 
+                width: 100%;
+                margin-top: 5px;
+            }
+            .nav-links a {
+                font-size: 0.6rem; 
+                letter-spacing: 0;
+            }
+            .hero { 
+                height: 50vh; 
+                margin-top: 105px; 
+            }
+            .section-title h2 { 
+                font-size: 1.8rem; 
+            }
+
+            /* NAROVNÁNÍ FILTRŮ GALERIE POD SEBE */
+            .filter-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+
+            .filter-btn {
+                width: 100%;
+                max-width: 280px;
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+
+            /* DVĚ FOTKY VEDLE SEBE NA MOBILU */
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 10px;
+            }
+
+            .gallery-item {
+                height: 150px;
+            }
         }
-        @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
+
+        /* STYLY PRO TABLETY A POČÍTAČE (ponecháno původní) */
+        @media (min-width: 768px) { 
+            .grid-fixed { grid-template-columns: repeat(2, 1fr); } 
+        }
+        @media (min-width: 1024px) { 
+            .grid-fixed { grid-template-columns: repeat(3, 1fr); } 
+        }
     </style>
 </head>
 <body>
