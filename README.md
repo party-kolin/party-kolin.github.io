@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Party Kolín | Půjčovna párty stanů, skákacích hradů a vybavení</title>
     <meta name="description" content="Půjčovna vybavení pro vaši oslavu v Kolíně a okolí. Nabízíme párty stany 6x12m a 3x6m, skákací hrady, pivní sety s luxusními povlaky, plynové hřiby, rautové a barové stoly. Kompletní servis včetně montáže a dopravy.">
@@ -27,8 +27,7 @@
         * { box-sizing: border-box; }
 
         html, body {
-            margin: 0; padding: 0; width: 100%; max-width: 100vw;
-            overflow-x: hidden; position: relative;
+            margin: 0; padding: 0; width: 100%; overflow-x: hidden;
         }
 
         body {
@@ -39,72 +38,76 @@
             scroll-behavior: smooth;
         }
 
- /* NAVIGACE */
-    nav {
-        position: fixed; top: 0; left: 0; width: 100%;
-        background: rgba(255, 255, 255, 0.98);
-        border-bottom: 1px solid var(--border-color);
-        z-index: 1000; display: flex;
-        justify-content: space-between; align-items: center;
-        padding: 10px 5%;
-    }
+        /* NAVIGACE */
+        nav {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 5%;
+        }
 
-    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
+        nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
 
-    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+        .nav-links { display: flex; gap: 15px; }
 
-    .nav-links a {
-        text-decoration: none; 
-        color: var(--text-dark);
-        font-weight: 700; 
-        font-size: 0.65rem;
-        text-transform: uppercase; 
-        letter-spacing: 0.5px;
-        transition: color 0.3s ease;
-    }
+        .nav-links a {
+            text-decoration: none; 
+            color: var(--text-dark);
+            font-weight: 700; 
+            font-size: 0.75rem;
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
 
-    /* Tento kousek zajistí to zelené najetí myší jen v menu */
-    .nav-links a:hover {
-        color: var(--primary-color);
-    }
-    /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
-    .hero {
-        height: 60vh;
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
-        text-align: center; 
-        color: white;
-        margin-top: 60px; 
-        padding: 20px;
-    }
+        .nav-links a:hover { color: var(--primary-color); }
 
         /* HERO */
         .hero {
             height: 60vh;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
-            display: flex; flex-direction: column; align-items: center;
-            justify-content: center; text-align: center; color: white;
-            margin-top: 60px; padding: 20px;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center; 
+            text-align: center; 
+            color: white;
+            margin-top: 60px; 
+            padding: 20px;
         }
+
         .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
         .hero h1 span { color: var(--primary-color); }
 
-        /* KONTEJNERY */
-        .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
+        /* KONTEJNERY - Zvětšeno pro PC šířku */
+        .container { 
+            width: 100%; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 80px 5%; 
+        }
+
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
         .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
 
-        /* KARTY CENÍKU */
-        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        /* KARTY CENÍKU - Oprava mřížky */
+        .grid-fixed { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+
         .card {
             background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
             overflow: hidden; display: flex; flex-direction: column;
             transition: all 0.3s ease;
         }
+
         .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
         .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
         .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
@@ -124,7 +127,7 @@
             font-weight: 700; text-align: center; font-size: 0.9rem;
         }
 
-        /* GALERIE STYLY */
+        /* GALERIE */
         .filter-container { text-align: center; margin-bottom: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
         .filter-btn {
             padding: 10px 20px; border: 1px solid var(--primary-color); background: transparent;
@@ -136,25 +139,25 @@
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
         .gallery-item { border-radius: 8px; overflow: hidden; height: 200px; transition: 0.3s; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .gallery-item.hide { display: none; }
 
-        /* FAQ & OSTATNÍ */
-        .faq-item, .policy-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+        /* FAQ */
+        .faq-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
         .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
 
         footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
         .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
         .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
-        .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
 
+        /* MOBILNÍ ÚPRAVY */
         @media (max-width: 768px) {
-            nav { padding: 15px; }
-            .nav-links { gap: 8px; justify-content: center; margin-top: 10px; }
+            nav { padding: 10px 20px; flex-direction: column; }
+            .nav-links { gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
+            .nav-links a { font-size: 0.65rem; }
             .hero { height: 50vh; margin-top: 110px; }
             .section-title h2 { font-size: 1.8rem; }
+            .container { padding: 40px 15px; }
+            .card-img { height: 180px; }
         }
-        @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
     </style>
 </head>
 <body>
@@ -175,7 +178,7 @@
         <h1>...s námi to <span>oslavíte</span>.</h1>
     </header>
 
-   <section id="sluzby" style="background: #fcfcfc; padding: 80px 0;">
+    <section id="sluzby" style="background: #fcfcfc;">
         <div class="container">
             <div class="section-title">
                 <span style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Půjčovna s lidským přístupem</span>
@@ -223,7 +226,6 @@
                             Naše <strong>skákací hrady</strong> zabaví ty nejmenší na dlouhé hodiny, zatímco vy si můžete v klidu užít kávu nebo drink. Bezpečná zábava, která k rodinné akci patří.
                         </p>
                     </div>
-
                 </div>
 
                 <div style="text-align: center; margin-top: 50px; padding: 30px; border-top: 1px dashed #ddd;">
@@ -401,7 +403,7 @@
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
-          
+            
             <div class="card">
                 <div class="card-img" style="background-image: url('image2.jpg');"></div>
                 <div class="card-content">
@@ -433,92 +435,53 @@
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
+        </div> 
+    </section>
 
-        </div> </section> <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
+    <section id="galerie" style="background: #fafafa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galerie našich realizací</h2>
+                <div class="divider"></div>
+            </div>
 
-    <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
-        <div class="section-title">
-            <h2>Galerie našich realizací</h2>
-            <div class="divider"></div>
-        </div>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Vše</button>
+                <button class="filter-btn" data-filter="stan6x12">Stan 6x12m</button>
+                <button class="filter-btn" data-filter="nuzkovy">Nůžkový stan</button>
+                <button class="filter-btn" data-filter="hrady">Skákací hrady</button>
+                <button class="filter-btn" data-filter="ostatni">Ostatní</button>
+            </div>
 
-        <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">Vše</button>
-            <button class="filter-btn" data-filter="stan6x12">Stan 6x12m</button>
-            <button class="filter-btn" data-filter="nuzkovy">Nůžkový stan</button>
-            <button class="filter-btn" data-filter="hrady">Skákací hrady</button>
-            <button class="filter-btn" data-filter="ostatni">Ostatní</button>
-        </div>
-
-        <div class="gallery-grid" id="gallery">
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 1.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 2.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 3.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 4.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 5.jpg" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 6.JPG" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 7.JPG" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 8.JPG" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-hajenka 9.JPG" alt="Párty stan Hájenka"></div>
-            <div class="gallery-item stan6x12"><img src="stan-khbox 1.JPG" alt="Párty stan Kolín"></div>
-            <div class="gallery-item stan6x12"><img src="stan-khbox 2.JPG" alt="Párty stan Kolín"></div>
-            <div class="gallery-item stan6x12"><img src="stan-khbox 3.JPG" alt="Párty stan Kolín"></div>
-            <div class="gallery-item stan6x12"><img src="stan-khbox 4.JPG" alt="Párty stan Kolín"></div>
-            <div class="gallery-item stan6x12"><img src="stan-mlyn 1.JPG" alt="Párty stan u mlýna"></div>
-            <div class="gallery-item stan6x12"><img src="stan-mlyn 2.JPG" alt="Párty stan u mlýna"></div>
-            <div class="gallery-item stan6x12"><img src="stan-mlyn 3.JPG" alt="Párty stan u mlýna"></div>
-
-            <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan Ostrov"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 2.jpg" alt="Nůžkový stan Ostrov"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 3.jpg" alt="Nůžkový stan Ostrov"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 4.jpg" alt="Nůžkový stan Ostrov"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-park.jpg" alt="Nůžkový stan v parku"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-zahrada 1.JPG" alt="Nůžkový stan na zahradě"></div>
-            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-zahrada 2.jpg" alt="Nůžkový stan na zahradě"></div>
-
-            <div class="gallery-item hrady"><img src="hrad-draha 1.jpg" alt="Překážková dráha"></div>
-            <div class="gallery-item hrady"><img src="hrad-draha 2.jpg" alt="Překážková dráha"></div>
-            <div class="gallery-item hrady"><img src="hrad-draha 3.jpg" alt="Překážková dráha"></div>
-            <div class="gallery-item hrady"><img src="hrad-draha 4.jpg" alt="Překážková dráha"></div>
-            <div class="gallery-item hrady"><img src="hrad-house 1.JPG" alt="Hradní dům"></div>
-            <div class="gallery-item hrady"><img src="hrad-house 2.JPG" alt="Hradní dům"></div>
-            <div class="gallery-item hrady"><img src="hrad-house 3.JPG" alt="Hradní dům"></div>
-            <div class="gallery-item hrady"><img src="hrad-skluzavka 1.JPG" alt="Obří skluzavka"></div>
-
-            <div class="gallery-item ostatni"><img src="pivni-sety 1.JPG" alt="Pivní sety"></div>
-            <div class="gallery-item ostatni"><img src="plynovy-hrib 1.jpg" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="plynovy-hrib 2.jpg" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="plynovy-hrib 3.JPG" alt="Plynový hřib"></div>
-            <div class="gallery-item ostatni"><img src="set-povlak 1.jpg" alt="Povlaky na pivní sety"></div>
-            <div class="gallery-item ostatni"><img src="set-povlak 2.jpg" alt="Povlaky na pivní sety"></div>
-            <div class="gallery-item ostatni"><img src="stul-povlak 1.jpg" alt="Rautový stůl s povlakem"></div>
-            <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl s povlakem"></div>
+            <div class="gallery-grid" id="gallery">
+                <div class="gallery-item stan6x12"><img src="stan-hajenka 1.jpg" alt="Párty stan Hájenka"></div>
+                <div class="gallery-item stan6x12"><img src="stan-khbox 1.JPG" alt="Párty stan Kolín"></div>
+                <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan"></div>
+                <div class="gallery-item hrady"><img src="hrad-draha 2.jpg" alt="Překážková dráha"></div>
+                <div class="gallery-item ostatni"><img src="plynovy-hrib 3.JPG" alt="Plynový hřib"></div>
+                <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl"></div>
+                </div>
         </div>
     </section>
 
-   <section id="faq" class="container" style="background: #fff;">
+    <section id="faq" class="container" style="background: #fff;">
         <div class="section-title">
             <h2>Časté dotazy</h2>
             <div class="divider"></div>
         </div>
 
         <div style="max-width: 900px; margin: 0 auto;">
-            
             <div style="margin-bottom: 40px;">
                 <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">📌 Obecné informace</h3>
-                
                 <div class="faq-item">
                     <h4>Jak objednat zápůjčku (pronájem)?</h4>
                     <p>Kontaktujte nás přes email nebo kontaktní formulář a sdělte nám, co byste z výčtu vybavení potřebovali zapůjčit a také na jaké období. V odpovědi Vám potvrdíme dostupnost vybavení. V ten moment nepřijmeme další požadavek od jiných zájemců, dokud u Vás nebudeme mít jasno, zda máte zájem či nikoliv. V dalších krocích komunikace přejdeme od nabídky až po případné potvrzení Vaší objednávky.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>Jak vzniká obchodní vztah (smlouva o pronájmu)?</h4>
                     <p>1) Potvrzením nabídky zájemcem elektronicky (závazná objednávka), kde zároveň zájemce souhlasí s Obchodními podmínkami.<br>
                        2) Podpisem papírové Smlouvy o pronájmu při předání předmětu nájmu.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>Kde je možné zápůjčku vyzvednout?</h4>
                     <p>Jelikož nemáme žádné oficiální výdejní místo, stany a další vybavení Vám <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání.</p>
@@ -527,17 +490,14 @@
 
             <div style="margin-bottom: 40px;">
                 <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">⛺ Párty stany</h3>
-                
                 <div class="faq-item">
                     <h4>Mohu si párty stan + příslušenství postavit sám/sama?</h4>
                     <p>Bohužel to není možné. Stany půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti a přesný postup.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>Jak velké místo budu pro stan či hrad potřebovat?</h4>
                     <p>Pro párty stan je třeba počítat s <strong>3 m navíc</strong> oproti psaným rozměrům na každou stranu stanu. Na výšku stan potřebuje cca 3 m prostoru. Skákací hrad potřebuje rovněž min. 3 m odstup na každou stranu.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>Na jakém místě lze párty stan postavit?</h4>
                     <p>Je třeba <strong>měkký podklad (tráva, hlína)</strong>, aby stan bylo možno řádně ukotvit, popř. podklad, do kterého lze navrtat kotvící turbo šrouby. Stavba na jiný podklad (beton, dlažba) je možná pouze po předchozí domluvě.</p>
@@ -546,202 +506,22 @@
 
             <div style="margin-bottom: 40px;">
                 <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">🏰 Dětské skákací hrady</h3>
-                
                 <div class="faq-item">
                     <h4>Zvládnu hrad rozbalit a nafouknout sám?</h4>
                     <p>Ano, hrad postavíte během pár minut. Stačí zkontrolovat plochu (bez ostrých nečistot), rozložit podkladovou plachtu a na ní hrad roztáhnout. Poté nasadíte rukáv hradu na kompresor, zajistíte suchým zipem a zapojíte do sítě. Hrad se do minuty nafoukne. Poté jej zafixujete kolíky do země.</p>
                 </div>
-
-                <div class="faq-item">
-                    <h4>Platí se vratná kauce za půjčení hradu?</h4>
-                    <p>Ne. Při převzetí hradu se hradí pouze sjednané nájemné.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Co dělat když hrad poškodím (malá dírka apod.)?</h4>
-                    <p>Ihned nás kontaktujte. I v případě malého propíchnutí hrad díky výkonnému kompresoru normálně funguje dál. Situaci s vámi vyřešíme individuálně.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Může na hrad pršet?</h4>
-                    <p><strong>V žádném případě.</strong> Hrozí úraz elektrickým proudem od kompresoru. Při dešti ihned odpojte kompresor a ukryjte jej. Pokud atrakce zmokne, je nutné ji později rozbalit na suchém místě a nechat důkladně vyschnout (včetně plachty).</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Jak sbalit hrad?</h4>
-                    <p>Hrad se nesmí balit mokrý nebo špinavý. Neumývejte jej saponáty, pouze čistou vodou. Po vypnutí kompresoru se hrad vyfoukne, stěny se složí do středu a hrad se sbalí překládáním (cca 5 min). Poté se vloží do tašky.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Můžu atrakci použít při kulturní akci a vybírat vstupné?</h4>
-                    <p>Bohužel ne. Naše atrakce jsou určeny <strong>výhradně pro soukromé účely</strong> (rodinné oslavy, zahrady).</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Co se stane, pokud nestihnu vrátit hrad včas?</h4>
-                    <p>V takovém případě je účtováno nájemné za další den dle ceníku. Vše je ale na dohodě – stačí zavolat a vždy se pokusíme najít rozumné řešení.</p>
-                </div>
             </div>
-
         </div>
     </section>
 
-    <section id="podminky" class="container">
-        <div class="section-title">
-            <h2>Obchodní podmínky</h2>
-            <div class="divider"></div>
+    <footer id="kontakt">
+        <span class="contact-label">Kontaktujte nás</span>
+        <a href="mailto:info@partykolin.cz" class="contact-large">info@partykolin.cz</a>
+        <p>Miloš Hulinko | Kolín a okolí</p>
+        <div style="margin-top: 40px; font-size: 0.8rem; color: #555;">
+            &copy; 2026 Party Kolín. Všechna práva vyhrazena.
         </div>
+    </footer>
 
-        <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-            <p style="margin-bottom: 20px; line-height: 1.6;">
-                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026.
-        
-
-            <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
-                <p style="margin-bottom: 20px; font-weight: 600;">Kompletní znění dokumentu ve formátu PDF:</p>
-                <a href="Obchodní podmínky.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;">
-                    <span>📄</span> Stáhnout Obchodní podmínky (PDF)
-                </a>
-            </div>
-    
-
-    <section id="kontakt" class="container" style="background: #fff; padding-top: 80px;">
-        <div class="section-title">
-            <h2>Napište nám</h2>
-            <div class="divider"></div>
-            <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
-        </div>
-
-        <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-            <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-                
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše jméno</label>
-                    <input type="text" name="name" placeholder="Jan Novák" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
-                </div>
-
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">E-mail pro odpověď</label>
-                    <input type="email" name="_replyto" placeholder="vas@email.cz" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
-                </div>
-
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Telefon</label>
-                    <input type="tel" name="phone" placeholder="+420 123 456 789" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
-                </div>
-
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">O co máte zájem?</label>
-                    <select name="vybaveni" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; background: white;">
-                        <option value="stan_6x12">Párty stan 6x12m</option>
-                        <option value="nuzkovy_stan">Nůžkový stan</option>
-                        <option value="skakaci_hrad">Skákací hrad</option>
-                        <option value="kompletni_oslava">Vybavení pro celou oslavu</option>
-                        <option value="jine">Jiný dotaz</option>
-                    </select>
-                </div>
-
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše zpráva (datum, místo, dotaz...)</label>
-                    <textarea name="message" rows="4" placeholder="Dobrý den, poptávám vybavení na..." required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical;"></textarea>
-                </div>
-
-                <input type="hidden" name="_subject" value="Nová poptávka z webu Party-Kolin.cz">
-                <button type="submit" class="btn-main" style="border: none; cursor: pointer; width: 100%; margin-top: 10px;">ODESLAT POPTÁVKU</button>
-            </form>
-        </div>
-
-      <div style="text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid var(--border-color);">
-            <p style="margin-bottom: 20px; font-weight: 700; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1px;">Kontaktujte nás přímo:</p>
-            
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
-                <div>
-                    <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
-                    <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
-                </div>
-                <div>
-                    <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloslav Hendrych</span>
-                    <a href="tel:+420605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 605 717 081</a>
-                </div>
-            </div>
-
-            <a href="mailto:info@party-kolin.cz" style="color: var(--primary-color); text-decoration: none; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 30px;">info@party-kolin.cz</a>
-
-            <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
-                <a href="https://www.facebook.com/partykolin/" target="_blank" style="text-decoration: none; color: #1877F2;">
-                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">FB</span>
-                </a>
-                <a href="https://www.instagram.com/party_kolin.cz" target="_blank" style="text-decoration: none; color: #E4405F;">
-                    <span style="background: #f0f2f5; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold;">IG</span>
-                </a>
-            </div>
-
-            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; font-size: 0.85rem; color: #666; line-height: 1.5; border: 1px solid #eee; max-width: 400px; margin: 0 auto;">
-                <strong style="color: var(--text-dark); display: block; margin-bottom: 5px;">Fakturační údaje:</strong>
-                Miloš Hulinko<br>
-                Tylova 184, 281 01 Velim<br>
-                IČ: 76282431
-            </div>
-        </div>
-            <p style="font-size: 0.75rem; color: #aaa; margin-top: 10px;">Sledujte naše realizace na sociálních sítích</p>
-    </section>
-
-
-<section id="sklad-sekce" style="padding: 40px 0 0 0; background: #fff; text-align: center; border-top: 1px solid #eee;">
-    <div style="padding: 0 20px 30px 20px;">
-        <h3 style="color: #333; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Výdejní místo</h3>
-        <p style="font-size: 1.1rem; color: #555; margin-bottom: 5px;"><strong>Areál Cihelna, Kolín (Garáže)</strong></p>
-        <p style="color: #777; margin-bottom: 25px;">Předání vybavení probíhá vždy po předchozí telefonické domluvě.</p>
-        
-        <a href="https://www.google.com/maps/dir/?api=1&destination=50.0136108,15.1997631" 
-           target="_blank" 
-           style="display: inline-block; padding: 12px 25px; background-color: #e63946; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">
-           📍 Otevřít v Mapách (navigovat)
-        </a>
-    </div>
-    </section>
-
-    <div style="width: 100%; height: 300px; border-top: 1px solid #ddd;">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2562.3846461947294!2d15.197188176669913!3d50.01361077151368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ5LjAiTiAxNcKwMTEnNTkuMiJF!5e0!3m2!1scs!2scz!4v1711735000000!5m2!1scs!2scz" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
- <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
-    <p style="margin: 0; font-size: 0.9rem; color: #777;">
-        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
-    </p>
-</footer>
-
-    <script>
-        // Funkce pro filtrování galerie
-        document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const filter = this.getAttribute('data-filter');
-                
-                // Přepnutí aktivního tlačítka
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-
-                // Filtrování položek
-                document.querySelectorAll('.gallery-item').forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.classList.remove('hide');
-                    } else {
-                        item.classList.add('hide');
-                    }
-                });
-            });
-        });
-    </script>
-
-
-
-
-
-
+</body>
+</html>
