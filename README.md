@@ -107,87 +107,7 @@
         color: var(--primary-color); 
     }
 
-    /* --- MOBILNÍ OPTIMALIZACE (pro telefony) --- */
-    @media (max-width: 768px) {
-        nav { 
-            padding: 10px 15px; 
-            flex-direction: column; 
-            gap: 8px;
-        }
-        nav img { 
-            height: 40px; 
-        }
-        .nav-links { 
-            gap: 8px; 
-            justify-content: center; 
-            width: 100%;
-        }
-        .nav-links a {
-            font-size: 0.6rem; 
-            letter-spacing: 0;
-        }
-        .hero { 
-            height: 50vh; 
-            margin-top: 105px; /* Aby nebyl text schovaný pod menu na mobilu */
-        }
-    }
-
-        /* KONTEJNERY */
-        .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
-        .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
-
-        /* KARTY CENÍKU */
-        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; }
-        .card {
-            background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
-            overflow: hidden; display: flex; flex-direction: column;
-            transition: all 0.3s ease;
-        }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
-        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
-        .card h3 { font-size: 1.25rem; margin: 5px 0; font-weight: 700; min-height: 3rem; display: flex; align-items: center; }
-        
-        .price { font-size: 1.5rem; font-weight: 800; margin: 15px 0 5px 0; color: var(--text-dark); }
-        .price span { font-size: 0.8rem; font-weight: 400; color: var(--text-gray); }
-        .note { font-size: 0.75rem; color: #888; margin-bottom: 15px; line-height: 1.3; }
-        
-        .card-list { list-style: none; padding: 0; margin: 10px 0; font-size: 0.85rem; flex-grow: 1; }
-        .card-list li { margin-bottom: 6px; padding-left: 22px; position: relative; color: var(--text-gray); border-bottom: 1px solid #fcfcfc; padding-bottom: 3px; }
-        .card-list li::before { content: "✓"; color: var(--primary-color); position: absolute; left: 0; font-weight: bold; }
-
-        .btn-main {
-            display: block; background: var(--primary-color); color: white;
-            padding: 12px; text-decoration: none; border-radius: 6px;
-            font-weight: 700; text-align: center; font-size: 0.9rem;
-        }
-
-        /* GALERIE STYLY */
-        .filter-container { text-align: center; margin-bottom: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
-        .filter-btn {
-            padding: 10px 20px; border: 1px solid var(--primary-color); background: transparent;
-            color: var(--text-dark); cursor: pointer; border-radius: 30px; font-weight: 600;
-            transition: all 0.3s ease; font-size: 0.8rem;
-        }
-        .filter-btn.active, .filter-btn:hover { background: var(--primary-color); color: white; }
-
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-        .gallery-item { border-radius: 8px; overflow: hidden; height: 200px; transition: 0.3s; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .gallery-item.hide { display: none; }
-
-        /* FAQ & OSTATNÍ */
-        .faq-item, .policy-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
-        .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
-
-        footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
-        .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-        .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
-        .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
-
-        /* --- KOMPLETNÍ OPRAVA PRO MOBILY A TABLETY --- */
+  /* --- MOBILNÍ OPTIMALIZACE (pro telefony) --- */
         @media (max-width: 768px) {
             nav { 
                 padding: 10px 15px; 
@@ -240,63 +160,52 @@
             .gallery-item {
                 height: 150px;
             }
-        }
 
-        /* STYLY PRO TABLETY A POČÍTAČE (ponecháno původní) */
-        @media (min-width: 768px) { 
-            .grid-fixed { grid-template-columns: repeat(2, 1fr); } 
-        }
-        @media (min-width: 1024px) { 
-            .grid-fixed { grid-template-columns: repeat(3, 1fr); } 
-        }
-    /* ÚPRAVA FORMULÁŘE NA MOBILU */
+            /* --- OPRAVA SEKCE KONTAKT A FORMULÁŘ --- */
             #kontakt .container {
-                padding: 40px 15px;
+                padding: 30px 15px;
             }
 
+            /* Formulář se roztáhne na celou šířku */
             #kontakt div[style*="max-width: 600px"] {
-                padding: 20px !important; /* Menší vnitřní odsazení formuláře */
-                margin: 0 10px !important;
+                max-width: 100% !important;
+                padding: 20px !important;
+                margin: 0 !important;
             }
 
-            form label {
-                font-size: 0.8rem !important;
-            }
-
-            form input, form select, form textarea {
-                padding: 10px !important; /* Kompaktnější pole */
-                font-size: 16px !important; /* Prevence automatického zoomu na iPhone */
-            }
-
-            /* ÚPRAVA KONTAKTNÍCH ÚDAJŮ (Jména a telefony) */
+            /* Jména (Miloš a Miloslav) pod sebe a vycentrovat */
             div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] {
                 flex-direction: column !important;
-                gap: 20px !important;
+                gap: 25px !important;
                 align-items: center !important;
             }
 
             div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] > div {
                 text-align: center !important;
                 width: 100%;
-                border-bottom: 1px solid #f0f0f0;
-                padding-bottom: 15px;
-            }
-
-            div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] > div:last-child {
-                border-bottom: none;
             }
 
             .contact-large {
                 font-size: 1.3rem !important;
-                margin-bottom: 15px !important;
+                margin-bottom: 5px !important;
             }
 
-            /* FAKTURAČNÍ ÚDAJE */
+            /* Fakturační box */
             div[style*="background: #f9f9f9"] {
-                margin: 0 10px !important;
-                padding: 15px !important;
-                font-size: 0.8rem !important;
+                margin: 20px 0 !important;
+                padding: 20px !important;
+                font-size: 0.85rem !important;
+                text-align: center !important;
             }
+        }
+
+        /* STYLY PRO TABLETY A POČÍTAČE */
+        @media (min-width: 768px) { 
+            .grid-fixed { grid-template-columns: repeat(2, 1fr); } 
+        }
+        @media (min-width: 1024px) { 
+            .grid-fixed { grid-template-columns: repeat(3, 1fr); } 
+        }
     </style>
 </head>
 <body>
