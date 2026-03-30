@@ -155,60 +155,7 @@
         }
         @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
-    <style>
-    /* Tyto úpravy zajistí, že kontakty budou pod sebou a čitelné */
-    .footer-contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px; /* Mezera mezi jednotlivými lidmi */
-        margin: 20px 0;
-    }
-    .contact-entry {
-        text-align: center;
-    }
-    .contact-name {
-        display: block;
-        font-weight: 700;
-        color: var(--primary-color);
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-    }
-    .contact-phone {
-        display: block;
-        font-size: 1.8rem;
-        font-weight: 800;
-        color: white;
-        text-decoration: none;
-    }
-    /* Na mobilu trochu zmenšíme písmo, aby se číslo vešlo na jeden řádek */
-    @media (max-width: 480px) {
-        .contact-phone { font-size: 1.5rem; }
-    }
-</style>
-
-<footer id="kontakt">
-    <span class="contact-label">Kontaktujte nás</span>
-    <a href="mailto:info@partykolin.cz" class="contact-large">info@partykolin.cz</a>
-    
-    <div class="footer-contacts">
-        <div class="contact-entry">
-            <span class="contact-name">Miloš Hulinko</span>
-            <a href="tel:+420721123456" class="contact-phone">721 123 456</a>
-        </div>
-
-        <div class="contact-entry">
-            <span class="contact-name">Jméno Příjmení</span>
-            <a href="tel:+420722987654" class="contact-phone">722 987 654</a>
-        </div>
-    </div>
-
-    <div style="margin-top: 40px; font-size: 0.8rem; color: #555;">
-        &copy; 2026 Party Kolín. Všechna práva vyhrazena.
-    </div>
-</footer>
+    </style>
 </head>
 <body>
 
