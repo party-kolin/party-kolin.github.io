@@ -38,20 +38,34 @@
             background-color: #fff;
             scroll-behavior: smooth;
         }
-
- /* NAVIGACE */
+/* NAVIGACE */
     nav {
-        position: fixed; top: 0; left: 0; width: 100%;
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%;
         background: rgba(255, 255, 255, 0.98);
         border-bottom: 1px solid var(--border-color);
-        z-index: 1000; display: flex;
-        justify-content: space-between; align-items: center;
+        z-index: 1000; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
         padding: 10px 5%;
     }
 
-    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
+    nav img { 
+        height: 50px; 
+        width: auto; 
+        max-width: 180px; 
+        object-fit: contain; 
+    }
 
-    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links { 
+        display: flex; 
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+    }
 
     .nav-links a {
         text-decoration: none; 
@@ -63,11 +77,12 @@
         transition: color 0.3s ease;
     }
 
-    /* Tento kousek zajistí to zelené najetí myší jen v menu */
+    /* Zelený efekt při najetí myší v menu */
     .nav-links a:hover {
         color: var(--primary-color);
     }
-    /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
+
+    /* HERO - Úvodní banner */
     .hero {
         height: 60vh;
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
@@ -81,16 +96,41 @@
         padding: 20px;
     }
 
-        /* HERO */
-        .hero {
-            height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
-            display: flex; flex-direction: column; align-items: center;
-            justify-content: center; text-align: center; color: white;
-            margin-top: 60px; padding: 20px;
+    .hero h1 { 
+        font-size: clamp(2rem, 8vw, 4.5rem); 
+        font-weight: 800; 
+        margin: 0; 
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+    }
+
+    .hero h1 span { 
+        color: var(--primary-color); 
+    }
+
+    /* --- MOBILNÍ OPTIMALIZACE (pro telefony) --- */
+    @media (max-width: 768px) {
+        nav { 
+            padding: 10px 15px; 
+            flex-direction: column; 
+            gap: 8px;
         }
-        .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
-        .hero h1 span { color: var(--primary-color); }
+        nav img { 
+            height: 40px; 
+        }
+        .nav-links { 
+            gap: 8px; 
+            justify-content: center; 
+            width: 100%;
+        }
+        .nav-links a {
+            font-size: 0.6rem; 
+            letter-spacing: 0;
+        }
+        .hero { 
+            height: 50vh; 
+            margin-top: 105px; /* Aby nebyl text schovaný pod menu na mobilu */
+        }
+    }
 
         /* KONTEJNERY */
         .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
