@@ -67,10 +67,10 @@
     .nav-links a:hover {
         color: var(--primary-color);
     }
-    /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
+  /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
     .hero {
         height: 60vh;
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('stan-khbox 1.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -81,21 +81,18 @@
         padding: 20px;
     }
 
-        /* HERO */
-       .hero {
-    height: 60vh;
-    /* Odstranili jsme linear-gradient */
-    background: url('stan-khbox 1.JPG') no-repeat center center/cover;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    text-align: center; 
-    color: white;
-    margin-top: 60px; 
-    padding: 20px;
-}
-        }
+    .hero h1 { 
+        font-size: clamp(2rem, 8vw, 4.5rem); 
+        font-weight: 800; 
+        margin: 0; 
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+    }
+    
+    .hero h1 span { 
+        color: var(--primary-color); 
+    }
+
+          }
         .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
         .hero h1 span { color: var(--primary-color); }
 
