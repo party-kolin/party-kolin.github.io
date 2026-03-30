@@ -24,11 +24,11 @@
             --border-color: #f0f0f0;
         }
 
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        * { box-sizing: border-box; }
 
         html, body {
-            margin: 0; padding: 0; width: 100%;
-            overflow-x: hidden;
+            margin: 0; padding: 0; width: 100%; max-width: 100vw;
+            overflow-x: hidden; position: relative;
         }
 
         body {
@@ -39,114 +39,123 @@
             scroll-behavior: smooth;
         }
 
-        /* NAVIGACE */
-        nav {
-            position: fixed; top: 0; left: 0; width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            border-bottom: 1px solid var(--border-color);
-            z-index: 1000; display: flex;
-            justify-content: space-between; align-items: center;
-            padding: 10px 5%;
-        }
+ /* NAVIGACE */
+    nav {
+        position: fixed; top: 0; left: 0; width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        z-index: 1000; display: flex;
+        justify-content: space-between; align-items: center;
+        padding: 10px 5%;
+    }
 
-        nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
+    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
 
-        .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
 
-        .nav-links a {
-            text-decoration: none; 
-            color: var(--text-dark);
-            font-weight: 700; 
-            font-size: 0.65rem;
-            text-transform: uppercase; 
-            letter-spacing: 0.5px;
-            transition: color 0.3s ease;
-        }
+    .nav-links a {
+        text-decoration: none; 
+        color: var(--text-dark);
+        font-weight: 700; 
+        font-size: 0.65rem;
+        text-transform: uppercase; 
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
+    }
 
-        .nav-links a:hover { color: var(--primary-color); }
+    /* Tento kousek zajistí to zelené najetí myší jen v menu */
+    .nav-links a:hover {
+        color: var(--primary-color);
+    }
+    /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
+    .hero {
+        height: 60vh;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center; 
+        color: white;
+        margin-top: 60px; 
+        padding: 20px;
+    }
 
-        /* HERO - Zvětšeno na celou šířku */
+        /* HERO */
         .hero {
             height: 60vh;
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;
-            justify-content: center; 
-            text-align: center; 
-            color: white;
-            margin-top: 60px; 
-            padding: 20px;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; text-align: center; color: white;
+            margin-top: 60px; padding: 20px;
         }
         .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
         .hero h1 span { color: var(--primary-color); }
 
-        /* KONTEJNERY - Roztaženo na 1400px pro PC */
-        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 60px 20px; }
+        /* KONTEJNERY */
+        .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
         .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
 
         /* KARTY CENÍKU */
-        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; }
         .card {
-            background: #fff; border-radius: 8px; border: 1px solid var(--border-color);
+            background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
             overflow: hidden; display: flex; flex-direction: column;
             transition: all 0.3s ease;
         }
-        .card:hover { border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
         .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
-        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
         .card h3 { font-size: 1.25rem; margin: 5px 0; font-weight: 700; min-height: 3rem; display: flex; align-items: center; }
         
         .price { font-size: 1.5rem; font-weight: 800; margin: 15px 0 5px 0; color: var(--text-dark); }
         .price span { font-size: 0.8rem; font-weight: 400; color: var(--text-gray); }
+        .note { font-size: 0.75rem; color: #888; margin-bottom: 15px; line-height: 1.3; }
         
+        .card-list { list-style: none; padding: 0; margin: 10px 0; font-size: 0.85rem; flex-grow: 1; }
+        .card-list li { margin-bottom: 6px; padding-left: 22px; position: relative; color: var(--text-gray); border-bottom: 1px solid #fcfcfc; padding-bottom: 3px; }
+        .card-list li::before { content: "✓"; color: var(--primary-color); position: absolute; left: 0; font-weight: bold; }
+
         .btn-main {
             display: block; background: var(--primary-color); color: white;
-            padding: 14px; text-decoration: none; border-radius: 4px;
+            padding: 12px; text-decoration: none; border-radius: 6px;
             font-weight: 700; text-align: center; font-size: 0.9rem;
         }
 
-        /* GALERIE - Na mobilu bez mezer u krajů */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
-        .gallery-item { overflow: hidden; height: 250px; transition: 0.3s; }
+        /* GALERIE STYLY */
+        .filter-container { text-align: center; margin-bottom: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+        .filter-btn {
+            padding: 10px 20px; border: 1px solid var(--primary-color); background: transparent;
+            color: var(--text-dark); cursor: pointer; border-radius: 30px; font-weight: 600;
+            transition: all 0.3s ease; font-size: 0.8rem;
+        }
+        .filter-btn.active, .filter-btn:hover { background: var(--primary-color); color: white; }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .gallery-item { border-radius: 8px; overflow: hidden; height: 200px; transition: 0.3s; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .gallery-item.hide { display: none; }
 
-        /* FAQ */
-        .faq-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+        /* FAQ & OSTATNÍ */
+        .faq-item, .policy-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+        .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
 
-        /* PATIČKA - Upraveno pro jména pod sebou */
-        footer { background: #111; color: white; padding: 60px 20px; text-align: center; }
-        .contact-group { margin: 30px 0; display: flex; flex-direction: column; gap: 30px; }
-        .contact-item { text-align: center; }
-        .contact-name { 
-            display: block; color: var(--primary-color); font-weight: 700; 
-            text-transform: uppercase; font-size: 0.85rem; margin-bottom: 5px; 
-        }
-        .contact-phone { 
-            display: block; color: white; text-decoration: none; 
-            font-size: 1.8rem; font-weight: 800; 
-        }
+        footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
+        .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
+        .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
 
-        /* MOBILNÍ OPTIMALIZACE "DO STRAN" */
         @media (max-width: 768px) {
-            nav { padding: 10px 20px; flex-direction: column; height: auto; }
-            .nav-links { gap: 10px; justify-content: center; margin-top: 10px; padding-bottom: 5px; }
+            nav { padding: 15px; }
+            .nav-links { gap: 8px; justify-content: center; margin-top: 10px; }
             .hero { height: 50vh; margin-top: 110px; }
-            
-            .container { padding: 40px 15px; } /* Menší okraje na mobilu = text víc do stran */
-            
-            /* Galerie na mobilu 2 fotky vedle sebe a úplně ke krajům */
-            #galerie .container { padding-left: 0; padding-right: 0; }
-            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
-            .gallery-item { height: 180px; }
-
-            .contact-phone { font-size: 1.5rem; }
+            .section-title h2 { font-size: 1.8rem; }
         }
-
         @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1200px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
+    </style>
 </head>
 <body>
 
@@ -427,8 +436,7 @@
 
         </div> </section> <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
 
-    <section id="galerie" style="background: #fafafa; width: 100%; overflow: hidden;">
-    <div class="container">
+    <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
         <div class="section-title">
             <h2>Galerie našich realizací</h2>
             <div class="divider"></div>
@@ -443,19 +451,51 @@
         </div>
 
         <div class="gallery-grid" id="gallery">
-            
             <div class="gallery-item stan6x12"><img src="stan-hajenka 1.jpg" alt="Párty stan Hájenka"></div>
-            </div> </div> </section> ```
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 2.jpg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 3.jpg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 4.jpg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 5.jpg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 6.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 7.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 8.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-hajenka 9.JPG" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan-khbox 1.JPG" alt="Párty stan Kolín"></div>
+            <div class="gallery-item stan6x12"><img src="stan-khbox 2.JPG" alt="Párty stan Kolín"></div>
+            <div class="gallery-item stan6x12"><img src="stan-khbox 3.JPG" alt="Párty stan Kolín"></div>
+            <div class="gallery-item stan6x12"><img src="stan-khbox 4.JPG" alt="Párty stan Kolín"></div>
+            <div class="gallery-item stan6x12"><img src="stan-mlyn 1.JPG" alt="Párty stan u mlýna"></div>
+            <div class="gallery-item stan6x12"><img src="stan-mlyn 2.JPG" alt="Párty stan u mlýna"></div>
+            <div class="gallery-item stan6x12"><img src="stan-mlyn 3.JPG" alt="Párty stan u mlýna"></div>
 
-### Proč tato drobná změna funguje?
-Tím, že jsme ze sekce `<section>` odstranili třídu `container` a dali ji až **dovnitř** (pod nadpis), dovolujeme galerii, aby se v kombinaci s těmi novými styly (CSS z 1. části), které jsem vám poslal minule, na mobilu "přisála" až k okrajům displeje.
+            <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan Ostrov"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 2.jpg" alt="Nůžkový stan Ostrov"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 3.jpg" alt="Nůžkový stan Ostrov"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 4.jpg" alt="Nůžkový stan Ostrov"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-park.jpg" alt="Nůžkový stan v parku"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-zahrada 1.JPG" alt="Nůžkový stan na zahradě"></div>
+            <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-zahrada 2.jpg" alt="Nůžkový stan na zahradě"></div>
 
-**Důležitý tip:**
-Pokud v 1. části (v CSS) použijete ty nové styly, co jsem vám poslal, tak:
-* Na **PC** bude galerie stále úhledně v prostředním pruhu.
-* Na **mobilu** se automaticky přepne do režimu 2 fotky vedle sebe bez bílých okrajů po stranách.
+            <div class="gallery-item hrady"><img src="hrad-draha 1.jpg" alt="Překážková dráha"></div>
+            <div class="gallery-item hrady"><img src="hrad-draha 2.jpg" alt="Překážková dráha"></div>
+            <div class="gallery-item hrady"><img src="hrad-draha 3.jpg" alt="Překážková dráha"></div>
+            <div class="gallery-item hrady"><img src="hrad-draha 4.jpg" alt="Překážková dráha"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 1.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 2.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-house 3.JPG" alt="Hradní dům"></div>
+            <div class="gallery-item hrady"><img src="hrad-skluzavka 1.JPG" alt="Obří skluzavka"></div>
 
-Máte už v kódu i tu **3. část (Patičku/Footer)** se jmény pod sebou, nebo ji chcete také zkontrolovat?
+            <div class="gallery-item ostatni"><img src="pivni-sety 1.JPG" alt="Pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 1.jpg" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 2.jpg" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="plynovy-hrib 3.JPG" alt="Plynový hřib"></div>
+            <div class="gallery-item ostatni"><img src="set-povlak 1.jpg" alt="Povlaky na pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="set-povlak 2.jpg" alt="Povlaky na pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="stul-povlak 1.jpg" alt="Rautový stůl s povlakem"></div>
+            <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl s povlakem"></div>
+        </div>
+    </section>
 
    <section id="faq" class="container" style="background: #fff;">
         <div class="section-title">
@@ -672,25 +712,10 @@ Máte už v kódu i tu **3. část (Patičku/Footer)** se jmény pod sebou, nebo
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
-<footer id="kontakt">
-    <span class="contact-label">Kontaktujte nás</span>
-    <a href="mailto:info@partykolin.cz" class="contact-large">info@partykolin.cz</a>
-    
-    <div class="contact-group">
-        <div class="contact-item">
-            <span class="contact-name">Miloš Hulinko</span>
-            <a href="tel:+420721123456" class="contact-phone">723 355 740</a>
-        </div>
-
-        <div class="contact-item">
-            <span class="contact-name">Miloslav Hendrych</span>
-            <a href="tel:+420722987654" class="contact-phone">605 717 081</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        &copy; 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
-    </div>
+ <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+    <p style="margin: 0; font-size: 0.9rem; color: #777;">
+        © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
+    </p>
 </footer>
 
     <script>
