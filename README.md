@@ -249,6 +249,54 @@
         @media (min-width: 1024px) { 
             .grid-fixed { grid-template-columns: repeat(3, 1fr); } 
         }
+    /* ÚPRAVA FORMULÁŘE NA MOBILU */
+            #kontakt .container {
+                padding: 40px 15px;
+            }
+
+            #kontakt div[style*="max-width: 600px"] {
+                padding: 20px !important; /* Menší vnitřní odsazení formuláře */
+                margin: 0 10px !important;
+            }
+
+            form label {
+                font-size: 0.8rem !important;
+            }
+
+            form input, form select, form textarea {
+                padding: 10px !important; /* Kompaktnější pole */
+                font-size: 16px !important; /* Prevence automatického zoomu na iPhone */
+            }
+
+            /* ÚPRAVA KONTAKTNÍCH ÚDAJŮ (Jména a telefony) */
+            div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] {
+                flex-direction: column !important;
+                gap: 20px !important;
+                align-items: center !important;
+            }
+
+            div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] > div {
+                text-align: center !important;
+                width: 100%;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 15px;
+            }
+
+            div[style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;"] > div:last-child {
+                border-bottom: none;
+            }
+
+            .contact-large {
+                font-size: 1.3rem !important;
+                margin-bottom: 15px !important;
+            }
+
+            /* FAKTURAČNÍ ÚDAJE */
+            div[style*="background: #f9f9f9"] {
+                margin: 0 10px !important;
+                padding: 15px !important;
+                font-size: 0.8rem !important;
+            }
     </style>
 </head>
 <body>
