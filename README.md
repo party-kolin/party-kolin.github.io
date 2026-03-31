@@ -762,60 +762,77 @@
                 // Přepnutí aktivního tlačítka
                 document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
-// Filtrování položek
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            if (filter === 'all' || item.classList.contains(filter)) {
-                item.classList.remove('hide');
-            } else {
-                item.classList.add('hide');
-            }
+<script>
+        // --- 1. ČÁST: OPRAVENÉ FILTROVÁNÍ ---
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Odstraní 'active' ze všech tlačítek a dá ho na to, na které se kliklo
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Samotné schovávání / ukazování fotek
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.classList.remove('hide');
+                    } else {
+                        item.classList.add('hide');
+                    }
+                });
+            });
         });
-    </script>
 
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <span class="lightbox-prev">&#10094;</span>
-        <img class="lightbox-content" src="" alt="Zvětšený náhled">
-        <span class="lightbox-next">&#10095;</span>
-    </div>
-
-    <script>
+        // --- 2. ČÁST: LIGHTBOX (ZVĚTŠOVÁNÍ) ---
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = lightbox.querySelector('.lightbox-content');
         const closeBtn = document.querySelector('.lightbox-close');
         const prevBtn = document.querySelector('.lightbox-prev');
         const nextBtn = document.querySelector('.lightbox-next');
-        const galleryImages = Array.from(document.querySelectorAll('.gallery-grid img'));
         
+        // Pomocná funkce, která najde jen fotky, které nejsou schované filtrem
+        let getVisibleImages = () => Array.from(document.querySelectorAll('.gallery-item:not(.hide) img'));
         let currentIndex = 0;
 
-        galleryImages.forEach((img, index) => {
-            img.addEventListener('click', () => {
-                currentIndex = index;
-                updateLightbox();
-                lightbox.classList.add('active');
-            });
+        // Otevření lightboxu při kliknutí na fotku
+        document.querySelector('.gallery-grid').addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG') {
+                const visibleImages = getVisibleImages();
+                currentIndex = visibleImages.indexOf(e.target);
+                
+                if (currentIndex !== -1) {
+                    updateLightbox();
+                    lightbox.classList.add('active');
+                }
+            }
         });
 
         function updateLightbox() {
-            const currentImg = galleryImages[currentIndex];
-            lightboxImg.src = currentImg.src;
+            const visibleImages = getVisibleImages();
+            if (visibleImages[currentIndex]) {
+                lightboxImg.src = visibleImages[currentIndex].src;
+            }
         }
 
         function showNext() {
-            currentIndex = (currentIndex + 1) % galleryImages.length;
+            const visibleImages = getVisibleImages();
+            if (visibleImages.length <= 1) return;
+            currentIndex = (currentIndex + 1) % visibleImages.length;
             updateLightbox();
         }
 
         function showPrev() {
-            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            const visibleImages = getVisibleImages();
+            if (visibleImages.length <= 1) return;
+            currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
             updateLightbox();
         }
 
+        // Ovládání
         nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
         prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
         closeBtn.addEventListener('click', () => lightbox.classList.remove('active'));
-        lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+        lightbox.addEventListener('click', (e) => { if(e.target === lightbox) lightbox.classList.remove('active'); });
 
         document.addEventListener('keydown', (e) => {
             if (!lightbox.classList.contains('active')) return;
