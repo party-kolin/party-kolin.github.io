@@ -159,6 +159,37 @@
         }
         @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
+
+        /* Styly pro Lightbox (vyskakovací okno) */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center; justify-content: center;
+}
+
+.lightbox.active { display: flex; }
+
+.lightbox-content {
+    max-width: 90%; max-height: 80%;
+    border: 3px solid #fff; border-radius: 4px;
+}
+
+.lightbox-close, .lightbox-prev, .lightbox-next {
+    position: absolute; color: white; font-size: 40px;
+    cursor: pointer; user-select: none; transition: 0.3s;
+}
+
+.lightbox-close { top: 20px; right: 30px; font-weight: bold; }
+.lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); padding: 20px; }
+.lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); padding: 20px; }
+
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { color: var(--primary-color); }
+
+/* Kurzor lupy na obrázcích v galerii */
+.gallery-item img { cursor: zoom-in; }
     </style>
 </head>
 <body>
@@ -731,18 +762,70 @@
                 // Přepnutí aktivního tlačítka
                 document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
-
-                // Filtrování položek
-                document.querySelectorAll('.gallery-item').forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.classList.remove('hide');
-                    } else {
-                        item.classList.add('hide');
-                    }
-                });
-            });
+// Filtrování položek
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            if (filter === 'all' || item.classList.contains(filter)) {
+                item.classList.remove('hide');
+            } else {
+                item.classList.add('hide');
+            }
         });
     </script>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094;</span>
+        <img class="lightbox-content" src="" alt="Zvětšený náhled">
+        <span class="lightbox-next">&#10095;</span>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('.lightbox-content');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        const galleryImages = Array.from(document.querySelectorAll('.gallery-grid img'));
+        
+        let currentIndex = 0;
+
+        galleryImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                updateLightbox();
+                lightbox.classList.add('active');
+            });
+        });
+
+        function updateLightbox() {
+            const currentImg = galleryImages[currentIndex];
+            lightboxImg.src = currentImg.src;
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            updateLightbox();
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightbox();
+        }
+
+        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+        closeBtn.addEventListener('click', () => lightbox.classList.remove('active'));
+        lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === "Escape") lightbox.classList.remove('active');
+            if (e.key === "ArrowRight") showNext();
+            if (e.key === "ArrowLeft") showPrev();
+        });
+    </script>
+</body>
+</html>
 
 
 
