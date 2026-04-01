@@ -844,8 +844,7 @@
             if (e.key === "ArrowLeft") showPrev();
         });
     </script>
-</body>
-</html>
+
 
 
 
