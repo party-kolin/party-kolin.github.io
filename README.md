@@ -89,28 +89,34 @@
     }
 
     .hero h1 { 
-        font-size: clamp(2.5rem, 8vw, 4.5rem); 
+        font-size: clamp(1.8rem, 5vw, 2.8rem); /* Zmenšeno pro PC */
         font-weight: 800; 
         margin: 0; 
-        /* SILNĚJŠÍ STÍN: Pro lepší čitelnost textu na světlé fotce */
         text-shadow: 2px 2px 18px rgba(0,0,0,0.6), 0px 0px 10px rgba(0,0,0,0.4); 
         line-height: 1.2;
+        padding: 0 15px;
     }
     
     .hero h1 span { 
         color: var(--primary-color); 
+        display: block; /* Slogan bude vždy na novém řádku i bez <br> */
+        font-size: 0.7em; /* Slogan bude o něco menší než hlavní nápis */
+        margin-top: 10px;
     }
 
-    /* Úprava pouze pro mobilní telefony (Banner efekt) */
+    /* Úprava pouze pro mobilní telefony */
     @media (max-width: 768px) {
         .hero {
-            height: 35vh; /* Na mobilu úzký banner */
+            height: 35vh; 
             min-height: 200px;
             background-attachment: scroll;
             padding: 10px;
         }
         .hero h1 {
-            font-size: 1.8rem; /* Menší písmo pro mobil v jedné lince */
+            font-size: 1.5rem; /* Menší písmo pro mobil */
+        }
+        .hero h1 span {
+            font-size: 0.9rem; /* Slogan na mobilu tak akorát */
         }
     }
         /* KONTEJNERY */
