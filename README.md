@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>Party Kolín | Půjčovna párty stanů, skákacích hradů a vybavení</title>
     <meta name="description" content="Půjčovna vybavení pro vaši oslavu v Kolíně a okolí. Nabízíme párty stany 6x12m a 3x6m, skákací hrady, pivní sety s luxusními povlaky, plynové hřiby, rautové a barové stoly. Kompletní servis včetně montáže a dopravy.">
@@ -92,7 +92,7 @@
         color: var(--primary-color); 
     }
 
-        
+          }
         .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
         .hero h1 span { color: var(--primary-color); }
 
@@ -190,68 +190,6 @@
 
 /* Kurzor lupy na obrázcích v galerii */
 .gallery-item img { cursor: zoom-in; }
-
-/* --- RESPONZIVITA PRO MOBILY --- */
-@media (max-width: 768px) {
-    /* Kontejnery a sekce */
-    .container {
-        padding: 40px 20px;
-    }
-
-    /* Nadpisy - zmenšíme, aby se nelámaly divně */
-    h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.4rem; }
-
-    /* Galerie - mřížka se přepne na 1 sloupec (nebo 2 menší) */
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 10px;
-    }
-
-    /* Filtrační tlačítka - aby se dala pohodlně mačkat prstem */
-    .filter-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .filter-btn {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-        flex: 1 1 auto; /* Tlačítka se roztáhnou podle potřeby */
-        min-width: 120px;
-    }
-
-    /* KONTAKTNÍ FORMULÁŘ - klíčové pro iPhone */
-    form {
-        padding: 20px;
-    }
-
-    input, textarea, select {
-        font-size: 16px !important; /* Prevence zoomování na iPhone */
-        padding: 12px !important;
-    }
-
-    .btn-main {
-        width: 100%; /* Tlačítko přes celou šířku pro palec */
-        padding: 15px;
-        font-size: 1.1rem;
-    }
-
-    /* Kontaktní údaje pod sebe */
-    .contact-flex {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-
-    /* Ceník / Karty služeb */
-    .pricing-grid {
-        grid-template-columns: 1fr; /* Vše pod sebe */
-    }
-}
     </style>
 </head>
 <body>
@@ -531,6 +469,8 @@
                 </div>
             </div>
 
+        </div> </section> <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
+
     <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
         <div class="section-title">
             <h2>Galerie našich realizací</h2>
@@ -616,7 +556,7 @@
 
                 <div class="faq-item">
                     <h4>Kde je možné zápůjčku vyzvednout?</h4>
-                    <p>Párty vybavení je možno vyzvednout na výdejním místě garáže Cihelna (naproti stavebninám DEK). Stany a další vybavení Vám <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání.</p>
+                    <p>Párty vybavení jako nůžkové stany, pivní sety, stoly, dětské skákací hrady a další je možno vyzvednout na výdejním místě garáže Cihelna Kolín (naproti stavebninám DEK). Stany a další vybavení Vám také <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání buď na výdejním místě nebo okolí Kolína.</p>
                 </div>
             </div>
 
@@ -624,8 +564,8 @@
                 <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">⛺ Párty stany</h3>
                 
                 <div class="faq-item">
-                    <h4>Mohu si párty stan + příslušenství postavit sám/sama?</h4>
-                    <p>Bohužel to není možné. Stany půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti a přesný postup.</p>
+                    <h4>Mohu si párty stan 6x12m + příslušenství postavit sám/sama?</h4>
+                    <p>Bohužel to není možné. Stan 6x12m půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti a přesný postup.</p>
                 </div>
 
                 <div class="faq-item">
@@ -706,9 +646,6 @@
             <div class="divider"></div>
             <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
-        <div class="contact-flex" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
-    <div>
-     
 
         <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
