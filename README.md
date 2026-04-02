@@ -233,7 +233,7 @@
     </nav>
 
     <header class="hero" id="home">
-    <h1>Párty stany Kolín <br><span>...s námi to oslavíte</span></h1>
+    <h1>Půjčovna párty stanů a vybavení v Kolíně <span>...s námi to oslavíte</span></h1>
 </header>
 
    <section id="sluzby" style="background: #fcfcfc; padding: 80px 0;">
