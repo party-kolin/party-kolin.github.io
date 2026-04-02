@@ -546,59 +546,68 @@
     </div>
 </section>
 
-    <section id="podminky" class="container">
-        <div class="section-title">
-            <h2>Obchodní podmínky</h2>
-            <div class="divider"></div>
+   <section id="podminky" style="padding: 40px 0; background: #fff;">
+    <div class="container" style="width: 100%; max-width: 1150px; margin: 0 auto; padding: 0 15px;">
+        <div style="width: 100%; background: #f9f9f9; padding: 20px; border-radius: 12px; border: 1px solid #eee;">
+            <h2 style="text-align: left; color: var(--text-dark); margin-bottom: 20px;">Obchodní podmínky</h2>
+            
+            <div style="font-size: 1rem; color: var(--text-gray); line-height: 1.7;">
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--primary-color); font-size: 1.2rem; margin-bottom: 10px;">1. Úvodní ustanovení</h4>
+                    <p>Tyto obchodní podmínky (dále jen „podmínky“) upravují práva a povinnosti mezi pronajímatelem a nájemcem v rámci zapůjčení párty vybavení. Veškeré smluvní vztahy jsou uzavřeny v souladu s právním řádem České republiky.</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--primary-color); font-size: 1.2rem; margin-bottom: 10px;">2. Rezervace a storno</h4>
+                    <p>Rezervace vybavení se stává závaznou v okamžiku písemného (e-mailového) potvrzení oběma stranami. Zrušení rezervace méně než 48 hodin před termínem může být zpoplatněno dle individuální domluvy.</p>
+                </div>
+
+                </div>
         </div>
-
-        <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-            <p style="margin-bottom: 20px; line-height: 1.6;">
-                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026.
-        
-
-            <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
-                <p style="margin-bottom: 20px; font-weight: 600;">Kompletní znění dokumentu ve formátu PDF:</p>
-                <a href="Obchodní podmínky.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;">
-                    <span>📄</span> Stáhnout Obchodní podmínky (PDF)
-                </a>
-            </div>
+    </div>
+</section>
     
 
-    <section id="kontakt" class="container" style="background: #fff; padding-top: 80px;">
+    <section id="kontakt" style="background: #fdfdfd; padding: 40px 0;">
+    <div class="container" style="width: 100%; max-width: 1150px; margin: 0 auto; padding: 0 15px;">
+        
         <div class="section-title">
             <h2>Napište nám</h2>
             <div class="divider"></div>
-            <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
 
-        <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-            <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            
+            <div style="flex: 1; min-width: 300px; width: 100%;">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Kontaktujte nás přímo</h3>
+                <p style="margin-bottom: 5px;"><strong>Miloš Hulinko</strong></p>
+                <p style="margin-bottom: 5px;">📧 <a href="mailto:info@partykolin.cz" style="color: var(--text-dark); text-decoration: none; font-weight: 700;">info@partykolin.cz</a></p>
+                <p style="margin-bottom: 20px;">📞 +420 721 123 456</p>
                 
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše jméno</label>
-                    <input type="text" name="name" placeholder="Jan Novák" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
+                <div style="width: 100%; border-radius: 8px; overflow: hidden; line-height: 0;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.483665798485!2d15.197920476882205!3d50.03975511717282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c6d59f77f597b%3A0xc3f345888d30e39b!2sCihelna%20Kol%C3%ADn!5e0!3m2!1scs!2scz!4v1711980000000!5m2!1scs!2scz" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+            </div>
 
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">E-mail pro odpověď</label>
-                    <input type="email" name="_replyto" placeholder="vas@email.cz" required style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
-                </div>
+            <div style="flex: 1; min-width: 300px; width: 100%; background: #fff; padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <form>
+                    <div style="margin-bottom: 15px;">
+                        <input type="text" placeholder="Vaše jméno" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <input type="email" placeholder="Váš Email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <textarea placeholder="S čím Vám můžeme pomoci?" rows="4" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-main" style="width: 100%; border: none; cursor: pointer; padding: 15px;">ODESLAT POPTÁVKU</button>
+                </form>
+            </div>
 
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Telefon</label>
-                    <input type="tel" name="phone" placeholder="+420 123 456 789" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;">
-                </div>
-
-                <div style="display: flex; flex-direction: column;">
-                    <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">O co máte zájem?</label>
-                    <select name="vybaveni" style="padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; background: white;">
-                        <option value="stan_6x12">Párty stan 6x12m</option>
-                        <option value="nuzkovy_stan">Nůžkový stan</option>
-                        <option value="skakaci_hrad">Skákací hrad</option>
-                        <option value="kompletni_oslava">Vybavení pro celou oslavu</option>
-                        <option value="jine">Jiný dotaz</option>
-                    </select>
+        </div>
+    </div>
+</section>
                 </div>
 
                 <div style="display: flex; flex-direction: column;">
