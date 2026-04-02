@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://www.party-kolin.cz/stan-uvod.JPG">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.party-kolin.cz/">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #8cc63f;
@@ -88,35 +88,37 @@
         box-sizing: border-box;
     }
 
-    .hero h1 { 
-        font-family: 'Inter', sans-serif; /* Moderní a silný základ */
+   .hero h1 { 
+        font-family: 'Inter', sans-serif;
         font-size: clamp(1.8rem, 5vw, 2.8rem); 
         font-weight: 800; 
         margin: 0; 
         text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
         line-height: 1.1;
-        letter-spacing: -1px; /* Přiblíží písmena k sobě, vypadá to víc profi */
+        letter-spacing: -1px;
+        text-transform: uppercase; /* Hlavní nápis VELKÝMI PÍSMY vypadá profi */
     }
     
     .hero h1 span { 
-        font-family: 'Dancing Script', cursive; /* Tady je ta změna - psané písmo */
+        font-family: 'Caveat', cursive; /* Ten nový "fixový" font */
         color: var(--primary-color); 
         display: block; 
-        font-size: 1.2em; /* Psané písmo musí být o něco větší, aby bylo čitelné */
-        margin-top: 15px;
-        font-weight: 600;
-        text-shadow: none; /* U psaného písma stín často překáží, tak ho dáme pryč */
-        letter-spacing: 0;
+        font-size: 1.4em; /* Caveat musí být větší, aby vynikl */
+        margin-top: 5px;
+        font-weight: 700;
+        text-transform: none; /* Slogan nechej malými písmeny pro kontrast */
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        transform: rotate(-2deg); /* Mírné naklonění dodá ten správný "párty" šmrnc */
     }
 
-    /* Úprava pro mobilní telefony */
+    /* Mobilní úprava */
     @media (max-width: 768px) {
         .hero h1 {
-            font-size: 1.6rem; 
+            font-size: 1.5rem; 
         }
         .hero h1 span {
-            font-size: 1.3rem;
-            margin-top: 5px;
+            font-size: 1.4rem;
+            margin-top: 10px;
         }
     }
         /* KONTEJNERY */
