@@ -282,7 +282,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+    
     </section>
  
     <section id="vybaveni" class="container">
