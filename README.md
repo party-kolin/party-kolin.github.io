@@ -89,39 +89,52 @@
     }
 
   .hero h1 { 
-        font-family: 'Caveat', cursive; /* TEĎ JE CELÝ NÁPIS PSANÝ */
-        font-size: clamp(2.2rem, 6vw, 3.5rem); /* Zvětšeno, aby to vyniklo */
+        font-family: 'Caveat', cursive;
+        font-size: clamp(2.2rem, 6vw, 3.5rem); 
         font-weight: 700; 
         margin: 0; 
         line-height: 1.1;
         color: #ffffff; 
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Jemný stín, aby bílé písmo nesplynulo s fotkou */
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
         max-width: 900px;
-        transform: rotate(-1deg); /* Celý nadpis je lehce šikmo pro styl */
+        transform: rotate(-1deg);
+        
+        /* TYTO TŘI ŘÁDKY SMAŽOU TU LINKU */
+        text-decoration: none !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
     }
     
     .hero h1 span { 
         font-family: 'Caveat', cursive;
         color: var(--primary-color); 
         display: block; 
-        font-size: 0.8em; /* Slogan je teď o něco menší než hlavní nápis */
+        font-size: 0.8em; 
         margin-top: 10px;
         font-weight: 700;
-        transform: rotate(1deg); /* Slogan se mírně nakloní na druhou stranu (vypadá to skvěle) */
+        transform: rotate(1deg);
+        
+        /* I TADY PRO JISTOTU */
+        text-decoration: none !important;
+        border-bottom: none !important;
     }
 
     /* Mobilní úprava */
     @media (max-width: 768px) {
         .hero {
-            height: 45vh; /* Trochu vyšší, aby se psané písmo dobře vešlo */
+            height: 45vh; 
         }
         .hero h1 {
             font-size: 1.8rem; 
             padding: 0 15px;
+            text-decoration: none !important; /* Pojistka pro mobily */
+            border-bottom: none !important;
         }
         .hero h1 span {
             font-size: 1.5rem;
             margin-top: 5px;
+            text-decoration: none !important;
+            border-bottom: none !important;
         }
     }
         /* KONTEJNERY */
