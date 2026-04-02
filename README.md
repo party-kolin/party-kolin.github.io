@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Party Kolín | Půjčovna párty stanů, skákacích hradů a vybavení</title>
     <meta name="description" content="Půjčovna vybavení pro vaši oslavu v Kolíně a okolí. Nabízíme párty stany 6x12m a 3x6m, skákací hrady, pivní sety s luxusními povlaky, plynové hřiby, rautové a barové stoly. Kompletní servis včetně montáže a dopravy.">
@@ -93,7 +92,7 @@
         color: var(--primary-color); 
     }
 
-          }
+        
         .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
         .hero h1 span { color: var(--primary-color); }
 
@@ -531,8 +530,6 @@
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
             </div>
-
-        </div> </section> <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
 
     <section id="galerie" class="container" style="background: #fafafa; max-width: 100%;">
         <div class="section-title">
