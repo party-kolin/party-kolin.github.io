@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -190,6 +191,68 @@
 
 /* Kurzor lupy na obrázcích v galerii */
 .gallery-item img { cursor: zoom-in; }
+
+/* --- RESPONZIVITA PRO MOBILY --- */
+@media (max-width: 768px) {
+    /* Kontejnery a sekce */
+    .container {
+        padding: 40px 20px;
+    }
+
+    /* Nadpisy - zmenšíme, aby se nelámaly divně */
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.4rem; }
+
+    /* Galerie - mřížka se přepne na 1 sloupec (nebo 2 menší) */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    /* Filtrační tlačítka - aby se dala pohodlně mačkat prstem */
+    .filter-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        flex: 1 1 auto; /* Tlačítka se roztáhnou podle potřeby */
+        min-width: 120px;
+    }
+
+    /* KONTAKTNÍ FORMULÁŘ - klíčové pro iPhone */
+    form {
+        padding: 20px;
+    }
+
+    input, textarea, select {
+        font-size: 16px !important; /* Prevence zoomování na iPhone */
+        padding: 12px !important;
+    }
+
+    .btn-main {
+        width: 100%; /* Tlačítko přes celou šířku pro palec */
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    /* Kontaktní údaje pod sebe */
+    .contact-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Ceník / Karty služeb */
+    .pricing-grid {
+        grid-template-columns: 1fr; /* Vše pod sebe */
+    }
+}
     </style>
 </head>
 <body>
@@ -646,6 +709,12 @@
             <div class="divider"></div>
             <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
+        <div class="contact-flex" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
+    <div>
+        <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
+        <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
+    </div>
+    </div>
 
         <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
