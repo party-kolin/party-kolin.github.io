@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>Party Kolín | Půjčovna párty stanů, skákacích hradů a vybavení</title>
-    <meta name="description" content="Půjčovna vybavení pro vaši oslavu v Kolíně a okolí. Nabízíme párty stany 6x12m a 3x6m, skákací hrady, pivní sety s luxusními povlaky, plynové hřiby, rautové a barové stoly. Kompletní servis včetně montáže a dopravy.">
+    <title>Půjčovna párty stanů Kolín | Party-Kolin.cz</title>
+    <meta name="description" content="Půjčovna párty stanů 6x12m a 3x6m v Kolíně a okolí. Pronájem skákacích hradů, pivních setů a vybavení pro vaši oslavu. Kompletní servis včetně dopravy a montáže.">
     <meta name="keywords" content="půjčovna stanů Kolín, párty stan 6x12, nůžkový stan, skákací hrad Kolín, pivní sety, plynový hřib, rautové stoly, barové stolky, oslavy Kolín, svatba venku">
     <meta name="author" content="Miloš Hulinko">
+    <link rel="canonical" href="https://www.party-kolin.cz/">
 
     <meta property="og:title" content="Party Kolín | ...s námi to oslavíte">
-    <meta property="og:description" content="Vše pro vaši párty na jednom místě. Stany, hrady, posezení i topení v Kolíně a okolí.">
-    <meta property="og:image" content="logo.jpg">
+    <meta property="og:description" content="Vše pro vaši párty na jednom místě v Kolíně a okolí. Stany, hrady, posezení i topení.">
+    <meta property="og:image" content="https://www.party-kolin.cz/stan-uvod.JPG">
     <meta property="og:type" content="website">
-
+    <meta property="og:url" content="https://www.party-kolin.cz/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -766,11 +767,18 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+    <footer>
+    <p class="contact-label">Kde nás najdete</p>
+    <p style="color: white; margin-bottom: 30px;">Kolín a okolí (Kutná Hora, Nymburk, Poděbrady, Čáslav)</p>
+
+    <div class="contact-label">Máte dotaz nebo chcete rezervovat?</div>
+    ... atd ...
+</footer>
  <footer style="text-align: center; margin-top: 0; padding: 40px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
     <p style="margin: 0; font-size: 0.9rem; color: #777;">
         © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena.
     </p>
-</footer>
+   </footer>
 
     <div class="lightbox" id="lightbox">
         <span class="lightbox-close">&times;</span>
