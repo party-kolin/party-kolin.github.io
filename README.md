@@ -88,37 +88,36 @@
         box-sizing: border-box;
     }
 
-   .hero h1 { 
+  .hero h1 { 
         font-family: 'Inter', sans-serif;
         font-size: clamp(1.8rem, 5vw, 2.8rem); 
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
         line-height: 1.1;
         letter-spacing: -1px;
-        text-transform: uppercase; /* Hlavní nápis VELKÝMI PÍSMY vypadá profi */
+        text-transform: uppercase;
+        text-shadow: none; /* TADY JSME ODSTRANILI TU LINKU/STÍN */
+        color: #ffffff; /* Čistě bílá */
     }
     
     .hero h1 span { 
-        font-family: 'Caveat', cursive; /* Ten nový "fixový" font */
+        font-family: 'Caveat', cursive;
         color: var(--primary-color); 
         display: block; 
-        font-size: 1.4em; /* Caveat musí být větší, aby vynikl */
-        margin-top: 5px;
+        font-size: 1.3em;
+        margin-top: 10px;
         font-weight: 700;
-        text-transform: none; /* Slogan nechej malými písmeny pro kontrast */
-        text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-        transform: rotate(-2deg); /* Mírné naklonění dodá ten správný "párty" šmrnc */
+        text-transform: none; 
+        text-shadow: none; /* Odstraněno i u sloganu */
+        transform: rotate(-1deg); /* Jen mírné naklonění pro styl */
     }
 
-    /* Mobilní úprava */
     @media (max-width: 768px) {
         .hero h1 {
-            font-size: 1.5rem; 
+            font-size: 1.6rem; 
         }
         .hero h1 span {
             font-size: 1.4rem;
-            margin-top: 10px;
         }
     }
         /* KONTEJNERY */
@@ -234,8 +233,8 @@
     </nav>
 
     <header class="hero" id="home">
-        <h1>Půjčovna párty stanů a vybavení v Kolíně <span>...s námi to oslavíte</span></h1>
-    </header>
+    <h1>Párty stany Kolín <br><span>...s námi to oslavíte</span></h1>
+</header>
 
    <section id="sluzby" style="background: #fcfcfc; padding: 80px 0;">
         <div class="container">
