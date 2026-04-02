@@ -337,7 +337,7 @@
                         <li>Kapacita 50 až 80 osob</li>
                         <li>Výška boční stěny 2m / střechy 3m</li>
                         <li>Stabilní PVC plachta a konstrukce</li>
-                        <li>V ceně montáž a doprava do 10km</li>
+                        <li>V ceně montáž a doprava do 10km od Kolína</li>
                     </ul>
                     <div class="price">10 890 Kč <span>s DPH</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
