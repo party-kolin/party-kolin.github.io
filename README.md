@@ -241,11 +241,12 @@
                     </p>
                 </div>
 
-                <div style="background: white; border: 1px solid var(--border-color); border-radius: 15px; padding: 30px; margin-bottom: 50px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 280px;">
-                        <h3 style="color: var(--primary-color); margin-top: 0;">Kdo jsme?</h3>
-                        <p style="margin-bottom: 0;">Jsme dva bratranci z Kolína, kteří věří, že každá oslava si zaslouží být perfektní, ať už venku praží slunce, fouká vítr nebo padají trakaře. Nejsme anonymní půjčovna – zakládáme si na lidském přístupu a 100% spolehlivosti.</p>
-                    </div>
+               <div style="background: #fff; padding: 30px 20px; border-radius: 15px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box; width: 100%;">
+    <h2 style="margin-top: 0;">Kdo jsme?</h2>
+    <p style="margin-bottom: 0; line-height: 1.6;">
+        Jsme dva bratranci z Kolína, kteří věří, že každá oslava si zaslouží být perfektní ať už venku praží slunce, fouká vítr nebo padají trakaře. Nejsme anonymní půjčovna – zakládáme si na lidském přístupu a 100% spolehlivosti.
+    </p>
+</div>
                 </div>
 
                 <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.6rem;">Co pro vás máme připraveno?</h3>
