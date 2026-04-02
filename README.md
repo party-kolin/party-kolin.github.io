@@ -26,6 +26,10 @@
 
         * { box-sizing: border-box; }
 
+    html {
+            scroll-behavior: smooth; /* Toto zajistí tu plynulou jízdu nahoru */
+        }
+
         html, body {
             margin: 0; padding: 0; width: 100%; max-width: 100vw;
             overflow-x: hidden; position: relative;
@@ -36,7 +40,6 @@
             color: var(--text-dark);
             line-height: 1.6;
             background-color: #fff;
-            scroll-behavior: smooth;
         }
 
  /* NAVIGACE */
@@ -208,7 +211,9 @@
 <body>
 
     <nav>
-        <img src="logo.jpg" alt="Party Kolín">
+        <a href="#home" style="display: flex; align-items: center;">
+    <img src="logo.jpg" alt="Party Kolín">
+</a>
         <div class="nav-links">
             <a href="#sluzby">Naše služby</a>
             <a href="#vybaveni">Ceník</a>
@@ -219,7 +224,7 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="home">
         <h1>...s námi to <span>oslavíte</span>.</h1>
     </header>
 
