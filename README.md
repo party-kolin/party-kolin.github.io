@@ -692,11 +692,11 @@
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
                 <div>
                     <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
-                    <a href="tel:723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
+                    <a href="tel:723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">723 355 740</a>
                 </div>
                 <div>
                     <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloslav Hendrych</span>
-                    <a href="tel:605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 605 717 081</a>
+                    <a href="tel:605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">605 717 081</a>
                 </div>
             </div>
 
