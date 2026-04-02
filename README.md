@@ -629,7 +629,7 @@
 
       <div style="width: 100%; max-width: 800px; margin: 0 auto; background: #fff; padding: 25px 15px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box;">
             <p style="margin-bottom: 20px; line-height: 1.6;">
-                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP), které nabývají účinnosti dnem <strong>30. 3. 2026.
+                Naše obchodní vztahy se řídí platnými Všeobecnými obchodními podmínkami (VOP).
         
 
             <div style="text-align: center; border-top: 1px solid #eee; pt-30px; padding-top: 30px;">
