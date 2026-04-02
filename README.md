@@ -71,7 +71,7 @@
     .hero {
         height: 35vh; /* Na PC nízký banner (35 % výšky) */
         min-height: 250px; /* Aby nebyl na PC úplně placatý */
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('stan-uvod.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
