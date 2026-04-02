@@ -767,13 +767,10 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
-  <footer id="kontakt" style="text-align: center; padding: 60px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
+<footer id="kontakt" style="text-align: center; padding: 60px 20px; background: #f1f1f1; border-top: 1px solid #ddd;">
     
-    <p class="contact-label" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Kde nás najdete</p>
-    <p style="color: #4a4a4a; margin-bottom: 30px; font-weight: 600;">Kolín a okolí (Kutná Hora, Nymburk, Poděbrady, Čáslav)</p>
-
-    <div class="contact-label" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Máte dotaz nebo chcete rezervovat?</div>
-    <a href="tel:+420XXXXXXXXX" style="font-size: 1.8rem; font-weight: 800; display: block; margin: 10px 0 40px; color: #1a1a1a; text-decoration: none;">+420 XXX XXX XXX</a>
+    <p class="contact-label" style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 10px;">Oblast působení</p>
+    <p style="color: #4a4a4a; margin-bottom: 0; font-weight: 600; font-size: 1rem;">Kolín a okolí (Kutná Hora, Nymburk, Poděbrady, Čáslav)</p>
     
     <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; font-size: 0.85rem; color: #777;">
         © 2026 PARTY-KOLIN.CZ. Všechna práva vyhrazena. <br>
