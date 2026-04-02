@@ -271,10 +271,17 @@
                     </p>
                 </div>
 
-               <div style="background: #fff; padding: 30px 20px; border-radius: 15px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box; width: 100%;">
-    <h2 style="margin-top: 0;">Kdo jsme?</h2>
-    <p style="margin-bottom: 0; line-height: 1.6;">
-        Jsme dva bratranci z Kolína, kteří věří, že každá oslava si zaslouží být perfektní ať už venku praží slunce, fouká vítr nebo padají trakaře. Nejsme anonymní půjčovna – zakládáme si na lidském přístupu a 100% spolehlivosti.
+               <div style="background: #fff; padding: 40px 30px; border-radius: 15px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box; width: 100%;">
+    <h2 style="margin-top: 0; font-size: 1.8rem; color: var(--text-dark); margin-bottom: 15px;">
+        Půjčovna stanů s lidským přístupem
+    </h2>
+    
+    <p style="color: var(--primary-color); font-weight: 800; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 1px;">
+        Kdo jsme?
+    </p>
+
+    <p style="margin-bottom: 0; line-height: 1.7; font-size: 1.05rem; color: var(--text-gray);">
+        Jsme dva bratranci z Kolína, kteří věří, že každá oslava si zaslouží být perfektní, ať už venku praží slunce, fouká vítr nebo padají trakaře. Nejsme anonymní půjčovna – zakládáme si na lidském přístupu a 100% spolehlivosti.
     </p>
 </div>
                 </div>
