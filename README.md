@@ -457,7 +457,7 @@
             </div>
           
             <div class="card">
-                <div class="card-img" style="background-image: url('image2.jpg');"></div>
+                <div class="card-img" style="background-image: url('Led leflektor.jpg');"></div>
                 <div class="card-content">
                     <h3>Osvětlení stanu</h3>
                     <ul class="card-list">
