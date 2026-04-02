@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://www.party-kolin.cz/stan-uvod.JPG">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.party-kolin.cz/">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #8cc63f;
@@ -89,34 +89,34 @@
     }
 
     .hero h1 { 
-        font-size: clamp(1.8rem, 5vw, 2.8rem); /* Zmenšeno pro PC */
+        font-family: 'Inter', sans-serif; /* Moderní a silný základ */
+        font-size: clamp(1.8rem, 5vw, 2.8rem); 
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 18px rgba(0,0,0,0.6), 0px 0px 10px rgba(0,0,0,0.4); 
-        line-height: 1.2;
-        padding: 0 15px;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
+        line-height: 1.1;
+        letter-spacing: -1px; /* Přiblíží písmena k sobě, vypadá to víc profi */
     }
     
     .hero h1 span { 
+        font-family: 'Dancing Script', cursive; /* Tady je ta změna - psané písmo */
         color: var(--primary-color); 
-        display: block; /* Slogan bude vždy na novém řádku i bez <br> */
-        font-size: 0.7em; /* Slogan bude o něco menší než hlavní nápis */
-        margin-top: 10px;
+        display: block; 
+        font-size: 1.2em; /* Psané písmo musí být o něco větší, aby bylo čitelné */
+        margin-top: 15px;
+        font-weight: 600;
+        text-shadow: none; /* U psaného písma stín často překáží, tak ho dáme pryč */
+        letter-spacing: 0;
     }
 
-    /* Úprava pouze pro mobilní telefony */
+    /* Úprava pro mobilní telefony */
     @media (max-width: 768px) {
-        .hero {
-            height: 35vh; 
-            min-height: 200px;
-            background-attachment: scroll;
-            padding: 10px;
-        }
         .hero h1 {
-            font-size: 1.5rem; /* Menší písmo pro mobil */
+            font-size: 1.6rem; 
         }
         .hero h1 span {
-            font-size: 0.9rem; /* Slogan na mobilu tak akorát */
+            font-size: 1.3rem;
+            margin-top: 5px;
         }
     }
         /* KONTEJNERY */
