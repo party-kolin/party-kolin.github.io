@@ -89,35 +89,39 @@
     }
 
   .hero h1 { 
-        font-family: 'Inter', sans-serif;
-        font-size: clamp(1.8rem, 5vw, 2.8rem); 
-        font-weight: 800; 
+        font-family: 'Caveat', cursive; /* TEĎ JE CELÝ NÁPIS PSANÝ */
+        font-size: clamp(2.2rem, 6vw, 3.5rem); /* Zvětšeno, aby to vyniklo */
+        font-weight: 700; 
         margin: 0; 
         line-height: 1.1;
-        letter-spacing: -1px;
-        text-transform: uppercase;
-        text-shadow: none; /* TADY JSME ODSTRANILI TU LINKU/STÍN */
-        color: #ffffff; /* Čistě bílá */
+        color: #ffffff; 
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Jemný stín, aby bílé písmo nesplynulo s fotkou */
+        max-width: 900px;
+        transform: rotate(-1deg); /* Celý nadpis je lehce šikmo pro styl */
     }
     
     .hero h1 span { 
         font-family: 'Caveat', cursive;
         color: var(--primary-color); 
         display: block; 
-        font-size: 1.3em;
+        font-size: 0.8em; /* Slogan je teď o něco menší než hlavní nápis */
         margin-top: 10px;
         font-weight: 700;
-        text-transform: none; 
-        text-shadow: none; /* Odstraněno i u sloganu */
-        transform: rotate(-1deg); /* Jen mírné naklonění pro styl */
+        transform: rotate(1deg); /* Slogan se mírně nakloní na druhou stranu (vypadá to skvěle) */
     }
 
+    /* Mobilní úprava */
     @media (max-width: 768px) {
+        .hero {
+            height: 45vh; /* Trochu vyšší, aby se psané písmo dobře vešlo */
+        }
         .hero h1 {
-            font-size: 1.6rem; 
+            font-size: 1.8rem; 
+            padding: 0 15px;
         }
         .hero h1 span {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            margin-top: 5px;
         }
     }
         /* KONTEJNERY */
