@@ -67,10 +67,11 @@
     .nav-links a:hover {
         color: var(--primary-color);
     }
-  /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
-   .hero {
-        min-height: 75vh; /* Vyšší fotka na mobilu (75 % výšky displeje) */
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+ /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO - BANNER VERZE */
+    .hero {
+        height: 35vh; /* Na PC nízký banner (35 % výšky) */
+        min-height: 250px; /* Aby nebyl na PC úplně placatý */
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('stan-khbox 1.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -78,27 +79,31 @@
         text-align: center; 
         color: white;
         margin-top: 60px; 
-        padding: 40px 20px;
+        padding: 10px;
         box-sizing: border-box;
     }
 
     .hero h1 { 
-        font-size: clamp(2.2rem, 10vw, 4.5rem); /* Větší písmo na malém displeji */
+        font-size: clamp(1.6rem, 7vw, 3.5rem); /* Zmenšené písmo pro úzký banner */
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
-        line-height: 1.2;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+        line-height: 1.1;
     }
     
     .hero h1 span { 
         color: var(--primary-color); 
     }
 
-    /* Fix pro iPhone - aby fotka nebyla "čtverec" a nápis měl místo */
+    /* Úprava pro iPhone a mobily (Banner efekt) */
     @media (max-width: 768px) {
         .hero {
-            min-height: 80vh; /* Na iPhone Mini bude fotka skoro přes celý displej */
-            background-attachment: scroll; /* Důležité pro plynulost na iOS */
+            height: 25vh; /* Na mobilu ještě nižší pruh */
+            min-height: 180px; /* Minimální výška, aby se tam vešel stan a text */
+            background-attachment: scroll;
+        }
+        .hero h1 {
+            font-size: 1.6rem; /* Fixní velikost pro mobil, aby se nápis nerozlomil */
         }
     }
         /* KONTEJNERY */
