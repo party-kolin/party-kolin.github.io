@@ -616,7 +616,7 @@
 
                 <div class="faq-item">
                     <h4>Kde je možné zápůjčku vyzvednout?</h4>
-                    <p>Jelikož nemáme žádné oficiální výdejní místo, stany a další vybavení Vám <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání.</p>
+                    <p>Párty vybavení je možno vyzvednout na výdejním místě garáže Cihelna (naproti stavebninám DEK). Stany a další vybavení Vám <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání.</p>
                 </div>
             </div>
 
@@ -708,10 +708,7 @@
         </div>
         <div class="contact-flex" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
     <div>
-        <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
-        <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
-    </div>
-    </div>
+     
 
         <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
             <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
@@ -758,11 +755,11 @@
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 25px;">
                 <div>
                     <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloš Hulinko</span>
-                    <a href="tel:+420723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
+                    <a href="tel:723355740" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 723 355 740</a>
                 </div>
                 <div>
                     <span style="display: block; font-size: 0.9rem; color: var(--text-gray);">Miloslav Hendrych</span>
-                    <a href="tel:+420605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 605 717 081</a>
+                    <a href="tel:605717081" style="color: var(--text-dark); font-size: 1.2rem; font-weight: 800; text-decoration: none;">+420 605 717 081</a>
                 </div>
             </div>
 
