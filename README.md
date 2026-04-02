@@ -624,7 +624,7 @@
     <section id="podminky" style="padding: 60px 0;">
         <div class="section-title">
             <h2>Obchodní podmínky</h2>
-            <div class="divider"></div>
+            <div class="section-title" style="padding-left: 5px; padding-right: 5px; margin-bottom: 30px;">
         </div>
 
       <div style="width: 100%; max-width: 800px; margin: 0 auto; background: #fff; padding: 25px 15px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box;">
