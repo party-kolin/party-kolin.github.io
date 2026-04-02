@@ -67,11 +67,11 @@
     .nav-links a:hover {
         color: var(--primary-color);
     }
- /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO - BANNER VERZE */
+ /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO - KOMBINOVANÁ VERZE */
     .hero {
-        height: 35vh; /* Na PC nízký banner (35 % výšky) */
-        min-height: 250px; /* Aby nebyl na PC úplně placatý */
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('stan-uvod.JPG') no-repeat center center/cover;
+        height: 65vh; /* Na PC velká fotka jako dřív */
+        min-height: 400px; /* Aby na PC fotka vždy vynikla */
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('stan-uvod.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -79,31 +79,32 @@
         text-align: center; 
         color: white;
         margin-top: 60px; 
-        padding: 10px;
+        padding: 20px;
         box-sizing: border-box;
     }
 
     .hero h1 { 
-        font-size: clamp(1.6rem, 7vw, 3.5rem); /* Zmenšené písmo pro úzký banner */
+        font-size: clamp(2.5rem, 8vw, 4.5rem); 
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
-        line-height: 1.1;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
+        line-height: 1.2;
     }
     
     .hero h1 span { 
         color: var(--primary-color); 
     }
 
-    /* Úprava pro iPhone a mobily (Banner efekt) */
+    /* Úprava pouze pro mobilní telefony (Efekt banneru) */
     @media (max-width: 768px) {
         .hero {
-            height: 25vh; /* Na mobilu ještě nižší pruh */
-            min-height: 180px; /* Minimální výška, aby se tam vešel stan a text */
+            height: 35vh; /* Na mobilu úzký banner přes šířku */
+            min-height: 200px; /* Pojistka pro čitelnost na iPhone Mini */
             background-attachment: scroll;
+            padding: 10px;
         }
         .hero h1 {
-            font-size: 1.6rem; /* Fixní velikost pro mobil, aby se nápis nerozlomil */
+            font-size: 1.8rem; /* Menší písmo pro mobil v jedné lince */
         }
     }
         /* KONTEJNERY */
