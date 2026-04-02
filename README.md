@@ -640,14 +640,14 @@
             </div>
     
 
-   <section id="kontakt" style="background: #fff; padding: 80px 0 20px 0; width: 100%;">
+   <section id="kontakt" style="background: #fff; padding: 60px 5px; width: 100%; overflow-x: hidden;">
         <div class="section-title">
             <h2>Napište nám</h2>
             <div class="divider"></div>
             <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
 
-      <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 20px 15px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box;">
+      <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 20px 10px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box;">
             <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
                 
                 <div style="display: flex; flex-direction: column;">
