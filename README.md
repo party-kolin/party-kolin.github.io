@@ -68,9 +68,9 @@
         color: var(--primary-color);
     }
   /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
-    .hero {
-        height: 60vh;
-        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('stan-khbox 1.JPG') no-repeat center center/cover;
+   .hero {
+        min-height: 75vh; /* Vyšší fotka na mobilu (75 % výšky displeje) */
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('stan-khbox 1.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -78,24 +78,29 @@
         text-align: center; 
         color: white;
         margin-top: 60px; 
-        padding: 20px;
+        padding: 40px 20px;
+        box-sizing: border-box;
     }
 
     .hero h1 { 
-        font-size: clamp(2rem, 8vw, 4.5rem); 
+        font-size: clamp(2.2rem, 10vw, 4.5rem); /* Větší písmo na malém displeji */
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
+        line-height: 1.2;
     }
     
     .hero h1 span { 
         color: var(--primary-color); 
     }
 
-          }
-        .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
-        .hero h1 span { color: var(--primary-color); }
-
+    /* Fix pro iPhone - aby fotka nebyla "čtverec" a nápis měl místo */
+    @media (max-width: 768px) {
+        .hero {
+            min-height: 80vh; /* Na iPhone Mini bude fotka skoro přes celý displej */
+            background-attachment: scroll; /* Důležité pro plynulost na iOS */
+        }
+    }
         /* KONTEJNERY */
         .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
         .section-title { text-align: center; margin-bottom: 40px; }
