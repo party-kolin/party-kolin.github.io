@@ -16,181 +16,122 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #8cc63f;
-            --text-dark: #1a1a1a;
-            --text-gray: #4a4a4a;
-            --bg-light: #fdfdfd;
-            --border-color: #f0f0f0;
-        }
+    :root {
+        --primary-color: #8cc63f;
+        --text-dark: #1a1a1a;
+        --text-gray: #4a4a4a;
+        --bg-light: #fdfdfd;
+        --border-color: #f0f0f0;
+    }
 
-        * { box-sizing: border-box; }
+    * { box-sizing: border-box; }
 
-        html, body {
-            margin: 0; padding: 0; width: 100%; max-width: 100vw;
-            overflow-x: hidden; position: relative;
-        }
+    html, body {
+        margin: 0; padding: 0; width: 100%;
+        overflow-x: hidden; position: relative;
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: #fff;
-            scroll-behavior: smooth;
-        }
+    body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-dark);
+        line-height: 1.6;
+        background-color: #fff;
+        scroll-behavior: smooth;
+    }
 
- /* NAVIGACE */
+    /* NAVIGACE */
     nav {
         position: fixed; top: 0; left: 0; width: 100%;
         background: rgba(255, 255, 255, 0.98);
         border-bottom: 1px solid var(--border-color);
         z-index: 1000; display: flex;
-        justify-content: space-between; align-items: center;
-        padding: 10px 5%;
+        flex-direction: column; /* Mobil: pod sebou */
+        align-items: center;
+        padding: 10px;
     }
 
-    nav img { height: 50px; width: auto; max-width: 180px; object-fit: contain; }
+    @media (min-width: 768px) {
+        nav { flex-direction: row; justify-content: space-between; padding: 10px 5%; }
+    }
 
-    .nav-links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    nav img { height: 45px; width: auto; max-width: 180px; object-fit: contain; margin-bottom: 5px; }
+    @media (min-width: 768px) { nav img { height: 50px; margin-bottom: 0; } }
 
+    .nav-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
     .nav-links a {
-        text-decoration: none; 
-        color: var(--text-dark);
-        font-weight: 700; 
-        font-size: 0.65rem;
-        text-transform: uppercase; 
-        letter-spacing: 0.5px;
+        text-decoration: none; color: var(--text-dark);
+        font-weight: 700; font-size: 0.7rem;
+        text-transform: uppercase; letter-spacing: 0.5px;
         transition: color 0.3s ease;
     }
+    .nav-links a:hover { color: var(--primary-color); }
 
-    /* Tento kousek zajistí to zelené najetí myší jen v menu */
-    .nav-links a:hover {
-        color: var(--primary-color);
-    }
-  /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO */
+    /* HERO SEKCE */
     .hero {
         height: 60vh;
         background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('stan-khbox 1.JPG') no-repeat center center/cover;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center; 
-        text-align: center; 
-        color: white;
-        margin-top: 60px; 
-        padding: 20px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-align: center; color: white; margin-top: 100px; padding: 20px;
     }
+    .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
+    .hero h1 span { color: var(--primary-color); }
 
-    .hero h1 { 
-        font-size: clamp(2rem, 8vw, 4.5rem); 
-        font-weight: 800; 
-        margin: 0; 
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.3); 
+    /* KONTEJNERY */
+    .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 40px 20px; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 10px; font-weight: 800; }
+    .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
+
+    /* KARTY CENÍKU */
+    .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 25px; }
+    @media (min-width: 650px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
+
+    .card {
+        background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
+        overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; height: 100%;
     }
+    .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .card-img { width: 100%; height: 200px; background-size: cover; background-position: center; }
+    .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
     
-    .hero h1 span { 
-        color: var(--primary-color); 
+    .price { font-size: 1.5rem; font-weight: 800; margin: 10px 0; color: var(--text-dark); }
+    .btn-main {
+        display: block; background: var(--primary-color); color: white;
+        padding: 12px; text-decoration: none; border-radius: 6px;
+        font-weight: 700; text-align: center; margin-top: auto;
     }
 
-          }
-        .hero h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
-        .hero h1 span { color: var(--primary-color); }
+    /* GALERIE */
+    .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    @media (min-width: 768px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); } }
+    .gallery-item { height: 160px; border-radius: 8px; overflow: hidden; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; }
 
-        /* KONTEJNERY */
-        .container { width: 100%; max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
-        .divider { width: 60px; height: 5px; background: var(--primary-color); margin: 0 auto; border-radius: 2px; }
+    /* FAQ */
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item { margin-bottom: 15px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
+    .faq-item h4 { margin: 0 0 10px 0; color: var(--primary-color); font-weight: 700; }
 
-        /* KARTY CENÍKU */
-        .grid-fixed { display: grid; grid-template-columns: 1fr; gap: 30px; }
-        .card {
-            background: #fff; border-radius: 12px; border: 1px solid var(--border-color);
-            overflow: hidden; display: flex; flex-direction: column;
-            transition: all 0.3s ease;
-        }
-        .card:hover { transform: translateY(-5px); border-color: var(--primary-color); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .card-img { width: 100%; height: 220px; background-size: cover; background-position: center; }
-        .card-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
-        .card h3 { font-size: 1.25rem; margin: 5px 0; font-weight: 700; min-height: 3rem; display: flex; align-items: center; }
-        
-        .price { font-size: 1.5rem; font-weight: 800; margin: 15px 0 5px 0; color: var(--text-dark); }
-        .price span { font-size: 0.8rem; font-weight: 400; color: var(--text-gray); }
-        .note { font-size: 0.75rem; color: #888; margin-bottom: 15px; line-height: 1.3; }
-        
-        .card-list { list-style: none; padding: 0; margin: 10px 0; font-size: 0.85rem; flex-grow: 1; }
-        .card-list li { margin-bottom: 6px; padding-left: 22px; position: relative; color: var(--text-gray); border-bottom: 1px solid #fcfcfc; padding-bottom: 3px; }
-        .card-list li::before { content: "✓"; color: var(--primary-color); position: absolute; left: 0; font-weight: bold; }
+    /* FOOTER */
+    footer { background: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
+    .contact-large { 
+        font-size: clamp(1.2rem, 5vw, 1.8rem); 
+        font-weight: 700; color: var(--primary-color); 
+        text-decoration: none; display: block; margin: 20px 0;
+        word-break: break-all;
+    }
 
-        .btn-main {
-            display: block; background: var(--primary-color); color: white;
-            padding: 12px; text-decoration: none; border-radius: 6px;
-            font-weight: 700; text-align: center; font-size: 0.9rem;
-        }
-
-        /* GALERIE STYLY */
-        .filter-container { text-align: center; margin-bottom: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
-        .filter-btn {
-            padding: 10px 20px; border: 1px solid var(--primary-color); background: transparent;
-            color: var(--text-dark); cursor: pointer; border-radius: 30px; font-weight: 600;
-            transition: all 0.3s ease; font-size: 0.8rem;
-        }
-        .filter-btn.active, .filter-btn:hover { background: var(--primary-color); color: white; }
-
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-        .gallery-item { border-radius: 8px; overflow: hidden; height: 200px; transition: 0.3s; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .gallery-item.hide { display: none; }
-
-        /* FAQ & OSTATNÍ */
-        .faq-item, .policy-item { margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; }
-        .faq-item h4 { margin: 0 0 10px 0; color: var(--text-dark); border-bottom: 1px solid var(--primary-color); display: inline-block; }
-
-        footer { background: #1a1a1a; color: white; padding: 80px 20px 40px; text-align: center; }
-        .contact-label { color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-        .contact-large { font-size: 1.5rem; font-weight: 700; display: block; margin: 10px 0 30px; color: white; text-decoration: none; }
-        .footer-bottom { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333; font-size: 0.8rem; color: #777; }
-
-        @media (max-width: 768px) {
-            nav { padding: 15px; }
-            .nav-links { gap: 8px; justify-content: center; margin-top: 10px; }
-            .hero { height: 50vh; margin-top: 110px; }
-            .section-title h2 { font-size: 1.8rem; }
-        }
-        @media (min-width: 768px) { .grid-fixed { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .grid-fixed { grid-template-columns: repeat(3, 1fr); } }
-
-        /* Styly pro Lightbox (vyskakovací okno) */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    align-items: center; justify-content: center;
-}
-
-.lightbox.active { display: flex; }
-
-.lightbox-content {
-    max-width: 90%; max-height: 80%;
-    border: 3px solid #fff; border-radius: 4px;
-}
-
-.lightbox-close, .lightbox-prev, .lightbox-next {
-    position: absolute; color: white; font-size: 40px;
-    cursor: pointer; user-select: none; transition: 0.3s;
-}
-
-.lightbox-close { top: 20px; right: 30px; font-weight: bold; }
-.lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); padding: 20px; }
-.lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); padding: 20px; }
-
-.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { color: var(--primary-color); }
-
-/* Kurzor lupy na obrázcích v galerii */
-.gallery-item img { cursor: zoom-in; }
-    </style>
+    /* LIGHTBOX */
+    .lightbox {
+        display: none; position: fixed; z-index: 2000;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.9); align-items: center; justify-content: center;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox-content { max-width: 90%; max-height: 80%; border: 3px solid #fff; }
+    .lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; }
+</style>
 </head>
 <body>
 
@@ -210,7 +151,7 @@
         <h1>...s námi to <span>oslavíte</span>.</h1>
     </header>
 
-   <section id="sluzby" style="background: #fcfcfc; padding: 80px 0;">
+   <section id="sluzby" style="background: #fcfcfc; padding: 40px 20px;">
         <div class="container">
             <div class="section-title">
                 <span style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Půjčovna s lidským přístupem</span>
@@ -218,7 +159,7 @@
                 <div class="divider"></div>
             </div>
 
-            <div style="max-width: 900px; margin: 0 auto;">
+           <div class="container">
                 <div style="text-align: center; margin-bottom: 50px;">
                     <p style="font-size: 1.15rem; color: var(--text-dark); font-weight: 600; line-height: 1.6; margin-bottom: 20px;">
                         Nenechte počasí diktovat pravidla vaší párty!
@@ -538,10 +479,18 @@
             <div class="divider"></div>
         </div>
 
-        <div style="max-width: 900px; margin: 0 auto;">
+     <section id="faq" style="background: #fff;">
+    <div class="container">
+        
+        <div class="section-title">
+            <h2>Časté dotazy</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div style="width: 100%; max-width: 850px; margin: 0 auto;">
             
-            <div style="margin-bottom: 40px;">
-                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">📌 Obecné informace</h3>
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.3rem;">📌 Obecné informace</h3>
                 
                 <div class="faq-item">
                     <h4>Jak objednat zápůjčku (pronájem)?</h4>
@@ -556,70 +505,46 @@
 
                 <div class="faq-item">
                     <h4>Kde je možné zápůjčku vyzvednout?</h4>
-                    <p>Párty vybavení jako nůžkové stany, pivní sety, stoly, dětské skákací hrady a další je možno vyzvednout na výdejním místě garáže Cihelna Kolín (naproti stavebninám DEK). Stany a další vybavení Vám také <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme. Dětský skákací hrad Vám buď také přivezeme, nebo se domluvíme na místě předání buď na výdejním místě nebo okolí Kolína.</p>
+                    <p>Párty vybavení jako nůžkové stany, pivní sety, stoly, dětské skákací hrady a další je možno vyzvednout na výdejním místě garáže Cihelna Kolín (naproti stavebninám DEK). Stany a další vybavení Vám také <strong>přivezeme na místo určení</strong>, kde Vám stan(y) rovnou postavíme.</p>
                 </div>
             </div>
 
-            <div style="margin-bottom: 40px;">
-                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">⛺ Párty stany</h3>
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.3rem;">⛺ Párty stany</h3>
                 
                 <div class="faq-item">
                     <h4>Mohu si párty stan 6x12m + příslušenství postavit sám/sama?</h4>
-                    <p>Bohužel to není možné. Stan 6x12m půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti a přesný postup.</p>
+                    <p>Bohužel to není možné. Stan 6x12m půjčujeme <strong>pouze se stavbou od nás</strong>, z důvodů kontroly stavu při navrácení a také proto, že stavba velkého stanu vyžaduje zkušenosti.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>Jak velké místo budu pro stan či hrad potřebovat?</h4>
-                    <p>Pro párty stan je třeba počítat s <strong>3 m navíc</strong> oproti psaným rozměrům na každou stranu stanu. Na výšku stan potřebuje cca 3 m prostoru. Skákací hrad potřebuje rovněž min. 3 m odstup na každou stranu.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Na jakém místě lze párty stan postavit?</h4>
-                    <p>Je třeba <strong>měkký podklad (tráva, hlína)</strong>, aby stan bylo možno řádně ukotvit, popř. podklad, do kterého lze navrtat kotvící turbo šrouby. Stavba na jiný podklad (beton, dlažba) je možná pouze po předchozí domluvě.</p>
+                    <p>Pro párty stan je třeba počítat s <strong>3 m navíc</strong> oproti psaným rozměrům na každou stranu stanu. Na výšku stan potřebuje cca 3 m prostoru.</p>
                 </div>
             </div>
 
-            <div style="margin-bottom: 40px;">
-                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px;">🏰 Dětské skákací hrady</h3>
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.3rem;">🏰 Dětské skákací hrady</h3>
                 
                 <div class="faq-item">
                     <h4>Zvládnu hrad rozbalit a nafouknout sám?</h4>
-                    <p>Ano, hrad postavíte během pár minut. Stačí zkontrolovat plochu (bez ostrých nečistot), rozložit podkladovou plachtu a na ní hrad roztáhnout. Poté nasadíte rukáv hradu na kompresor, zajistíte suchým zipem a zapojíte do sítě. Hrad se do minuty nafoukne. Poté jej zafixujete kolíky do země.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Platí se vratná kauce za půjčení hradu?</h4>
-                    <p>Ne. Při převzetí hradu se hradí pouze sjednané nájemné.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Co dělat když hrad poškodím (malá dírka apod.)?</h4>
-                    <p>Ihned nás kontaktujte. I v případě malého propíchnutí hrad díky výkonnému kompresoru normálně funguje dál. Situaci s vámi vyřešíme individuálně.</p>
+                    <p>Ano, hrad postavíte během pár minut. Stačí zkontrolovat plochu, rozložit podkladovou plachtu a nasadit rukáv hradu na kompresor. Hrad se do minuty nafoukne.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>Může na hrad pršet?</h4>
-                    <p><strong>V žádném případě.</strong> Hrozí úraz elektrickým proudem od kompresoru. Při dešti ihned odpojte kompresor a ukryjte jej. Pokud atrakce zmokne, je nutné ji později rozbalit na suchém místě a nechat důkladně vyschnout (včetně plachty).</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Jak sbalit hrad?</h4>
-                    <p>Hrad se nesmí balit mokrý nebo špinavý. Neumývejte jej saponáty, pouze čistou vodou. Po vypnutí kompresoru se hrad vyfoukne, stěny se složí do středu a hrad se sbalí překládáním (cca 5 min). Poté se vloží do tašky.</p>
+                    <p><strong>V žádném případě.</strong> Hrozí úraz elektrickým proudem od kompresoru. Při dešti ihned odpojte kompresor a ukryjte jej.</p>
                 </div>
 
                 <div class="faq-item">
                     <h4>Můžu atrakci použít při kulturní akci a vybírat vstupné?</h4>
                     <p>Bohužel ne. Naše atrakce jsou určeny <strong>výhradně pro soukromé účely</strong> (rodinné oslavy, zahrady).</p>
                 </div>
-
-                <div class="faq-item">
-                    <h4>Co se stane, pokud nestihnu vrátit hrad včas?</h4>
-                    <p>V takovém případě je účtováno nájemné za další den dle ceníku. Vše je ale na dohodě – stačí zavolat a vždy se pokusíme najít rozumné řešení.</p>
-                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="podminky" class="container">
         <div class="section-title">
