@@ -623,7 +623,7 @@
 
     <section id="podminky" style="padding: 60px 0;">
         <div class="section-title">
-            <h2>Obchodní podmínky</h2>
+            <h2 style="font-size: clamp(1.5rem, 7vw, 2.2rem); white-space: nowrap;">Obchodní podmínky</h2>
             <div class="section-title" style="padding-left: 5px; padding-right: 5px; margin-bottom: 30px;">
         </div>
 
