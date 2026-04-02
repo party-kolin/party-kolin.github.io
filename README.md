@@ -67,11 +67,12 @@
     .nav-links a:hover {
         color: var(--primary-color);
     }
- /* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO - KOMBINOVANÁ VERZE */
+/* ZDE KONČÍ NAVIGACE A ZAČÍNÁ HERO - ZESVĚTLENÁ VERZE */
     .hero {
-        height: 65vh; /* Na PC velká fotka jako dřív */
-        min-height: 400px; /* Aby na PC fotka vždy vynikla */
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('stan-uvod.JPG') no-repeat center center/cover;
+        height: 65vh; /* Na PC velká fotka */
+        min-height: 400px;
+        /* ZESVĚTLENO: Změněno rgba(0,0,0,0.2) -> 0.1 a rgba(0,0,0,0.4) -> 0.2 */
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('stan-uvod.JPG') no-repeat center center/cover;
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -87,7 +88,8 @@
         font-size: clamp(2.5rem, 8vw, 4.5rem); 
         font-weight: 800; 
         margin: 0; 
-        text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
+        /* SILNĚJŠÍ STÍN: Pro lepší čitelnost textu na světlé fotce */
+        text-shadow: 2px 2px 18px rgba(0,0,0,0.6), 0px 0px 10px rgba(0,0,0,0.4); 
         line-height: 1.2;
     }
     
@@ -95,11 +97,11 @@
         color: var(--primary-color); 
     }
 
-    /* Úprava pouze pro mobilní telefony (Efekt banneru) */
+    /* Úprava pouze pro mobilní telefony (Banner efekt) */
     @media (max-width: 768px) {
         .hero {
-            height: 35vh; /* Na mobilu úzký banner přes šířku */
-            min-height: 200px; /* Pojistka pro čitelnost na iPhone Mini */
+            height: 35vh; /* Na mobilu úzký banner */
+            min-height: 200px;
             background-attachment: scroll;
             padding: 10px;
         }
