@@ -647,7 +647,7 @@
             <p style="margin-top: 15px; color: var(--text-gray);">Máte dotaz nebo chcete rezervovat termín? Vyplňte formulář a my se vám ozveme.</p>
         </div>
 
-        <div style="max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+      <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: clamp(15px, 5vw, 30px); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 5px 15px rgba(0,0,0,0.05); box-sizing: border-box;">
             <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
                 
                 <div style="display: flex; flex-direction: column;">
