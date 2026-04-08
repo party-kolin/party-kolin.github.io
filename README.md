@@ -399,10 +399,10 @@
                     <ul class="card-list">
                         <li>Výkon 10kW (provoz až 13h)</li>
                         <li>Vytápění stanu nebo okolí</li>
-                        <li>Cena s 10kg PB: 1550 Kč s DPH</li>
+                        <li>Cena s 10kg PB: 1700 Kč s DPH</li>
                         <li>Samostatně po domluvě</li>
                     </ul>
-                    <div class="price">770 Kč <span>/ bez náplně</span></div>
+                    <div class="price">900 Kč <span>/ bez náplně</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
                     <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
                 </div>
