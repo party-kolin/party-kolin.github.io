@@ -699,7 +699,7 @@
         </div>
 
  <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #fcfcfc; padding: 25px 15px; border-radius: 0; border-left: none; border-right: none; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); box-shadow: none; box-sizing: border-box;">
-            <form action="https://formspree.io/f/xnjojkjk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+            <form action="https://formspree.io/f/mzdygerv" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
                 
                 <div style="display: flex; flex-direction: column;">
                     <label style="font-weight: 600; font-size: 0.85rem; margin-bottom: 5px;">Vaše jméno</label>
