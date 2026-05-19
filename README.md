@@ -336,8 +336,8 @@
                     <ul class="card-list">
                         <li>Kapacita 50 až 80 osob</li>
                         <li>Výška boční stěny 2m / střechy 3m</li>
-                        <li>Stabilní PVC plachta a konstrukce</li>
-                        <li>V ceně montáž a doprava do 10km od Kolína</li>
+                        <li>Stabilní PVC plachta a konstrukce, odnímatelné boční stěny zdarma v ceně pronájmu</li>
+                        <li>Cena je včetně montáže a demontáže</li>
                     </ul>
                     <div class="price">10 890 Kč <span>s DPH</span></div>
                     <div class="note">Cena za 1 až 2 dny zapůjčení</div>
@@ -509,7 +509,7 @@
                 <div class="card-content">
                     <h3>Doprava a závoz</h3>
                     <ul class="card-list">
-                        <li><strong>Stan 6x12m: do 10km ZDARMA</strong></li>
+                        <li><strong>Stany, pivní sety, plynové hřiby</strong></li>
                         <li>Ostatní: individuální kalkulace</li>
                         <li>Dle velikosti zakázky a vzdálenosti</li>
                         <li>Závoz v rámci Kolína a okolí</li>
