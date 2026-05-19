@@ -393,7 +393,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('ubrus na pivni set.jpg');"></div>
+                <div class="card-img" style="background-image: url('úbrus na pivnici set.jpg');"></div>
                 <div class="card-content">
                     <h3>Ubrus na pivní set 200x50 cm</h3>
                     <ul class="card-list">
