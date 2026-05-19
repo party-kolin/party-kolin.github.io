@@ -364,7 +364,7 @@
             <div class="card">
                 <div class="card-img" style="background-image: url('pivni-set1.png');"></div>
                 <div class="card-content">
-                    <h3>Pivní set (2x lavice + stůl)</h3>
+                    <h3>Pivní set 200x50 cm (2x lavice + stůl)</h3>
                     <ul class="card-list">
                         <li>Pro 6 až 8 osob, stabilní provedení</li>
                         <li>Samostatně od 4ks</li>
@@ -379,7 +379,7 @@
             <div class="card">
                 <div class="card-img" style="background-image: url('povlak.jpg');"></div>
                 <div class="card-content">
-                    <h3>Povlak na pivní set 200x50</h3>
+                    <h3>Povlak na pivní set 200x50 cm</h3>
                     <ul class="card-list">
                         <li>Povlak na 2 lavice a stůl</li>
                         <li>Molitanová výstelka lavic</li>
@@ -392,6 +392,21 @@
                 </div>
             </div>
 
+            <div class="card">
+                <div class="card-img" style="background-image: url('Úbrus na pivnici set.PNG');"></div>
+                <div class="card-content">
+                    <h3>Ubrus na pivní set 200x50 cm</h3>
+                    <ul class="card-list">
+                        <li>Bílý ubrus pro stůl k pivním setům</li>
+                        <li>Dodá setu elegantní vzhled</li>
+                        <li>Půjčujeme pouze k pivním setům</li>
+                    </ul>
+                    <div class="price">200 Kč <span>s DPH</span></div>
+                    <div class="note">Cena za 1 až 2 dny zapůjčení</div>
+                    <a href="#kontakt" class="btn-main">POPTAT TERMÍN</a>
+                </div>
+            </div>
+           
             <div class="card">
                 <div class="card-img" style="background-image: url('plynovy-hrib 2.jpg');"></div>
                 <div class="card-content">
