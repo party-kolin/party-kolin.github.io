@@ -522,12 +522,12 @@
             <div class="card">
                 <div class="card-img" style="background-image: url('doprava.jpg');"></div>
                 <div class="card-content">
-                    <h3>Doprava a závoz</h3>
+                    <h3>Doprava</h3>
                     <ul class="card-list">
                         <li><strong>Stany, pivní sety, plynové hřiby</strong></li>
                         <li>Ostatní: individuální kalkulace</li>
                         <li>Dle velikosti zakázky a vzdálenosti</li>
-                        <li>Závoz v rámci Kolína a okolí</li>
+                        <li>Doprava v rámci Kolína a okolí</li>
                     </ul>
                     <div class="price">Individuálně <span>/ dle cesty</span></div>
                     <div class="note">Cenu vám upřesníme v nabídce</div>
