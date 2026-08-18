@@ -460,7 +460,7 @@
                 <div class="card-content">
                     <h3>Hrad House 3v1</h3>
                     <ul class="card-list">
-                        <li>4,55 x 3,30 x 2,65 m</li>
+                        <li>4,5 x 3,3 x 2,6 m</li>
                         <li>Max. 6 dětí, nosnost 180kg</li>
                         <li>Atest TÜV, boční sítě</li>
                         <li>Věk dětí 3 až 10 let</li>
@@ -476,7 +476,7 @@
                 <div class="card-content">
                     <h3>Hrad Obří skluzavka</h3>
                     <ul class="card-list">
-                        <li>5,60 x 2,55 x 1,90 m</li>
+                        <li>6,0 x 2,2 x 2,9 m</li>
                         <li>Max. 4 děti, nosnost 180kg</li>
                         <li>Atest TÜV, fukar v ceně</li>
                         <li>Věk dětí 3 až 10 let</li>
@@ -492,7 +492,7 @@
                 <div class="card-content">
                     <h3>Hrad Závodní skluzavka</h3>
                     <ul class="card-list">
-                        <li>5,20 x 2,50 x 2,90 m</li>
+                        <li>5,2 x 2,5 x 2,9 m</li>
                         <li>Max. 4 děti, nosnost 180kg</li>
                         <li>Atest TÜV, váha 30kg</li>
                         <li>Věk dětí 3 až 10 let</li>
