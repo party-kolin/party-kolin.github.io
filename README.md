@@ -572,6 +572,11 @@
             <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 2.jpeg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 3.jpeg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 4.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka tri dvory 1.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka tri dvory 2.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="sety s ubrusema svatba 2.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="sety s ubrusema svatba 1.jpeg" alt="Párty stan Hájenka"></div>
+            
 
             <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
             <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan Ostrov"></div>
@@ -597,6 +602,8 @@
             <div class="gallery-item ostatni"><img src="plynovy-hrib 3.JPG" alt="Plynový hřib"></div>
             <div class="gallery-item ostatni"><img src="set-povlak 1.jpg" alt="Povlaky na pivní sety"></div>
             <div class="gallery-item ostatni"><img src="set-povlak 2.jpg" alt="Povlaky na pivní sety"></div>
+            <div class="gallery-item ostatni"><img src="ubrus na pivni set 1.jpeg" alt="Ubrus na pivní set"></div>
+            <div class="gallery-item ostatni"><img src="ubrus na pivni set 2.jpg" alt="Ubrus na pivní set"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 1.jpg" alt="Rautový stůl s povlakem"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl s povlakem"></div>
         </div>
