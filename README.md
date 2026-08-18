@@ -576,6 +576,9 @@
             <div class="gallery-item stan6x12"><img src="stan hajenka tri dvory 2.jpeg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="sety s ubrusema svatba 2.jpeg" alt="Párty stan Hájenka"></div>
             <div class="gallery-item stan6x12"><img src="sety s ubrusema svatba 1.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan kovanice 1.jpeg" alt="Párty stan Kovanice"></div>
+            <div class="gallery-item stan6x12"><img src="stan kovanice 2.jpeg" alt="Párty stan Kovanice"></div>
+            <div class="gallery-item stan6x12"><img src="stan sobesin.jpeg" alt="Párty stan Sobesin"></div>
             
 
             <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
