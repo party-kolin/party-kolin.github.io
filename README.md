@@ -488,7 +488,7 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('zavodni skluzavka.jpeg');"></div>
+                <div class="card-img" style="background-image: url('zavodni skluzavka zahrada.jpg');"></div>
                 <div class="card-content">
                     <h3>Hrad Závodní skluzavka</h3>
                     <ul class="card-list">
