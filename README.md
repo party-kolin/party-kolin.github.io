@@ -488,11 +488,11 @@
             </div>
 
             <div class="card">
-                <div class="card-img" style="background-image: url('hrad-draha 2.jpg');"></div>
+                <div class="card-img" style="background-image: url('zavodni skluzavka.jpeg');"></div>
                 <div class="card-content">
-                    <h3>Hrad Překážková dráha</h3>
+                    <h3>Hrad Závodní skluzavka</h3>
                     <ul class="card-list">
-                        <li>5,60 x 2,55 x 1,90 m</li>
+                        <li>5,20 x 2,50 x 2,90 m</li>
                         <li>Max. 4 děti, nosnost 180kg</li>
                         <li>Atest TÜV, váha 30kg</li>
                         <li>Věk dětí 3 až 10 let</li>
