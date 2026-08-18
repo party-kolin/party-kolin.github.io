@@ -568,6 +568,10 @@
             <div class="gallery-item stan6x12"><img src="stan-mlyn 1.JPG" alt="Párty stan u mlýna"></div>
             <div class="gallery-item stan6x12"><img src="stan-mlyn 2.JPG" alt="Párty stan u mlýna"></div>
             <div class="gallery-item stan6x12"><img src="stan-mlyn 3.JPG" alt="Párty stan u mlýna"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 1.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 2.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 3.jpeg" alt="Párty stan Hájenka"></div>
+            <div class="gallery-item stan6x12"><img src="stan hajenka libodrice 4.jpeg" alt="Párty stan Hájenka"></div>
 
             <div class="gallery-item nuzkovy"><img src="nizkovy-stan.JPG" alt="Nůžkový stan"></div>
             <div class="gallery-item nuzkovy"><img src="nuzkovy-stan-ostrov 1.jpg" alt="Nůžkový stan Ostrov"></div>
