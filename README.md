@@ -595,6 +595,12 @@
             <div class="gallery-item hrady"><img src="hrad-house 2.JPG" alt="Hradní dům"></div>
             <div class="gallery-item hrady"><img src="hrad-house 3.JPG" alt="Hradní dům"></div>
             <div class="gallery-item hrady"><img src="hrad-skluzavka 1.JPG" alt="Obří skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 1.jpeg" alt="Závodní skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 2.jpeg" alt="Závodní skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 3.JPG" alt="Závodní skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 4.jpeg" alt="Závodní skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 5.jpeg" alt="Závodní skluzavka"></div>
+            <div class="gallery-item hrady"><img src="hrad zavodni skluzavka 6.JPG" alt="Závodní skluzavka"></div>
 
             <div class="gallery-item ostatni"><img src="pivni-sety 1.JPG" alt="Pivní sety"></div>
             <div class="gallery-item ostatni"><img src="plynovy-hrib 1.jpg" alt="Plynový hřib"></div>
