@@ -615,6 +615,7 @@
             <div class="gallery-item ostatni"><img src="ubrus na pivni set 2.jpg" alt="Ubrus na pivní set"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 1.jpg" alt="Rautový stůl s povlakem"></div>
             <div class="gallery-item ostatni"><img src="stul-povlak 2.JPG" alt="Barový stůl s povlakem"></div>
+            <div class="gallery-item ostatni"><img src="pivni sety s povlakama kank hajenka.jpeg" alt="Pivní sety s povlakama"></div>
         </div>
     </section>
 
